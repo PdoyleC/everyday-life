@@ -1,6 +1,10 @@
+Welcome to the **[Living Life](https://everyday-life-3e5f19430af5.herokuapp.com/)** and platform where people can share what their up to.
 
 
+[Link, to live project](https://everyday-life-3e5f19430af5.herokuapp.com/)
 
+**Purpose of the site**
+This site is a blog style site, aimed at people to share what their up, going for a walk, having a picnic, etc.
 
 
 
