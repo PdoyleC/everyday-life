@@ -1,3 +1,23 @@
+
+
+
+
+
+
+
+
+Using publisher and paint I created the logo. Font Kristen ITC
+
+<img src="readmedoc/livelifelogo.png" alt="Live Life logo">
+<img src="readmedoc/livelifelogopaint.png" alt="Live Life logo paint software">
+<img src="readmedoc/livelifelogopublisher.png" alt="Live Life publisher software">
+
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome,
