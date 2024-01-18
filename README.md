@@ -15,6 +15,8 @@ This site is a blog style site, aimed at people to share what their up to, going
 
 ## Design
 
+### Logo:
+
 Using publisher and paint I created the logo. Font Kristen ITC was used for the lettering, Publisher was used to create the colour and lettering, paint was used to merge the two L's together and also to merge the two L's to the Green circle. 
 <details>
 <summary>Logo Image</summary>
@@ -24,6 +26,8 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 <img src="readmedoc/livelifelogopublisher.png" alt="Live Life publisher software">
 
 </details>
+
+### Colour Scheme:
 
 <details>
 <summary>Colour Palet Image</summary>
