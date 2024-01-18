@@ -4,20 +4,35 @@ Welcome to the **[Living Life](https://everyday-life-3e5f19430af5.herokuapp.com/
 [Link, to live project](https://everyday-life-3e5f19430af5.herokuapp.com/)
 
 **Purpose of the site**
-This site is a blog style site, aimed at people to share what their up, going for a walk, having a picnic, etc.
+This site is a blog style site, aimed at people to share what their up to, going for a walk, having a picnic, etc.
 
 
+# Table of Contents
 
 
+## Design
 
 Using publisher and paint I created the logo. Font Kristen ITC was used for the lettering, Publisher was used to create the colour and lettering, paint was used used to mereg the two L's together and also to merge the two L's to the Green circle. 
+<details>
+<summary>Logo Image</summary>
 
 <img src="readmedoc/livelifelogo.png" alt="Live Life logo">
 <img src="readmedoc/livelifelogopaint.png" alt="Live Life logo paint software">
 <img src="readmedoc/livelifelogopublisher.png" alt="Live Life publisher software">
 
+</details>
+
+<details>
+<summary>Colour Palet Image</summary>
 
 <img src="readmedoc/colourpalet.png" alt="colour Palet">
+
+</details>
+
+### Database schema
+
+
+
 
 
 
