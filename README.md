@@ -45,8 +45,8 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ## credits
 
-- [React bootstrap navbar](https://react-bootstrap-v4.netlify.app/components/navbar/)
-- [React router](https://reactrouter.com/en/6.21.3/web/guides/quick-start)
+- [React bootstrap navbar](https://react-bootstrap-v4.netlify.app/components/navbar/).
+- Route renders a given component  when its path matches the current URL. [React router](https://reactrouter.com/en/6.21.3/web/guides/quick-start).
 
 
 
