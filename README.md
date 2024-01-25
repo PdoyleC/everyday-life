@@ -40,7 +40,12 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ### Database schema
 
-
+## Deploy connect
+CLIENT_ORIGIN to live life API with the url for your deployed React application. 
+CLIENT_ORIGIN_DEV  to live life API with Code anywhere preview link.  
+npm install axios in IDE
+create api folder and add axiosDefaults.js folder.
+add deployed API heroku link
 
 
 ## credits
