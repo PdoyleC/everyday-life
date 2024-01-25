@@ -6,6 +6,8 @@ Welcome to the **[Living Life](https://everyday-life-3e5f19430af5.herokuapp.com/
 **Purpose of the site**
 This site is a blog style site, aimed at people to share what their up to, going for a walk, having a picnic, etc.
 
+[Link, to API READme project](https://github.com/PdoyleC/live-life-api)
+
 
 # Table of Contents
 
@@ -41,6 +43,10 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 
 
+## credits
+
+- [React bootstrap navbar](https://react-bootstrap-v4.netlify.app/components/navbar/)
+- [React router](https://reactrouter.com/en/6.21.3/web/guides/quick-start)
 
 
 
