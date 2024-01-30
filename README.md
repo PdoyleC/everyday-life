@@ -28,7 +28,9 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 <img src="readmedoc/livelifelogopublisher.png" alt="Live Life publisher software">
 
 </details>
+
 <img src="readmedoc/pagenotfounddesign.png" alt="page not found design">
+- The page not found image was designed in Paint.
 
 
 ### Colour Scheme:
