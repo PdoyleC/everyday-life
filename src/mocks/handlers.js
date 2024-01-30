@@ -7,13 +7,13 @@ export const handlers = [
     return res(
       ctx.json({
         pk: 2,
-        username: "brian",
+        username: "Jim",
         email: "",
         first_name: "",
         last_name: "",
-        profile_id: 2,
+        profile_id: 7,
         profile_image:
-          "https://res.cloudinary.com/dgjrrvdbl/image/upload/v1/media/../default_profile_qdjgyp",
+        "https://res.cloudinary.com/dpo8kigkj/image/upload/v1/media/images/20231231_122051_rgtfqx",
       })
     );
   }),
