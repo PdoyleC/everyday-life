@@ -51,7 +51,7 @@
     /* background-color: #242a3d;
     color: white; */
     background-color: #242a3d;
-    color: aliceblue;
+    color: #e6dfdb;
   }
   
   .Black:hover,
@@ -59,11 +59,11 @@
     /* background-color: #dadadf;
     color: #242a3d;
     border-color: #242a3d; */
-    background-color: aliceblue;
+    background-color: #e6dfdb;
     color: #242a3d;
   }
   
   .Bright {
-    background-color: #2ed9ff;
+    background-color: #83bdbf;
     color: #363e44;
   }
