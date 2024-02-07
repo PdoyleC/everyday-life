@@ -68,6 +68,10 @@ it is refreshed in the background and the request eventually succeeds.
 - [React bootstrap navbar](https://react-bootstrap-v4.netlify.app/components/navbar/).
 - Route renders a given component  when its path matches the current URL. [React router](https://reactrouter.com/en/6.21.3/web/guides/quick-start).
 - Dropdown menu [React bootstrap Dropdown](https://react-bootstrap-v4.netlify.app/components/dropdowns/#custom-dropdown-components).
+- Page layout [React bootstrap Dropdown](https://react-bootstrap-v4.netlify.app/layout/grid/).
+
+
+
 
 
 
