@@ -45,9 +45,9 @@ const NavBar = () => {
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
-        to="/feed"
+        to="/following"
       >
-        <i className="fas fa-stream"></i>Feed
+        <i className="fas fa-stream"></i>Following
       </NavLink>
       <NavLink
         className={styles.NavLink}
