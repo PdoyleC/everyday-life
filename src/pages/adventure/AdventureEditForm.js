@@ -112,18 +112,12 @@ function AdventureEditForm() {
               value={activity}
               onChange={handleChange}
             >
-              <option value="other">Choose one</option>
-              <option value="hiking">Hiking </option>
-              <option value="cycling">Cycling</option>
-              <option value="racing">Racing</option>
-              <option value="rugby">Rugby</option>
-              <option value="gaa">GAA</option>
-              <option value="soccer">Soccer</option>
-              <option value="swimming">Swimming</option>
-              <option value="climbing">Climbing</option>
-              <option value="water_sports">Water Sports</option>
+              <option value="choose_one">Choose one</option>
+              <option value="family">Family</option>
+              <option value="hobbies">Hobbies </option>
+              <option value="sport">Sport</option>
               <option value="travel">Travel</option>
-              <option value="running">Running</option>
+              <option value="other">Other</option>
             </Form.Control>
           </Form.Group>
 
