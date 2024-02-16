@@ -25,11 +25,12 @@ function AdventureCreateForm() {
   const [errors, setErrors] = useState({});
 
   const [postData, setPostData] = useState({
-    title: "",
-    content: "",
+    location: "",
+    personal_note: "",
     image: "",
+    activity: "unknown",
   });
-  const { title, content, image } = postData;
+  const { location, personal_note, image, activity } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -37,7 +38,7 @@ function AdventureCreateForm() {
   const handleChange = (event) => {
     setPostData({
       ...postData,
-      [event.target.name]: event.target.value,
+      [event.target.location]: event.target.value,
     });
   };
 
@@ -55,8 +56,9 @@ function AdventureCreateForm() {
     event.preventDefault();
     const formData = new FormData();
 
-    formData.append("title", title);
-    formData.append("content", content);
+    formData.append("location", location);
+    formData.append("activity", activity);
+    formData.append("personal_note", personal_note);
     formData.append("image", imageInput.current.files[0]);
 
     try {
@@ -73,31 +75,31 @@ function AdventureCreateForm() {
   const textFields = (
     <div className="text-center">
       <Form.Group>
-        <Form.Label>Title</Form.Label>
+        <Form.Label>Location</Form.Label>
         <Form.Control
           type="text"
-          name="title"
-          value={title}
+          name="location"
+          value={location}
           onChange={handleChange}
         />
       </Form.Group>
-      {errors?.title?.map((message, idx) => (
+      {errors?.location?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
       ))}
 
       <Form.Group>
-        <Form.Label>Content</Form.Label>
+        <Form.Label>Personal Note</Form.Label>
         <Form.Control
           as="textarea"
           rows={6}
-          name="content"
-          value={content}
+          name="personal_note"
+          value={personal_note}
           onChange={handleChange}
         />
       </Form.Group>
-      {errors?.content?.map((message, idx) => (
+      {errors?.personal_note?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
