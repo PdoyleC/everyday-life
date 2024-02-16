@@ -89,6 +89,30 @@ function AdventureCreateForm() {
         </Alert>
       ))}
 
+<Form.Group>
+            <Form.Label>Activity</Form.Label>
+            <Form.Control
+              as="select"
+              type="text"
+              name="activity"
+              value={activity}
+              onChange={handleChange}
+            >
+              <option value="other">Choose one</option>
+              <option value="hiking">Hiking </option>
+              <option value="cycling">Cycling</option>
+              <option value="racing">Racing</option>
+              <option value="rugby">Rugby</option>
+              <option value="gaa">GAA</option>
+              <option value="soccer">Soccer</option>
+              <option value="swimming">Swimming</option>
+              <option value="climbing">Climbing</option>
+              <option value="water_sports">Water Sports</option>
+              <option value="travel">Travel</option>
+              <option value="running">Running</option>
+            </Form.Control>
+          </Form.Group>
+
       <Form.Group>
         <Form.Label>Personal Note</Form.Label>
         <Form.Control
