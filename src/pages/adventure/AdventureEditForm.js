@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-
+import React, { useRef, useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
@@ -7,33 +6,46 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 import Image from "react-bootstrap/Image";
-
 import Asset from "../../components/Asset";
-
 import Upload from "../../assets/upload.png";
-
 import styles from "../../styles/AdventureCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
-
-import { useHistory } from "react-router";
+import { useHistory, useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useRedirect } from "../../hooks/useRedirect";
+import axios from "axios";
 
-function AdventureCreateForm() {
-  useRedirect("loggedOut");
-  const [errors, setErrors] = useState({});
-
-  const [postData, setPostData] = useState({
-    location: "",
-    personal_note: "",
-    image: "",
-    activity: "unknown",
-  });
-  const { location, personal_note, image, activity } = postData;
+function AdventureEditForm() {
+    useRedirect("loggedOut");
+    const [errors, setErrors] = useState({});
+  
+    const [postData, setPostData] = useState({
+      location: "",
+      personal_note: "",
+      image: "",
+      activity: "unknown",
+    });
+    const { location, personal_note, image, activity } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
+  const { id } = useParams();
+
+  useEffect(() => {
+    const handleMount = async () => {
+      try {
+        const { data } = await axios.get(`/adventure/${id}/`);
+        const { location, personal_note, activity, image } = data;
+
+        setPostData({ location, personal_note, activity, image });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    handleMount();
+  }, [id]);
 
   const handleChange = (event) => {
     setPostData({
@@ -59,13 +71,15 @@ function AdventureCreateForm() {
     formData.append("location", location);
     formData.append("activity", activity);
     formData.append("personal_note", personal_note);
-    formData.append("image", imageInput.current.files[0]);
+    if (imageInput?.current?.files[0]) {
+      formData.append("image", imageInput.current.files[0]);
+    }
 
     try {
-      const { data } = await axiosReq.post("/adventure/", formData);
-      history.push(`/adventure/${data.id}`);
+      await axiosReq.put(`/adventure/${id}/`, formData);
+      history.push(`/adventure/${id}`);
     } catch (err) {
-    //   console.log(err);
+      console.log(err);
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
       }
@@ -83,13 +97,13 @@ function AdventureCreateForm() {
           onChange={handleChange}
         />
       </Form.Group>
-      {errors?.location?.map((message, idx) => (
+      {errors?.name?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
       ))}
 
-<Form.Group>
+      <Form.Group>
             <Form.Label>Activity</Form.Label>
             <Form.Control
               as="select"
@@ -114,7 +128,7 @@ function AdventureCreateForm() {
           </Form.Group>
 
       <Form.Group>
-        <Form.Label>Personal Note</Form.Label>
+      <Form.Label>Personal Note</Form.Label>
         <Form.Control
           as="textarea"
           rows={4}
@@ -128,7 +142,7 @@ function AdventureCreateForm() {
           {message}
         </Alert>
       ))}
-
+      
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
         onClick={() => history.goBack()}
@@ -136,7 +150,7 @@ function AdventureCreateForm() {
         Cancel
       </Button>
       <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-        Create
+        Save
       </Button>
     </div>
   );
@@ -156,7 +170,7 @@ function AdventureCreateForm() {
                   </figure>
                   <div>
                     <Form.Label
-                      className={`${btnStyles.Button} ${btnStyles.Blue} btn`}
+                      className={`${btnStyles.Button} ${btnStyles.Green}`}
                       htmlFor="image-upload"
                     >
                       Change the image
@@ -199,4 +213,4 @@ function AdventureCreateForm() {
   );
 }
 
-export default AdventureCreateForm;
+export default AdventureEditForm;
