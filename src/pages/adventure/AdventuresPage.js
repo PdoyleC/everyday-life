@@ -11,33 +11,33 @@ import appStyles from "../../App.module.css";
 import styles from "../../styles/PostsPage.module.css";
 import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
-
 import NoResults from "../../assets/no-results.png";
+
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 
-function AdventurePage({ message, filter = "" }) {
+function AdventuresPage({ message, filter = "" }) {
+  const currentUser = useCurrentUser();
   const [adventure, setAdventure] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
   const [query, setQuery] = useState("");
-  const currentUser = useCurrentUser();
 
   useEffect(() => {
     const fetchAdventure = async () => {
       try {
-        const { data } = await axiosReq.get(`/adventure/?${filter}search=${query}`);
-        setadventure(data);
+        const { data: { results } } = await axiosReq.get(`/adventure/?${filter}&search=${query}`);
+        setAdventure(prevData => ({ ...prevData, results: [...results] }));
         setHasLoaded(true);
       } catch (err) {
-        // console.log(err);
+        console.log(err);
       }
     };
 
     setHasLoaded(false);
     const timer = setTimeout(() => {
-      fetchadventure();
+      fetchAdventure();
     }, 1000);
 
     return () => {
@@ -47,8 +47,7 @@ function AdventurePage({ message, filter = "" }) {
 
   return (
     <Row className="h-100">
-      <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <i className={`fas fa-search ${styles.SearchIcon}`} />
+      <Col className="py-2 p-0 p-lg-2" lg={8} xl={9}>
         <Form
           className={styles.SearchBar}
           onSubmit={(event) => event.preventDefault()}
@@ -58,22 +57,23 @@ function AdventurePage({ message, filter = "" }) {
             onChange={(event) => setQuery(event.target.value)}
             type="text"
             className="mr-sm-2"
-            placeholder="Search posts"
+            placeholder="Search Adventure"
           />
         </Form>
+
 
         {hasLoaded ? (
           <>
             {adventure.results.length ? (
               <InfiniteScroll
-                children={posts.results.map((post) => (
-                  <Post key={post.id} {...post} setPosts={setPosts} />
-                ))}
-                dataLength={posts.results.length}
+                dataLength={adventure.results.length}
+                next={() => fetchMoreData(adventure, setAdventure)}
+                hasMore={!!adventure.next}
                 loader={<Asset spinner />}
-                hasMore={!!posts.next}
-                next={() => fetchMoreData(posts, setPosts)}
-              />
+                scrollThreshold="100px"
+              >
+
+              </InfiniteScroll>
             ) : (
               <Container className={appStyles.Content}>
                 <Asset src={NoResults} message={message} />
@@ -81,15 +81,13 @@ function AdventurePage({ message, filter = "" }) {
             )}
           </>
         ) : (
-          <Container className={appStyles.Content}>
+          <Container>
             <Asset spinner />
           </Container>
         )}
-      </Col>
-      <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
       </Col>
     </Row>
   );
 }
 
-export default AdventurePage;
+export default AdventuresPage;

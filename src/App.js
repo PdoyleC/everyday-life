@@ -16,6 +16,7 @@ import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import NotFound from "./components/NotFound";
 import AdventureCreateForm from "./pages/adventure/AdventureCreateForm";
+import AdventuresPage from "./pages/adventure/AdventuresPage";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -60,6 +61,7 @@ function App() {
           <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
           <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
           <Route exact path="/adventure/create" render={() => <AdventureCreateForm />} />
+          <Route exact path="/adventures" render={() => <AdventuresPage />} />
           <Route
             exact
             path="/profiles/:id/edit/username"
