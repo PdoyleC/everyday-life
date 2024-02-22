@@ -69,8 +69,7 @@ it is refreshed in the background and the request eventually succeeds.
 - Route renders a given component  when its path matches the current URL. [React router](https://reactrouter.com/en/6.21.3/web/guides/quick-start).
 - Dropdown menu [React bootstrap Dropdown](https://react-bootstrap-v4.netlify.app/components/dropdowns/#custom-dropdown-components).
 - Page layout [React bootstrap Dropdown](https://react-bootstrap-v4.netlify.app/layout/grid/).
-
-
+- Infinite Scroll [Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component).
 
 
 

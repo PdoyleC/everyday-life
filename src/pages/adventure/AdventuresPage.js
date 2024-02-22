@@ -12,6 +12,7 @@ import styles from "../../styles/PostsPage.module.css";
 import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import NoResults from "../../assets/no-results.png";
+import AdventureCard from "../../components/AdventureCard";
 
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
@@ -31,7 +32,7 @@ function AdventuresPage({ message, filter = "" }) {
         setAdventure(prevData => ({ ...prevData, results: [...results] }));
         setHasLoaded(true);
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     };
 
@@ -61,7 +62,6 @@ function AdventuresPage({ message, filter = "" }) {
           />
         </Form>
 
-
         {hasLoaded ? (
           <>
             {adventure.results.length ? (
@@ -72,7 +72,11 @@ function AdventuresPage({ message, filter = "" }) {
                 loader={<Asset spinner />}
                 scrollThreshold="100px"
               >
-
+                <div className={styles.CardGrid}>
+                  {adventure.results.map((adventure) => (
+                    <AdventureCard key={adventure.id} adventure={adventure} />
+                  ))}
+                </div>
               </InfiniteScroll>
             ) : (
               <Container className={appStyles.Content}>
