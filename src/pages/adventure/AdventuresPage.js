@@ -8,10 +8,10 @@ import Container from "react-bootstrap/Container";
 import Asset from "../../components/Asset";
 
 import appStyles from "../../App.module.css";
-import styles from "../../styles/PostsPage.module.css";
 import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import NoResults from "../../assets/no-results.png";
+import styles from "../../styles/Cards.module.css";
 import AdventureCard from "../../components/AdventureCard";
 
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -70,7 +70,6 @@ function AdventuresPage({ message, filter = "" }) {
                 next={() => fetchMoreData(adventure, setAdventure)}
                 hasMore={!!adventure.next}
                 loader={<Asset spinner />}
-                scrollThreshold="100px"
               >
                 <div className={styles.CardGrid}>
                   {adventure.results.map((adventure) => (
