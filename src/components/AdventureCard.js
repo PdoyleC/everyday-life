@@ -21,6 +21,7 @@ function AdventureCard({ adventure }) {
         </div>
         <Card.Body>
           <Card.Title>{adventure.location}</Card.Title>
+          <Card.Title>{adventure.activity}</Card.Title>
         </Card.Body>
       </Card>
     );
