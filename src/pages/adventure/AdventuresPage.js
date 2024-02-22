@@ -4,15 +4,18 @@ import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import { Button } from "react-bootstrap";
 
 import Asset from "../../components/Asset";
 
 import appStyles from "../../App.module.css";
 import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
 import NoResults from "../../assets/no-results.png";
 import styles from "../../styles/Cards.module.css";
 import AdventureCard from "../../components/AdventureCard";
+import btnStyles from "../../styles/Button.module.css";
 
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
@@ -62,6 +65,20 @@ function AdventuresPage({ message, filter = "" }) {
             placeholder="Search Adventure"
           />
         </Form>
+
+        <Button
+        className={`${btnStyles.Button} ${btnStyles.Blue}`}
+        onClick={() => "/adventure/create"()}
+        onClick={() => setShowEditForm(false)}
+      >
+        Add an adventure
+      </Button>
+
+        <Link to="/adventure/create">
+          <Button className={`${btnStyles.Button}`}>
+            Add an adventure
+          </Button>
+        </Link>
 
         {hasLoaded ? (
           <>
