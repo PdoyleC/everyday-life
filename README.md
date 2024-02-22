@@ -71,6 +71,7 @@ it is refreshed in the background and the request eventually succeeds.
 - Page layout [React bootstrap Dropdown](https://react-bootstrap-v4.netlify.app/layout/grid/).
 - Infinite Scroll [Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component).
 - Screen Size Thresholds [screen-size-thresholds](https://stackoverflow.com/questions/51566916/why-does-bootstrap-use-a-0-02px-difference-between-screen-size-thresholds-in-its).
+- Components Cards [components cards](https://react-bootstrap.netlify.app/docs/components/cards).
 
 
 

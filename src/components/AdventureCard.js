@@ -7,7 +7,7 @@ function AdventureCard({ adventure }) {
     const history = useHistory();
   
     const handleClick = () => {
-      history.push(`/plants/${adventure.id}`);
+      history.push(`/adventure/${adventure.id}`);
     };
   
     return (
@@ -15,13 +15,13 @@ function AdventureCard({ adventure }) {
         <div className={styles.CardImageContainer}> 
           <img
             src={adventure.image}
-            alt={adventure.name}
+            alt={adventure.location}
             className={styles.CardImage} 
           />
         </div>
         <Card.Body>
           <Card.Title>{adventure.location}</Card.Title>
-          <Card.Title>{adventure.activity}</Card.Title>
+          <Card.Title>Activity: {adventure.activity}</Card.Title>
         </Card.Body>
       </Card>
     );
