@@ -68,7 +68,7 @@ function AdventuresPage({ message, filter = "" }) {
 
         <Link to="/adventure/create">
           <Button className={`${btnStyles.Button} ${btnStyles.Blue}`}>
-            Add an adventure
+            Add an Adventure
           </Button>
         </Link>
 

@@ -79,6 +79,7 @@ function AdventureCreateForm() {
         <Form.Control
           type="text"
           name="location"
+          placeholder="Please add a Location."
           value={location}
           onChange={handleChange}
         />
@@ -111,6 +112,8 @@ function AdventureCreateForm() {
         <Form.Label>Personal Note</Form.Label>
         <Form.Control
           as="textarea"
+          type="text"
+          placeholder="Please add a note, for future reference, for yourself."
           rows={4}
           name="personal_note"
           value={personal_note}

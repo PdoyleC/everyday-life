@@ -71,6 +71,7 @@ function AdventureEditForm() {
     formData.append("location", location);
     formData.append("activity", activity);
     formData.append("personal_note", personal_note);
+    
     if (imageInput?.current?.files[0]) {
       formData.append("image", imageInput.current.files[0]);
     }
