@@ -12,7 +12,7 @@ import appStyles from "../../App.module.css";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
-import NoResults from "../../assets/no-results.png";
+import NoImagesUploaded from "../../assets/NoImagesUploaded.png";
 import styles from "../../styles/Cards.module.css";
 import AdventureCard from "../../components/AdventureCard";
 import btnStyles from "../../styles/Button.module.css";
@@ -21,12 +21,12 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 
-function AdventuresPage({ message, filter = "" }) {
-  const currentUser = useCurrentUser();
+function AdventuresPage({ message, filter = "" }) {  
   const [adventure, setAdventure] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
   const [query, setQuery] = useState("");
+  const currentUser = useCurrentUser();
 
   useEffect(() => {
     const fetchAdventure = async () => {
@@ -66,16 +66,8 @@ function AdventuresPage({ message, filter = "" }) {
           />
         </Form>
 
-        <Button
-        className={`${btnStyles.Button} ${btnStyles.Blue}`}
-        onClick={() => "/adventure/create"()}
-        onClick={() => setShowEditForm(false)}
-      >
-        Add an adventure
-      </Button>
-
         <Link to="/adventure/create">
-          <Button className={`${btnStyles.Button}`}>
+          <Button className={`${btnStyles.Button} ${btnStyles.Blue}`}>
             Add an adventure
           </Button>
         </Link>
@@ -97,7 +89,7 @@ function AdventuresPage({ message, filter = "" }) {
               </InfiniteScroll>
             ) : (
               <Container className={appStyles.Content}>
-                <Asset src={NoResults} message={message} />
+                <Asset src={NoImagesUploaded} message={message} />
               </Container>
             )}
           </>

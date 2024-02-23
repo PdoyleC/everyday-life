@@ -63,7 +63,7 @@ function App() {
           <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
           <Route exact path="/adventure/create" render={() => <AdventureCreateForm />} />
           <Route exact path="/adventures" render={() => <AdventuresPage />} />
-          <Route exact path="/adventure/edit" render={() => <AdventureEditForm />} />
+          <Route exact path="/adventure/:id/edit" render={() => <AdventureEditForm />} />
           <Route
             exact
             path="/profiles/:id/edit/username"
