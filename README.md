@@ -17,6 +17,19 @@ This site is a blog style site, aimed at people to share what their up to, going
 
 ## Design
 
+### Wireframes
+
+<details>
+<summary>Wireframes</summary>
+
+<img src="readmedoc/wirehome.png" alt="Home image">
+<img src="readmedoc/wireprofile.png" alt="Profile image">
+<img src="readmedoc/wireupload.png" alt="Upload image">
+<img src="readmedoc/wireadventure.png" alt="Adventure image">
+<img src="readmedoc/wireaddiary.png" alt="Diary image">
+
+</details>
+
 ### Logo:
 
 Using publisher and paint I created the logo. Font Kristen ITC was used for the lettering, Publisher was used to create the colour and lettering, paint was used to merge the two L's together and also to merge the two L's to the Green circle. 
