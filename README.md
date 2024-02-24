@@ -26,7 +26,7 @@ This site is a blog style site, aimed at people to share what their up to, going
 <img src="readmedoc/wireprofile.png" alt="Profile image">
 <img src="readmedoc/wireupload.png" alt="Upload image">
 <img src="readmedoc/wireadventure.png" alt="Adventure image">
-<img src="readmedoc/wireaddiary.png" alt="Diary image">
+<img src="readmedoc/wirediary.png" alt="Diary image">
 
 </details>
 
