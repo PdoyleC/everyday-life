@@ -89,7 +89,10 @@ it is refreshed in the background and the request eventually succeeds.
 - Infinite Scroll [Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component).
 - Screen Size Thresholds [screen-size-thresholds](https://stackoverflow.com/questions/51566916/why-does-bootstrap-use-a-0-02px-difference-between-screen-size-thresholds-in-its).
 - Components Cards [components cards](https://react-bootstrap.netlify.app/docs/components/cards).
-- add an adventure button link [button link](https://artwilton.medium.com/adding-a-link-to-a-bootstrap-button-with-react-router-57d2f6197588).
+- Add an adventure button link [button link](https://artwilton.medium.com/adding-a-link-to-a-bootstrap-button-with-react-router-57d2f6197588).
+- From for contact page [Contact form](https://react-bootstrap-v4.netlify.app/components/forms/?).
+
+
 
 
 
