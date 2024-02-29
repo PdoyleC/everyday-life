@@ -19,7 +19,7 @@ import AdventureCreateForm from "./pages/adventure/AdventureCreateForm";
 import AdventureEditForm from "./pages/adventure/AdventureEditForm";
 import AdventurePage from "./pages/adventure/AdventurePage";
 import AdventuresPage from "./pages/adventure/AdventuresPage";
-// import ContactCreateForm from "./pages/contacts/ContactCreateForm";
+import ContactCreateForm from "./pages/contacts/ContactCreateForm";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -67,7 +67,7 @@ function App() {
           <Route exact path="/adventures" render={() => <AdventuresPage />} />
           <Route exact path="/adventure/:id" render={() => <AdventurePage />} />
           <Route exact path="/adventure/:id/edit" render={() => <AdventureEditForm />} />
-          {/* <Route exact path="/contact/" render={() => <ContactCreateForm />} /> */}
+          <Route exact path="/contact/" render={() => <ContactCreateForm />} />
           <Route
             exact
             path="/profiles/:id/edit/username"

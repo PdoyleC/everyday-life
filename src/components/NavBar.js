@@ -75,14 +75,7 @@ const NavBar = () => {
     </>
   );
   const loggedOutIcons = (
-    <>
-    <NavLink
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-        to="/contact"
-        >
-        <i className="fas fa-envelope"></i>Contact Us
-      </NavLink>
+    <>    
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
@@ -128,6 +121,13 @@ const NavBar = () => {
               to="/"
             >
               <i className="fas fa-home"></i>Home
+            </NavLink>
+            <NavLink
+            className={styles.NavLink}
+            activeClassName={styles.Active}
+            to="/contact"
+            >
+              <i className="fas fa-envelope"></i>Contact Us
             </NavLink>
 
             {currentUser ? loggedInIcons : loggedOutIcons}
