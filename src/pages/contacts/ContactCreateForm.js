@@ -9,50 +9,45 @@ import Alert from "react-bootstrap/Alert";
 
 // import Asset from "../../components/Asset";
 
-import styles from "../../styles/AdventureCreateEditForm.module.css";
+import styles from "../../styles/ContactCreateForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
 
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
-import { useRedirect } from "../../hooks/useRedirect";
 
-function ContactCreateForm() {
-  useRedirect("loggedOut");
+
+
+
+const  ContactCreateForm = () => {
   const [errors, setErrors] = useState({});
 
-  const [contactData, setContactData] = useState({
+  const [contactsData, setContactsData] = useState({
     name: "",
     email: "",
     subject:"",
     message: "",
   });
 
-  const { name, email, subject, message } = contactData;
+  const { name, email, subject, message } = contactsData;
 
   const history = useHistory();
 
   const handleChange = (event) => {
-    setContactData({
-      ...contactData,
+    setContactsData({
+      ...contactsData,
       [event.target.name]: event.target.value,
     });
   };
 
-  
-
-  const handleSubmit = async (event) => {
+    const handleSubmit = async (event) => {
     event.preventDefault();
-    const formData = new FormData();
+    // const formData = new FormData();
 
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("subject", subject);
-    formData.append("message", message);
 
     try {
-      const { data } = await axiosReq.post("/contact/", formData);
-      history.push(`/contact/${data.id}`);
+      await axiosReq.post("/contacts/", contactsData);
+      history.push("/ContactConfirPage");
     } catch (err) {
     //   console.log(err);
       if (err.response?.status !== 401) {
@@ -89,6 +84,7 @@ function ContactCreateForm() {
               <Form.Control
                 type="text"
                 name="email"
+                placeholder="Please enter your email address here."
                 value={email}
                 onChange={handleChange}
               />
@@ -108,7 +104,7 @@ function ContactCreateForm() {
                 onChange={handleChange}
               />
             </Form.Group>
-            {errors.email?.map((message, idx) => (
+            {errors.subject?.map((message, idx) => (
               <Alert variant="warning" key={idx}>
                 {message}
               </Alert>
@@ -120,6 +116,7 @@ function ContactCreateForm() {
                 as="textarea"
                 rows={4}
                 name="message"
+                placeholder="How can we help you?"
                 value={message}
                 onChange={handleChange}
               />
@@ -138,13 +135,13 @@ function ContactCreateForm() {
             </Button>
             <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
             Submit
-          </Button>
+            </Button>
             {errors.non_field_errors?.map((message, idx) => (
               <Alert key={idx} variant="warning" className="mt-3">
                 {message}
               </Alert>
             ))}
-            </Form>
+          </Form>
         </Container>
       </Col>
     </Row>
