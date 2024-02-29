@@ -10,7 +10,7 @@ const ContactConfirPage = () => {
     >
       <h1>Thank you for getting in Contact with us!</h1>
       <h3>We have received your message.</h3>
-      <h5>A members of staff will be in Contact soon.</h5>
+      <h5>A member of staff will be in Contact soon.</h5>
     </div>
   );
 };
