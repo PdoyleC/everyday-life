@@ -65,7 +65,7 @@ const  ContactCreateForm = () => {
           <h1 className={styles.Header}>Contact Us</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group>
-              <Form.Label>Name</Form.Label>
+              <Form.Label>Name *</Form.Label>
               <Form.Control
                 type="text"
                 name="name"
@@ -80,7 +80,7 @@ const  ContactCreateForm = () => {
             ))}
 
             <Form.Group>
-              <Form.Label>Email</Form.Label>
+              <Form.Label>Email *</Form.Label>
               <Form.Control
                 type="text"
                 name="email"
@@ -96,7 +96,7 @@ const  ContactCreateForm = () => {
             ))}
 
             <Form.Group>
-              <Form.Label>Subject</Form.Label>
+              <Form.Label>Subject *</Form.Label>
               <Form.Control
                 type="text"
                 name="subject"
@@ -111,7 +111,7 @@ const  ContactCreateForm = () => {
             ))}
 
             <Form.Group>
-              <Form.Label>Message</Form.Label>
+              <Form.Label>Message *</Form.Label>
               <Form.Control
                 as="textarea"
                 rows={4}

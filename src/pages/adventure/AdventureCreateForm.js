@@ -75,7 +75,7 @@ function AdventureCreateForm() {
   const textFields = (
     <div className="text-center">
       <Form.Group>
-        <Form.Label>Location</Form.Label>
+        <Form.Label>Location *</Form.Label>
         <Form.Control
           type="text"
           name="location"
@@ -91,7 +91,7 @@ function AdventureCreateForm() {
       ))}
 
 <Form.Group>
-            <Form.Label>Activity</Form.Label>
+            <Form.Label>Activity *</Form.Label>
             <Form.Control
               as="select"
               type="text"
@@ -109,7 +109,7 @@ function AdventureCreateForm() {
           </Form.Group>
 
       <Form.Group>
-        <Form.Label>Personal Note</Form.Label>
+        <Form.Label>Personal Note *</Form.Label>
         <Form.Control
           as="textarea"
           type="text"
