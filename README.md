@@ -101,3 +101,4 @@ it is refreshed in the background and the request eventually succeeds.
 - Components Cards [components cards](https://react-bootstrap.netlify.app/docs/components/cards).
 - Add an adventure button link [button link](https://artwilton.medium.com/adding-a-link-to-a-bootstrap-button-with-react-router-57d2f6197588).
 - From for contact page [Contact form](https://react-bootstrap-v4.netlify.app/components/forms/?).
+- Contact page modal pop up for confirmation [Modal pop up](https://getbootstrap.com/docs/4.0/components/modal/).
