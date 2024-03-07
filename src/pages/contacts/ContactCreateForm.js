@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
+// import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
+// import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 import { axiosReq } from "../../api/axiosDefaults";
 import appStyles from "../../App.module.css";
-import styles from "../../styles/ContactCreateForm.module.css";
+// import styles from "../../styles/ContactCreateForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import { useHistory } from "react-router-dom";
 
@@ -57,12 +57,8 @@ const  ContactCreateForm = () => {
   };
 
   const contactfields = (
-    <Row classame={styles.Row}>
-      
-      <Col>
-        <Container className={`${appStyles.Message} p-4 `}>
-          <Form onSubmit={handleSubmit}>
-            <Form.Group>
+    <div className="text-left">
+      <Form.Group>
               <Form.Label>Name *</Form.Label>
               <Form.Control
                 type="text"
@@ -134,16 +130,8 @@ const  ContactCreateForm = () => {
             <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
             Submit
             </Button>
-            {errors.non_field_errors?.map((message, idx) => (
-              <Alert key={idx} variant="warning" className="mt-3">
-                {message}
-              </Alert>
-            ))}
-          </Form>
-        </Container>
-      </Col>
-    </Row>
-  )
+    </div>
+  );
 
   /* 
     Returns contact form page
