@@ -18,7 +18,7 @@ function AdventurePage() {
         const response = await axiosReq.get(`/adventure/${id}`);
         setAdventure(response.data);
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     };
 

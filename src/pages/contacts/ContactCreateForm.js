@@ -1,27 +1,19 @@
 import React, { useState } from "react";
-
+import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
-
-// import Asset from "../../components/Asset";
-
-import styles from "../../styles/ContactCreateForm.module.css";
-import appStyles from "../../App.module.css";
-import btnStyles from "../../styles/Button.module.css";
-
-import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
-
-
-
+import appStyles from "../../App.module.css";
+import styles from "../../styles/ContactCreateForm.module.css";
+import btnStyles from "../../styles/Button.module.css";
+import { useHistory } from "react-router-dom";
 
 const  ContactCreateForm = () => {
   const [errors, setErrors] = useState({});
-
   const [contactsData, setContactsData] = useState({
     name: "",
     email: "",
@@ -32,6 +24,7 @@ const  ContactCreateForm = () => {
   const { name, email, subject, message } = contactsData;
 
   const history = useHistory();
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (event) => {
     setContactsData({
@@ -42,12 +35,11 @@ const  ContactCreateForm = () => {
 
     const handleSubmit = async (event) => {
     event.preventDefault();
-    // const formData = new FormData();
 
 
     try {
       await axiosReq.post("/contacts/", contactsData);
-      history.push("/ContactConfirPage");
+      setShowModal(true);
     } catch (err) {
     //   console.log(err);
       if (err.response?.status !== 401) {
@@ -56,13 +48,19 @@ const  ContactCreateForm = () => {
     }
   };
 
- 
-  return (    
+  /* 
+    Handle closing of modal
+  */
+  const handleCloseModal = () => {
+    setShowModal(false);
+    history.push("/");
+  };
+
+  const contactfields = (
     <Row classame={styles.Row}>
       
       <Col>
         <Container className={`${appStyles.Message} p-4 `}>
-          <h1 className={styles.Header}>Contact Us</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group>
               <Form.Label>Name *</Form.Label>
@@ -145,6 +143,39 @@ const  ContactCreateForm = () => {
         </Container>
       </Col>
     </Row>
+  )
+
+  /* 
+    Returns contact form page
+  */
+  return (
+    <Form onSubmit={handleSubmit}>
+      {showModal && (
+        <Modal show={showModal} onHide={handleCloseModal} centered={true}>
+          <Modal.Header closeButton>
+            <Modal.Title>We have received your message.</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+          A member of staff will be in Contact soon!
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleCloseModal}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      )}
+      <div className={appStyles.CenterAlignForm}>
+        <Col md={7} lg={8}>
+          <div
+            className={`${appStyles.Content} ${appStyles.TextAlignCenter} d-flex flex-column justify-content-center`}
+          >
+            <h3>Contact us</h3>
+            <div className={appStyles.Content}>{contactfields}</div>
+          </div>
+        </Col>
+      </div>
+    </Form>
   );
 };
 
