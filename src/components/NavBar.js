@@ -1,15 +1,18 @@
 import React from "react";
+import { useState } from "react";
 import { Navbar } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import logo from "../assets/logo.png";
 import styles from "../styles/NavBar.module.css";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import {
   useCurrentUser,
   useSetCurrentUser,
 } from "../contexts/CurrentUserContext";
 import Avatar from "./Avatar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import axios from "axios";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
 import { removeTokenTimestamp } from "../utils/utils";
@@ -17,6 +20,8 @@ import { removeTokenTimestamp } from "../utils/utils";
 const NavBar = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
+
+  const [toggleNavBar, setToggleNavBar] = useState(false);
 
   const { expanded, setExpanded, ref } = useClickOutsideToggle();
 
@@ -49,20 +54,47 @@ const NavBar = () => {
       >
         <i className="fas fa-mountain"></i>My Adventures
       </NavLink>
-      <NavLink
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-        to="/following"
-      >
-        <i className="fas fa-stream"></i>Following
-      </NavLink>
-      <NavLink
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-        to="/liked"
-      >
-        <i className="fas fa-heart"></i>Liked
-      </NavLink>
+      <NavDropdown
+        id={styles.dropdownMenu}
+        title=<span className={`${styles.dropdownText} d-sm-inline-column`}>
+          <i className="fas fa-list"></i>          
+          Items
+        </span>
+        >
+      <NavDropdown.Item
+          id={styles.dropdownItem}
+          as={Link}
+          className={styles.NavLink}
+          to="/following"
+          onClick={() => {
+            setToggleNavBar(!toggleNavBar);
+          }}
+        >
+          <i className="fas fa-stream"></i>Following
+        </NavDropdown.Item>
+        <NavDropdown.Item
+          id={styles.dropdownItem}
+          as={Link}
+          className={styles.NavLink}
+          to="/liked"
+          onClick={() => {
+            setToggleNavBar(!toggleNavBar);
+          }}
+        >
+          <i className="fas fa-heart"></i>Liked
+        </NavDropdown.Item>
+        <NavDropdown.Item
+          id={styles.dropdownItem}
+          className={styles.NavLink}
+          as={Link}
+          to="/contact"
+          onClick={() => {
+            setToggleNavBar(!toggleNavBar);
+          }}
+        >
+          <i className="fas fa-envelope"></i>Contact Us
+        </NavDropdown.Item>
+      </NavDropdown>
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
         <i className="fas fa-sign-out-alt"></i>Sign out
       </NavLink>
@@ -89,6 +121,13 @@ const NavBar = () => {
         activeClassName={styles.Active}
       >
         <i className="fas fa-user-plus"></i>Sign up
+      </NavLink>
+      <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
+        to="/contact"
+      >
+        <i className="fas fa-envelope"></i>Contact Us
       </NavLink>
     </>
   );
@@ -122,14 +161,6 @@ const NavBar = () => {
             >
               <i className="fas fa-home"></i>Home
             </NavLink>
-            <NavLink
-            className={styles.NavLink}
-            activeClassName={styles.Active}
-            to="/contact"
-            >
-              <i className="fas fa-envelope"></i>Contact Us
-            </NavLink>
-
             {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>
         </Navbar.Collapse>
