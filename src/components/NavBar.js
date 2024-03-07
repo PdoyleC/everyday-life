@@ -14,7 +14,7 @@ import {
 import Avatar from "./Avatar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import axios from "axios";
-import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
+// import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
 import { removeTokenTimestamp } from "../utils/utils";
 
 const NavBar = () => {
@@ -23,7 +23,6 @@ const NavBar = () => {
 
   const [toggleNavBar, setToggleNavBar] = useState(false);
 
-  const { expanded, setExpanded, ref } = useClickOutsideToggle();
 
   const handleSignOut = async () => {
     try {
@@ -56,8 +55,9 @@ const NavBar = () => {
       </NavLink>
       <NavDropdown
         id={styles.dropdownMenu}
-        title=<span className={`${styles.dropdownText} d-sm-inline-column`}>
-          <i className="fas fa-list"></i>          
+        title=<span 
+        className={`${styles.dropdownText} d-sm-inline-column`}>
+          <i className="fas fa-list"></i>
           Items
         </span>
         >
@@ -134,10 +134,11 @@ const NavBar = () => {
 
   return (
     <Navbar
-      expanded={expanded}
+      expanded={toggleNavBar}
       className={styles.NavBar}
       expand="md"
       fixed="top"
+      collapseOnSelect
     >
       <Container>
         <NavLink to="/">
@@ -147,12 +148,13 @@ const NavBar = () => {
         </NavLink>
         {currentUser && addPostIcon}
         <Navbar.Toggle
-          ref={ref}
-          onClick={() => setExpanded(!expanded)}
+          onClick={() => {
+            setToggleNavBar(!toggleNavBar);
+          }}
           aria-controls="basic-navbar-nav"
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto text-left">
+          <Nav className="ml-auto text-right">
             <NavLink
               exact
               className={styles.NavLink}
