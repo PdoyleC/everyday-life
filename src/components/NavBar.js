@@ -14,15 +14,13 @@ import {
 import Avatar from "./Avatar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import axios from "axios";
-// import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
 import { removeTokenTimestamp } from "../utils/utils";
 
 const NavBar = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
 
-  const [toggleNavBar, setToggleNavBar] = useState(false);
-
+  const [toggleNavBar, setToggleNavBar] = useState();
 
   const handleSignOut = async () => {
     try {
@@ -41,11 +39,18 @@ const NavBar = () => {
       activeClassName={styles.Active}
       to="/posts/create"
     >
-      <i className="far fa-plus-square"></i>Add New Post
+      <i className="far fa-plus-square"></i>Add Post
     </NavLink>
   );
   const loggedInIcons = (
     <>
+      <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
+        to="/trips"
+      >
+        <i className="fas fa-mountain"></i>Trips List
+      </NavLink>
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
@@ -148,9 +153,11 @@ const NavBar = () => {
         </NavLink>
         {currentUser && addPostIcon}
         <Navbar.Toggle
+        
           onClick={() => {
             setToggleNavBar(!toggleNavBar);
           }}
+          
           aria-controls="basic-navbar-nav"
         />
         <Navbar.Collapse id="basic-navbar-nav">

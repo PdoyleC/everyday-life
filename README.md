@@ -88,7 +88,7 @@ it is refreshed in the background and the request eventually succeeds.
 ## Issues
 
 - After my adventures was created and there was a number of images uploaded under user A. I logged in under user B and I was able to see the images that user A had uploaded. This was solved by adding Authenticated only and adding a filter to the queryset, in the backend api.
-- 
+- When the dropdown menu was added and tested on a small screen (mobile). The dropdown menu was opening but wouldn't open. This was fixed by removing ref and changing a const for easy to read function.
 
 
 ## Credits
