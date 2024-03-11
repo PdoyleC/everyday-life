@@ -1,9 +1,67 @@
-
-
-
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router";
+import InfiniteScroll from "react-infinite-scroll-component";
+import { axiosReq } from "../../api/axiosDefaults";
+import TripListCreateForm from "./TripListCreateForm";
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
+import { MoreDropdown } from "../../components/MoreDropdown";
+import btnStyles from "../../styles/Button.module.css";
 
 function TripPage({ message, filter = "" }) {
+  const [editingTripName, setEditingTripName] = useState("");
+  const [editingTripQuantity, setEditingTripQuantity] = useState("");
 
+
+  const handleSaveEdit = async (tripId) => {
+    try {
+      await axiosReq.put(`/trips/${tripId}/`, {
+        name: setEditingTripName,
+        quantity: setEditingTripQuantity,
+        buy:setEditingTripBuy,
+      });
+      setTrips((prevTrips) =>
+        prevTrips.map((trip) => {
+          if (trip.id === tripId) {
+            return {
+              ...trip,
+              name: editingTripName,
+              quantity: editingTripQuantity,
+              buy:setEditingTripBuy,
+            };
+          }
+          return trip;
+        })
+      );
+      setEditingTripId(null);
+      setEditingTripName("");
+      setEditingTripQuantity("");
+      setEditingTripBuy("");
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const handleDelete = async (tripId) => {
+    const confirmed = window.confirm("Are you sure you want to delete this item?");
+    if (confirmed) {
+      try {
+        await axiosReq.delete(`/trips/${tripId}/`);
+        setTrips((prevTrips) => prevTrips.filter((trip) => trip.id !== tripId));
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  };
+
+    setHasLoaded(false);
+    const timer = setTimeout(() => {
+      fetchLists();
+    }, 1000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [filter, query, pathname, currentUser];
 
   return (
     <Row className="h-100">
@@ -32,6 +90,7 @@ function TripPage({ message, filter = "" }) {
                 next={() => fetchMoreData(trips, setTrips)}
                 hasMore={!!trips.next}
                 loader={<Asset spinner />}
+                scrollThreshold="100px"
               >
                 <table className="table">
                   <thead>
@@ -106,6 +165,6 @@ function TripPage({ message, filter = "" }) {
       </Col>
     </Row>
   );
-}
+
 
 export default TripPage;
