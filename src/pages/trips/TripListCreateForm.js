@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import Alert from "react-bootstrap/Alert";
 import { axiosReq } from "../../api/axiosDefaults";
@@ -24,6 +26,7 @@ function TripListCreateForm({ setTrips }) {
   };
 
   const handleCancel = () => {
+    const confirmed = window.confirm("Empty form?");
     if (confirmed) {
       setPostData({ name: "", quantity: "",buy: "", });
       setErrors({});
@@ -94,8 +97,10 @@ function TripListCreateForm({ setTrips }) {
           value={buy}
           onChange={handleChange}
         >
+        <option value="choose_one">Choose, Y or N</option>
         <option value="N">N</option>
         <option value="Y">Y</option>
+        
         </Form.Control>
       </Form.Group>
       {errors?.quantity?.map((message, idx) => (
@@ -115,6 +120,14 @@ function TripListCreateForm({ setTrips }) {
         Cancel
       </Button>
     </div>
+  );
+
+  return (
+    <Container className={`d-flex align-items-center justify-content-center ${appStyles.Content}`}>
+      <Form onSubmit={handleSubmit} className="w-100">
+        {textFields}
+      </Form>
+    </Container>
   );
 }
 

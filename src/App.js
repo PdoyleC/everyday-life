@@ -21,6 +21,7 @@ import AdventurePage from "./pages/adventure/AdventurePage";
 import AdventuresPage from "./pages/adventure/AdventuresPage";
 import ContactCreateForm from "./pages/contacts/ContactCreateForm";
 import ContactConfirPage from "./pages/contacts/ContactConfirPage";
+import TripPage from "./pages/trips/TripPage";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -69,7 +70,17 @@ function App() {
           <Route exact path="/adventure/:id" render={() => <AdventurePage />} />
           <Route exact path="/adventure/:id/edit" render={() => <AdventureEditForm />} />
           <Route exact path="/contact/" render={() => <ContactCreateForm />} />
-          <Route exact path="/contactconfirpage" render={() => <ContactConfirPage />} />          
+          <Route exact path="/contactconfirpage" render={() => <ContactConfirPage />} />
+          <Route
+            exact
+            path="/trips"
+            render={() =>
+              <TripPage
+              message="No results found. Adjust the search keyword or add an item."
+              filter={currentUser}
+              />
+            }
+          />
           <Route
             exact
             path="/profiles/:id/edit/username"

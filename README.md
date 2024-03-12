@@ -103,3 +103,5 @@ it is refreshed in the background and the request eventually succeeds.
 - Add an adventure button link [button link](https://artwilton.medium.com/adding-a-link-to-a-bootstrap-button-with-react-router-57d2f6197588).
 - From for contact page [Contact form](https://react-bootstrap-v4.netlify.app/components/forms/?).
 - Contact page modal pop up for confirmation [Modal pop up](https://getbootstrap.com/docs/4.0/components/modal/).
+- React-infinite-scroll-component [Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component).
+

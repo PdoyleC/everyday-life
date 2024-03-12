@@ -1,16 +1,44 @@
 import { useState, useEffect } from "react";
+import Form from "react-bootstrap/Form";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 import { useLocation } from "react-router";
 import InfiniteScroll from "react-infinite-scroll-component";
+import { fetchMoreData } from "../../utils/utils";
 import { axiosReq } from "../../api/axiosDefaults";
+import Asset from "../../components/Asset";
+import NoResults from "../../assets/no-results.png";
+import styles from "../../styles/TripsPage.module.css";
 import TripListCreateForm from "./TripListCreateForm";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { MoreDropdown } from "../../components/MoreDropdown";
 import btnStyles from "../../styles/Button.module.css";
 
 function TripPage({ message, filter = "" }) {
+  const currentUser = useCurrentUser();
+  const [trips, setTrips] = useState([]);
+  const [hasLoaded, setHasLoaded] = useState(false);
+  const { pathname } = useLocation();
+  const [query, setQuery] = useState("");
+  const [editingTripId, setEditingTripId] = useState(null);
   const [editingTripName, setEditingTripName] = useState("");
   const [editingTripQuantity, setEditingTripQuantity] = useState("");
+  const [editingTripBuy, setEditingTripBuy] = useState("");
 
+  const handleEdit = (tripId, tripName, tripQuantity, tripBuy) => {
+    setEditingTripId(tripId);
+    setEditingTripName(tripName);
+    setEditingTripQuantity(tripQuantity);    
+    setEditingTripBuy(tripBuy);
+  };
+
+  const handleCancelEdit = () => {
+    setEditingTripId(null);
+    setEditingTripName("");
+    setEditingTripQuantity("");
+    setEditingTripBuy("");
+  };
 
   const handleSaveEdit = async (tripId) => {
     try {
@@ -53,15 +81,29 @@ function TripPage({ message, filter = "" }) {
     }
   };
 
+  useEffect(() => {
+    const fetchTrips = async () => {
+      try {
+        const { data } = await axiosReq.get(`/trips/?${filter}&search=${query}`);
+        const filteredLists = data.results.filter((trip) =>
+          trip.name.toLowerCase().includes(query.toLowerCase())
+        );
+        setTrips(filteredLists);
+        setHasLoaded(true);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
     setHasLoaded(false);
     const timer = setTimeout(() => {
-      fetchLists();
+      fetchTrips();
     }, 1000);
 
     return () => {
       clearTimeout(timer);
     };
-  }, [filter, query, pathname, currentUser];
+  }, [filter, query, pathname, currentUser]);
 
   return (
     <Row className="h-100">
@@ -87,10 +129,13 @@ function TripPage({ message, filter = "" }) {
             {trips.length ? (
               <InfiniteScroll
                 dataLength={trips.length}
-                next={() => fetchMoreData(trips, setTrips)}
                 hasMore={!!trips.next}
+                next={() => fetchMoreData(trips, setTrips)}
                 loader={<Asset spinner />}
-                scrollThreshold="100px"
+                endMessage={
+                  <p style={{ textAlign: 'center' }}>
+                    <b>That's the end of your list</b>
+                  </p>}
               >
                 <table className="table">
                   <thead>
@@ -165,6 +210,6 @@ function TripPage({ message, filter = "" }) {
       </Col>
     </Row>
   );
-
+}
 
 export default TripPage;
