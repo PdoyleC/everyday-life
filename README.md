@@ -7,7 +7,7 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
 
 [Link, to live project](https://live-life-897b359a6b34.herokuapp.com/)
 
-[Link, to DRF-API READme project](https://github.com/PdoyleC/live-life-api)
+[Link, to DRF-API READme project](https://github.com/PdoyleC/live-life-api/blob/main/README.md)
 
 **Purpose of the site**
 - This site is a blog style site, aimed at people to share what their up to, going for a walk, having a picnic, etc.
@@ -20,7 +20,53 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
+  - [UX](#ux)
   - [Design](#design)
+
+
+
+
+## UX
+
+### Site Purpose:
+This site is a blog style site, aimed at people to share what their up to, going for a walk, having a picnic, etc.
+
+### Site Goal:
+Users to upload images, for the group. Users can upload images for themselves to view, create a list for there next trip so the user doesn't forget anything.
+
+### Audience:
+Anyone who enjoys going out and about and wants to share what there up to.
+
+### Communication:
+The social network-style layout presents posts from different users, allowing interaction between them through likes, comments and following your favorite users.
+
+### Current User Goals:
+Create new posts regularly, Create a item  list for there next adventure.
+
+### New User Goals:
+To engage the user in a meaningful way, and encourage them to explore life and the outside world.
+
+### Future Goals:
+- To provide a page for users to show walking routes aroound there area for others to see.
+- Give users an option to send private messages to each other.
+
+## User Stories
+I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-life/issues) for this project, as well as the [KANBAN board](https://github.com/users/PdoyleC/projects/6/views/1).
+
+## User Experience
+
+### Agile
+
+- Agile methodology was used for this project, starting from the planning stage and continuing until the final product. GitHub project was used to stay organized and keep track for the different issues being looked after [ISSUES board](https://github.com/PdoyleC/live-life/issues).
+- Agile methodology was used to map and create user stories, each with their own function and list of tasks.
+- GitHub projects Kanban was used to keep track of the project. It is divided into To Start, In Progress and Completed. [KANBAN board](https://github.com/users/PdoyleC/projects/6/views/1) to Kanban board.
+
+<details>
+<summary>Project Issues Image</summary>
+
+<img src="readmedoc/kanbanproject.png" alt="kanban project image">
+
+</details>
 
 
 
@@ -36,6 +82,7 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
 <img src="readmedoc/wireupload.png" alt="Upload image">
 <img src="readmedoc/wireadventure.png" alt="Adventure image">
 <img src="readmedoc/wirecontactus.png" alt="Contact Us image">
+<img src="readmedoc/wiretriplist.png" alt="Trip List image">
 
 
 </details>
