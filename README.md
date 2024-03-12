@@ -114,13 +114,33 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ### Database schema
 
-## Deploy connect
-CLIENT_ORIGIN to live life API with the url for your deployed React application. 
-CLIENT_ORIGIN_DEV  to live life API with Code anywhere preview link.  
-npm install axios in IDE
-create api folder and add axiosDefaults.js folder.
-add deployed API heroku link
+## Deployment
 
+### Heroku
+To deploy to Heroku, follow these steps:
+
+1. In the `scripts` section of `package.json` in gitpod, added the following command:
+```
+"heroku-prebuild": "npm install -g serve",
+```
+2. Add Procfile to project root & populate with the following:
+```
+web: serve -s build
+```
+3. Log in to heroku.com and open the dashboard for your react application (remember this is separate from the DRF application that runs your API).
+4. Select 'Create new app' from the 'New' menu at the top right.
+5. Select the “Deploy” tab in the dashboard.
+6. Scroll down to the bottom and then select “Deploy Branch”.
+7. Wait for your build to complete (you can click “view build log” to watch the process in a larger window).
+8. When you see the message “deployed to Heroku” in the build log, click the “open app” button at the top of the page.
+
+
+### Connecting to the API:
+1. Login to the Heroku app of the project DRF-API, and under the Settings tab, added the following Config Vars.
+- Key: CLIENT_ORIGIN | Value: https://react-app-name.herokuapp.com
+- Key: CLIENT_ORIGIN_DEV | Value: https://gitpod-browser-link.442-fg.gitpod.io
+2. Check that the trailing slash `\` at the end of both links has been removed, and save the Config Vars.
+3. Install the Axios package, & create supporting `axiosDefaults.js` as shown in Moments Walkthrough
 
 
 
