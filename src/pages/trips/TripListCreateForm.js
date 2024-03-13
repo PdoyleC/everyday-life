@@ -13,7 +13,7 @@ function TripListCreateForm({ setTrips }) {
   const [postData, setPostData] = useState({
     name: "",
     quantity: "",
-    buy: "",
+    buy: "Unknown",
   });
 
   const { name, quantity, buy } = postData;
@@ -103,7 +103,7 @@ function TripListCreateForm({ setTrips }) {
         
         </Form.Control>
       </Form.Group>
-      {errors?.quantity?.map((message, idx) => (
+      {errors?.buy?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>

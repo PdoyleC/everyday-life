@@ -76,7 +76,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 |Test|     Add a Post                           |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Add a Post is clicked                   | Directed to create page                                                   | PASS  |
-| 2  |  Create clicked with invalid info        | Error message appears                                                     | PASS  |
+| 2  |  Create clicked with invalid info        | Error message appears for image                                           | PASS  |
 | 3  |  Create clicked with valid info          | Directed to edit page                                                     | PASS  |
 
 |Test|     My Adventure                         |   Result                                                                  |Done   |
@@ -85,5 +85,44 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 2  |  Search Bar ,Family entered              | All family tags appear                                                    | PASS  |
 | 3  |  Add an Adventure clicked                | Directed to create page                                                   | PASS  |
 | 4  |  Cancel clicked on create page           | Directed back to Adventure page                                           | PASS  |
-| 5  |  Create clicked with invalid info        | Error message appears                                                     | PASS  |
-| 6  |                  | Directed to create page                                                   | PASS  |
+| 5  |  Create clicked with invalid info        | Error message appears for Image,Location and Activity                     | PASS  |
+| 6  |  Create clicked with valid info          | Directed to edit page                                                     | PASS  |
+
+|Test|     Trip List                            |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Search Bar, items entered               | Returns item                                                              | PASS  |
+|Note*|  For testing for the search bar both Shorts and shor were items added for my trips list trip             |          |       |
+| 3  |  shor entered into search Bar            | Shorts and Shor both returned items                                       | PASS  |
+| 4  |  Add Item clicked with invalid info      | Error message appears for Item,Quantity and Buy                           | PASS  |
+| 5  |  Only Item entered                       | Error message appears for Quantity and Buy                                | PASS  |
+| 6  |            |                                                     | PASS  |
+
+
+|Test|                              |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |                 |                                                   | PASS  |
+| 2  |                |                                                     | PASS  |
+| 3  |                 |                                                    | PASS  |
+| 4  |             |                                            | PASS  |
+| 5  |          |                      | PASS  |
+| 6  |            |                                                     | PASS  |
+
+
+|Test|                              |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |                 |                                                   | PASS  |
+| 2  |                |                                                     | PASS  |
+| 3  |                 |                                                    | PASS  |
+| 4  |             |                                            | PASS  |
+| 5  |          |                      | PASS  |
+| 6  |            |                                                     | PASS  |
+
+
+|Test|                              |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |                 |                                                   | PASS  |
+| 2  |                |                                                     | PASS  |
+| 3  |                 |                                                    | PASS  |
+| 4  |             |                                            | PASS  |
+| 5  |          |                      | PASS  |
+| 6  |            |                                                     | PASS  |
