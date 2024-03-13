@@ -86,19 +86,22 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 2  |  Search Bar ,Family entered              | All family tags appear                                                    | PASS  |
 | 3  |  Add an Adventure clicked                | Directed to create page                                                   | PASS  |
 | 4  |  Cancel clicked on create page           | Directed back to Adventure page                                           | PASS  |
-| 5  |  Create clicked with invalid info        | Error message appears for Image,Location and Activity                     | PASS  |
+| 5  |  Create clicked with invalid info        | <details><summary>Error message appears for Image,Location and Activity</summary><img src="./readmedoc/advchecks.png"></details>                     | PASS  |
 | 6  |  Create clicked with valid info          | Directed to edit page                                                     | PASS  |
+
 
 |Test|     Trip List                            |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Search Bar, items entered               | Returns item                                                              | PASS  |
 |Note*|  For testing for the search bar both Shorts and shor were items added for my trips list trip             |          |       |
-| 3  |  shor entered into search Bar            | Shorts and Shor both returned items                                       | PASS  |
-| 4  |  Add Item clicked with invalid info      | Error message appears for Item,Quantity and Buy                           | PASS  |
+| 3  |  shor entered into search Bar            | <details><summary>Shorts and Shor both returned items</summary><img src="./readmedoc/tripsearchcheck.png"></details>                                       | PASS  |
+| 4  |  Add Item clicked with invalid info      | <details><summary>Error message appears for Item,Quantity and Buy</summary><img src="./readmedoc/tripchecks.png"></details>                           | PASS  |
 | 5  |  Only Item entered                       | Error message appears for Quantity and Buy                                | PASS  |
 | 6  |  Only Quantity entered                   | Error message appears for Item and Buy                                    | PASS  |
 | 7  |  Only Buy entered                        | Error message appears for Item and Quantity                               | PASS  |
 | 8  |  Add Item clicked                        | Item appears button of the screen                                         | PASS  |
+
+
 
 |Test|     Contact US page                      |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
