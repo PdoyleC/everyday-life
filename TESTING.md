@@ -95,17 +95,31 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 3  |  shor entered into search Bar            | Shorts and Shor both returned items                                       | PASS  |
 | 4  |  Add Item clicked with invalid info      | Error message appears for Item,Quantity and Buy                           | PASS  |
 | 5  |  Only Item entered                       | Error message appears for Quantity and Buy                                | PASS  |
-| 6  |            |                                                     | PASS  |
+| 6  |  Only Quantity entered                   | Error message appears for Item and Buy                                    | PASS  |
+| 7  |  Only Buy entered                        | Error message appears for Item and Quantity                               | PASS  |
+| 8  |  Add Item clicked                        | Item appears button of the screen                                         | PASS  |
 
-
-|Test|                              |   Result                                                                  |Done   |
+|Test|     Contact US page                      |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |                 |                                                   | PASS  |
-| 2  |                |                                                     | PASS  |
-| 3  |                 |                                                    | PASS  |
-| 4  |             |                                            | PASS  |
-| 5  |          |                      | PASS  |
-| 6  |            |                                                     | PASS  |
+| 1  |  Name not entered                        | Error message appears for Email,Subject,Message                           | PASS  |
+| 2  |  Email not entered                       | Error message appears for Name,Subject,Message                            | PASS  |
+| 3  |  Subject not entered                     | Error message appears for Name,Email,Message                              | PASS  |
+| 4  |  Message not entered                     | Error message appears for Name,Email,Subject                              | PASS  |
+| 5  |  Email sent                              | Model window pops up, close is clicked                                    | PASS  |
+| 6  |  Email sent and closed is clicked        | Redirected to home page                                                   | PASS  |
+| 7  |  Django Admin checked                    | Email arrived with same info                                              | PASS  |
+
+|Test|     Liked page                           |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Liked only 1 post                       | Show only the 1  liked post                                               | PASS  |
+| 2  |  Liked zero posts                        | Shows No results image                                                    | PASS  |
+| 2  |  Liked own posts                         | Error message appears for can't like your own posts                       | PASS  |
+
+|Test|     Following page                       |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Following only 1 profile                | Show only the 1 post from that profile                                    | PASS  |
+| 2  |  Following zero profile                  | Shows No results image                                                    | PASS  |
+
 
 
 |Test|                              |   Result                                                                  |Done   |
