@@ -23,7 +23,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 
 ## Checks Completed
 
-- The following check have been completed when there is no user signed in.
+- The following checks have been completed when there is no user signed in.
   
 |Test|       Action                             |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
@@ -57,3 +57,33 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 5  |  Email sent                              | Model window pops up, close is clicked                                    | PASS  |
 | 6  |  Email sent and closed is clicked        | Redirected to home page                                                   | PASS  |
 | 7  |  Django Admin checked                    | Email arrived with same info                                              | PASS  |
+
+
+|Test|     General site page                    |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Post image clicked                      | Post opens, No comment available                                          | PASS  |
+| 2  |  Heart clicked                           | Error message appears to say to log in                                    | PASS  |
+| 3  |  Comment icon clicked                    | Not login, can't comment                                                  | PASS  |
+
+
+- The following checks have been completed when a user is signed in.
+
+|Test|     Sign Out                             |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Sign Out clicked                        | User is signed Out                                                        | PASS  |
+
+
+|Test|     Add a Post                           |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Add a Post is clicked                   | Directed to create page                                                   | PASS  |
+| 2  |  Create clicked with invalid info        | Error message appears                                                     | PASS  |
+| 3  |  Create clicked with valid info          | Directed to edit page                                                     | PASS  |
+
+|Test|     My Adventure                         |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Search Bar ,Trip entered                | Only 1 adventure appears                                                  | PASS  |
+| 2  |  Search Bar ,Family entered              | All family tags appear                                                    | PASS  |
+| 3  |  Add an Adventure clicked                | Directed to create page                                                   | PASS  |
+| 4  |  Cancel clicked on create page           | Directed back to Adventure page                                           | PASS  |
+| 5  |  Create clicked with invalid info        | Error message appears                                                     | PASS  |
+| 6  |                  | Directed to create page                                                   | PASS  |

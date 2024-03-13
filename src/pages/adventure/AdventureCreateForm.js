@@ -28,7 +28,7 @@ function AdventureCreateForm() {
     location: "",
     personal_note: "",
     image: "",
-    activity: "unknown",
+    activity: "Unknown",
   });
   const { location, personal_note, image, activity } = postData;
 
@@ -90,26 +90,31 @@ function AdventureCreateForm() {
         </Alert>
       ))}
 
-<Form.Group>
-            <Form.Label>Activity *</Form.Label>
-            <Form.Control
-              as="select"
-              type="text"
-              name="activity"
-              value={activity}
-              onChange={handleChange}
-            >
-              <option value="choose_one">Choose one</option>
-              <option value="family">Family</option>
-              <option value="hobbies">Hobbies </option>
-              <option value="sport">Sport</option>
-              <option value="travel">Travel</option>
-              <option value="other">Other</option>
-            </Form.Control>
-          </Form.Group>
+      <Form.Group>
+        <Form.Label>Activity *</Form.Label>
+        <Form.Control
+          as="select"
+          type="text"
+          name="activity"
+          value={activity}
+          onChange={handleChange}
+          >
+          <option value="choose_one">Choose one</option>
+          <option value="family">Family</option>
+          <option value="hobbies">Hobbies </option>
+          <option value="sport">Sport</option>
+          <option value="travel">Travel</option>
+          <option value="other">Other</option>
+        </Form.Control>
+        </Form.Group>
+        {errors?.activity?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+        {message}
+        </Alert>
+      ))}
 
       <Form.Group>
-        <Form.Label>Personal Note *</Form.Label>
+        <Form.Label>Personal Note </Form.Label>
         <Form.Control
           as="textarea"
           type="text"
@@ -120,12 +125,6 @@ function AdventureCreateForm() {
           onChange={handleChange}
         />
       </Form.Group>
-      {errors?.personal_note?.map((message, idx) => (
-        <Alert variant="warning" key={idx}>
-          {message}
-        </Alert>
-      ))}
-
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
         onClick={() => history.goBack()}
