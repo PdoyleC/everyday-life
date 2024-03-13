@@ -148,3 +148,88 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 4  |             |                                            | PASS  |
 | 5  |          |                      | PASS  |
 | 6  |            |                                                     | PASS  |
+
+
+## ESLint JavaScript validator
+
+All JavaScript files were validated using the [ESLint JavaScript validator](https://jshint.com/).
+
+- There are a number of warning for 'import' is only available in ES6 (use 'esversion: 6'), [ES6 Fix stackoverflow](https://stackoverflow.com/questions/36318895/vs-code-with-es6).
+
+
+- `Adventure.js`: no errors found
+- `AdventureCreateForm.js`: no errors found
+- `AdventureEditForm.js`: no errors found
+- `AdventurePage.js`: no errors found
+- `AdventuresPage.js`: no errors found
+- `TripListCreateForm.js`: no errors found
+- `TripPage.js`: no errors found
+- `PopularProfiles.js`: no errors found
+- `Profile.js`: no errors found
+- `ProfileEditForm.js`: no errors found
+- `ProfilePage.js`: no errors found
+- `UserPasswordForm.js`: no errors found
+- `UsernameForm.js`: no errors found
+- `Post.js`: no errors found
+- `PostCreateForm.js`: no errors found
+- `PostEditForm.js`: no errors found
+- `PostPage.js`: no errors found
+- `PostsPage.js`: no errors found
+- `ContactConfirPage.js`: no errors found
+- `ContactCreateForm.js`: no errors found
+- `Comment.js`: no errors found
+- `CommentCreateForm.js`: no errors found
+- `CommentEditForm.js`: no errors found
+- `SignInForm.js`: no errors found
+- `SignUpForm.js`: no errors found
+- `handlers.js`: no errors found
+- `useRedirect.js`: no errors found
+- `useClickOutsideToggle.js`: no errors found
+- `ProfileDataContext.js`: no errors found
+- `CurrentUserContext.js`: no errors found
+- `NotFound.js`: no errors found
+- `NavBar.js`: no errors found
+- `MoreDropdown.js`: no errors found
+- `Avatar.js`: no errors found
+- `Asset.js`: no errors found
+- `AdventureCard.js`: no errors found
+- `App.js`: no errors found
+
+
+
+
+
+## CSS validator
+
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
+- `profiles/views.py`: no errors found
