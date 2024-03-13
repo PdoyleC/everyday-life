@@ -18,7 +18,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 - If there is no user logged in, the home page is showing with no Crate a post, My Adventure, Trip list.
 - The user will be able to see a post entry but won't be able to add a comment.
 - The user isn't able to edit or deleted a post unless it's a post that the user has created.
-- The user can't see another users My Adventure or Trip list detials. 
+- The user can't see another users My Adventure or Trip list details. 
 - User can See Home, Sign in, Sign up and Contact Us.
 
 ## Checks Completed
@@ -86,7 +86,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 2  |  Search Bar ,Family entered              | All family tags appear                                                    | PASS  |
 | 3  |  Add an Adventure clicked                | Directed to create page                                                   | PASS  |
 | 4  |  Cancel clicked on create page           | Directed back to Adventure page                                           | PASS  |
-| 5  |  Create clicked with invalid info        | <details><summary>Error message appears for Image,Location and Activity</summary><img src="./readmedoc/advchecks.png"></details>                     | PASS  |
+| 5  |  Create clicked with invalid info        | <details><summary>Error message appears for Image, Location and Activity</summary><img src="./readmedoc/advchecks.png"></details>                    | PASS  |
 | 6  |  Create clicked with valid info          | Directed to edit page                                                     | PASS  |
 
 
@@ -96,7 +96,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 2  |  Search Bar, incorrect entered           | <details><summary>Nothing returned item</summary><img src="./readmedoc/tripsearchchecknotfound.png"></details>                                                              | PASS  |
 |Note*|  For testing for the search bar both Shorts and shor were items added for my trips list trip             |          |       |
 | 3  |  shor entered into search Bar            | <details><summary>Shorts and Shor both returned items</summary><img src="./readmedoc/tripsearchcheck.png"></details>                                       | PASS  |
-| 4  |  Add Item clicked with invalid info      | <details><summary>Error message appears for Item,Quantity and Buy</summary><img src="./readmedoc/tripchecks.png"></details>                           | PASS  |
+| 4  |  Add Item clicked with invalid info      | <details><summary>Error message appears for Item, Quantity and Buy</summary><img src="./readmedoc/tripchecks.png"></details>                          | PASS  |
 | 5  |  Only Item entered                       | Error message appears for Quantity and Buy                                | PASS  |
 | 6  |  Only Quantity entered                   | Error message appears for Item and Buy                                    | PASS  |
 | 7  |  Only Buy entered                        | Error message appears for Item and Quantity                               | PASS  |
@@ -107,10 +107,10 @@ Automated testing is where code is used to test the logic, set of instructions t
 
 |Test|     Contact US page                      |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Name not entered                        | Error message appears for Email,Subject,Message                           | PASS  |
-| 2  |  Email not entered                       | Error message appears for Name,Subject,Message                            | PASS  |
-| 3  |  Subject not entered                     | Error message appears for Name,Email,Message                              | PASS  |
-| 4  |  Message not entered                     | Error message appears for Name,Email,Subject                              | PASS  |
+| 1  |  Name not entered                        | Error message appears for Email, Subject, Message                         | PASS  |
+| 2  |  Email not entered                       | Error message appears for Name, Subject, Message                          | PASS  |
+| 3  |  Subject not entered                     | Error message appears for Name, Email, Message                            | PASS  |
+| 4  |  Message not entered                     | Error message appears for Name, Email, Subject                            | PASS  |
 | 5  |  Email sent                              | Model window pops up, close is clicked                                    | PASS  |
 | 6  |  Email sent and closed is clicked        | Redirected to home page                                                   | PASS  |
 | 7  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              | PASS  |
@@ -119,9 +119,9 @@ Automated testing is where code is used to test the logic, set of instructions t
 
 |Test|     Liked page                           |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Liked only 1 post                       | Show only the 1  liked post                                               | PASS  |
+| 1  |  Liked only 1 post                       | Show only the 1 liked post                                               | PASS  |
 | 2  |  Liked zero posts                        | Shows No results image                                                    | PASS  |
-| 2  |  Liked own posts                         | Error message appears for can't like your own posts                       | PASS  |
+| 3  |  Liked own posts                         | Error message appears for can't like your own posts                       | PASS  |
 
 |Test|     Following page                       |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|

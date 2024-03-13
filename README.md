@@ -114,6 +114,11 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ### Database schema
 
+
+# Testing
+
+Please see [TESTNG.md](TESTNG.md) for all testing completed.
+
 ## Deployment
 
 ### Heroku
