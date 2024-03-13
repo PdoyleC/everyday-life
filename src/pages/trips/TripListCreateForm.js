@@ -48,10 +48,10 @@ function TripListCreateForm({ setTrips }) {
       setPostData({ name: "", quantity: "", buy:"" });
       setErrors({});
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
-        console.log(err.response.data);
+        // console.log(err.response.data);
       }
     }
   };

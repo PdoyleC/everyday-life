@@ -65,7 +65,7 @@ function TripPage({ message, filter = "" }) {
       setEditingTripQuantity("");
       setEditingTripBuy("");
     } catch (err) {
-      console.log(err);
+      // console.log(err);
     }
   };
 
@@ -76,7 +76,7 @@ function TripPage({ message, filter = "" }) {
         await axiosReq.delete(`/trips/${tripId}/`);
         setTrips((prevTrips) => prevTrips.filter((trip) => trip.id !== tripId));
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     }
   };
@@ -91,7 +91,7 @@ function TripPage({ message, filter = "" }) {
         setTrips(filteredLists);
         setHasLoaded(true);
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     };
 

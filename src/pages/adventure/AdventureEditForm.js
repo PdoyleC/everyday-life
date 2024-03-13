@@ -40,7 +40,7 @@ function AdventureEditForm() {
 
         setPostData({ location, personal_note, activity, image });
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
     };
 
@@ -80,7 +80,7 @@ function AdventureEditForm() {
       await axiosReq.put(`/adventure/${id}/`, formData);
       history.push(`/adventure/${id}`);
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
       }
