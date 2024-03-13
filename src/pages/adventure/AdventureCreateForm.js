@@ -28,7 +28,7 @@ function AdventureCreateForm() {
     location: "",
     personal_note: "",
     image: "",
-    activity: "Unknown",
+    activity: "Choose one",
   });
   const { location, personal_note, image, activity } = postData;
 
@@ -99,7 +99,7 @@ function AdventureCreateForm() {
           value={activity}
           onChange={handleChange}
           >
-          <option value="choose_one">Choose one</option>
+          <option value="choose_one">Choose one </option>
           <option value="family">Family</option>
           <option value="hobbies">Hobbies </option>
           <option value="sport">Sport</option>

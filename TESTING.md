@@ -56,7 +56,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 4  |  Message not entered                     | Error message appears                                                     | PASS  |
 | 5  |  Email sent                              | Model window pops up, close is clicked                                    | PASS  |
 | 6  |  Email sent and closed is clicked        | Redirected to home page                                                   | PASS  |
-| 7  |  Django Admin checked                    | Email arrived with same info                                              | PASS  |
+| 7  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              | PASS  |
 
 
 |Test|     General site page                    |   Result                                                                  |Done   |
@@ -108,7 +108,9 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 4  |  Message not entered                     | Error message appears for Name,Email,Subject                              | PASS  |
 | 5  |  Email sent                              | Model window pops up, close is clicked                                    | PASS  |
 | 6  |  Email sent and closed is clicked        | Redirected to home page                                                   | PASS  |
-| 7  |  Django Admin checked                    | Email arrived with same info                                              | PASS  |
+| 7  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              | PASS  |
+
+
 
 |Test|     Liked page                           |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
