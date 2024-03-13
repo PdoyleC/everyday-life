@@ -66,6 +66,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 3  |  Comment icon clicked                    | Not login, can't comment                                                  | PASS  |
 
 
+**User is Registered and Signed In**
 - The following checks have been completed when a user is signed in.
 
 |Test|     Sign Out                             |   Result                                                                  |Done   |
