@@ -25,6 +25,13 @@ function TripPage({ message, filter = "" }) {
   const [editingTripName, setEditingTripName] = useState("");
   const [editingTripQuantity, setEditingTripQuantity] = useState("");
   const [editingTripBuy, setEditingTripBuy] = useState("");
+  const [setErrors] = useState({});
+
+  const [setPostData] = useState({
+    name: "",
+    quantity: "",
+    buy: "",
+  });
 
   const handleEdit = (tripId, tripName, tripQuantity, tripBuy) => {
     setEditingTripId(tripId);
@@ -40,34 +47,57 @@ function TripPage({ message, filter = "" }) {
     setEditingTripBuy("");
   };
 
-  const handleSaveEdit = async (tripId) => {
+  const handleSaveEdit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData();
+
+    formData.append("name", editingTripName);
+    formData.append("quantity", editingTripQuantity);
+    formData.append("buy", editingTripBuy);
+
     try {
-      await axiosReq.put(`/trips/${tripId}/`, {
-        name: setEditingTripName,
-        quantity: setEditingTripQuantity,
-        buy:setEditingTripBuy,
-      });
-      setTrips((prevTrips) =>
-        prevTrips.map((trip) => {
-          if (trip.id === tripId) {
-            return {
-              ...trip,
-              name: editingTripName,
-              quantity: editingTripQuantity,
-              buy:editingTripBuy,
-            };
-          }
-          return trip;
-        })
-      );
-      setEditingTripId(null);
-      setEditingTripName("");
-      setEditingTripQuantity("");
-      setEditingTripBuy("");
+      const { data } = await axiosReq.post("/trips/", formData);
+      const newTrips = data ?? {};
+      setTrips((prevTrips) => [newTrips, ...prevTrips]);
+      setPostData({ name: "", quantity: "", buy:"" });
+      setErrors({});
     } catch (err) {
       // console.log(err);
+      if (err.response?.status !== 401) {
+        setErrors(err.response?.data);
+        // console.log(err.response.data);
+      }
     }
   };
+
+  // const handleSaveEdit = async (tripId) => {
+  //   try {
+  //     await axiosReq.put(`/trips/${tripId}/`, {
+  //       name: setEditingTripName,
+  //       quantity: setEditingTripQuantity,
+  //       buy:setEditingTripBuy,
+  //     });
+  //     setTrips((prevTrips) =>
+  //       prevTrips.map((trip) => {
+  //         if (trip.id === tripId) {
+  //           return {
+  //             ...trip,
+  //             name: editingTripName,
+  //             quantity: editingTripQuantity,
+  //             buy: editingTripBuy,
+  //           };
+  //         }
+  //         return trip;
+  //       })
+  //     );
+  //     setEditingTripId(null);
+  //     setEditingTripName("");
+  //     setEditingTripQuantity("");
+  //     setEditingTripBuy("");
+  //   } catch (err) {
+  //     // console.log(err);
+  //   }
+  // };
 
   const handleDelete = async (tripId) => {
     const confirmed = window.confirm("Are you sure you want to delete this item?");
@@ -178,7 +208,7 @@ function TripPage({ message, filter = "" }) {
                               />
                             </td>
                             <td>
-                              <button className={`${btnStyles.Button} ${btnStyles.blue}`} onClick={() => handleSaveEdit(trip.id)}>
+                              <button className={`${btnStyles.Button} ${btnStyles.blue}`} onClick={(event) => handleSaveEdit(event, trip.id)}>
                                 Update
                               </button>
                               <button className={`${btnStyles.Button} ${btnStyles.blue}`} onClick={handleCancelEdit}>Cancel</button>
