@@ -137,8 +137,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 6  |  Email sent                              | Model window pops up, close is clicked                                    |&#9745;|
 | 7  |  Email sent and closed is clicked        | Redirected to home page                                                   |&#9745;|
 | 8  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              |&#9745;|
-| 9  |  Console error checks in Dev chrome      | No Console errors displayed for Contact us checks                         |&#9745;|
-
+| 9  |  Console error checks in Dev chrome      | <details><summary>No Console errors displayed for Contact us checks</summary><img src="./readmedoc/consoleemail.png"></details>                         |&#9745;|
 
 
 |Test|     Liked page                           |   Result                                                                  |Passed |
