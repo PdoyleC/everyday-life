@@ -47,8 +47,9 @@ Create new posts regularly, Create a item  list for there next adventure.
 To engage the user in a meaningful way, and encourage them to explore life and the outside world.
 
 ### Future Goals:
-- To provide a page for users to show walking routes aroound there area for others to see.
+- To provide a page for users to show walking routes around there area for others to see.
 - Give users an option to send private messages to each other.
+- User could create an event and other users can sign up for the event. 
 
 ## User Stories
 I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-life/issues) for this project, as well as the [KANBAN board](https://github.com/users/PdoyleC/projects/6/views/1).
