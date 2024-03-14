@@ -235,3 +235,18 @@ All JavaScript files were validated using the [ESLint JavaScript validator](http
 - `ProfilePage.module.css`: no errors found
 - `SignInUpForm.module.css`: no errors found
 - `TripsPage.module.css`: no errors found
+
+
+
+
+
+## Lighthouse & WAVE
+
+
+- Performance due to image size and extension for posts and profiles, when uploaded by Users, was around the 70-80%. With no images the Performance was above 90%
+- Best Practices was down to third part cookies, [Dev tools 3rd party cookies](https://developer.chrome.com/blog/new-in-devtools-122/?utm_source=devtools), and the phaseout warnings in network [tracking protection](https://blog.google/products/chrome/privacy-sandbox-tracking-protection/). Chrome is testing Tracking Protection, a new feature that limits cross-site tracking.
+
+<img src="readmedoc/lighthouse1.png" alt="lighthouse image">
+<img src="readmedoc/lighthouse2.png" alt="lighthouse image">
+
+<img src="readmedoc/lighthousetriplistcookie.png" alt="lighthouse cookie image">
