@@ -122,7 +122,8 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 7  |  Only Quantity entered                   | Error message appears for Item and Buy                                    |&#9745;|
 | 8  |  Only Buy entered                        | Error message appears for Item and Quantity                               |&#9745;|
 | 9  |  Add Item clicked                        | Item appears button of the screen                                         |&#9745;|
-| 10 |  Console error checks in Dev chrome      | No Console errors displayed for Trip List  checks                         |&#9745;|
+| 10 |  Full List of items displayed            | All items created are dispalayed                                          |&#9745;|
+| 11 |  Console error checks in Dev chrome      | No Console errors displayed for Trip List  checks                         |&#9745;|
 
 
 
