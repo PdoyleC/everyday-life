@@ -25,129 +25,129 @@ Automated testing is where code is used to test the logic, set of instructions t
 
 - The following checks have been completed when there is no user signed in.
   
-|Test|       Action                             |   Result                                                                  |Done   |
+|Test|       Action                             |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Sign in clicked                         |  Redirected to login page                                                 | PASS  |
-| 2  |  Sign up clicked                         |  Redirected to Sign up page                                               | PASS  |
-| 3  |  Contact US	                            |  Redirected to Contact US page                                            | PASS  |
-| 4  |  Live Life logo is Clicked	            |  Redirected to Blog home page from contact us/ Sign in and Sign up pages  | PASS  |
+| 1  |  Sign in clicked                         |  Redirected to login page                                                 |&#9745;|
+| 2  |  Sign up clicked                         |  Redirected to Sign up page                                               |&#9745;|
+| 3  |  Contact US	                            |  Redirected to Contact US page                                            |&#9745;|
+| 4  |  Live Life logo is Clicked	            |  Redirected to Blog home page from contact us/ Sign in and Sign up pages  |&#9745;|
 
 
 
-|Test|     Sign In  Page                        |   Result                                                                  |Done   |
+|Test|     Sign In  Page                        |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Valid info, submitted                   | Redirected to blog                                                        | PASS  |
-| 2  |  Invalid info, submitted                 | Error message appears                                                     | PASS  |
-| 3  |  Sign Up Now clicked                     | Redirected to Sign UP                                                     | PASS  |
+| 1  |  Valid info, submitted                   | Redirected to blog                                                        |&#9745;|
+| 2  |  Invalid info, submitted                 | Error message appears                                                     |&#9745;|
+| 3  |  Sign Up Now clicked                     | Redirected to Sign UP                                                     |&#9745;|
 
 
-|Test|     Sign Up page                         |   Result                                                                  |Done   |
+|Test|     Sign Up page                         |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Valid info, submitted                   | Redirected to blog                                                        | PASS  |
-| 2  |  Invalid info, submitted                 | Error message appears (password to common or to short, or don't match)    | PASS  |
-| 3  |  Sign In Now clicked                     | Redirected to Sign In                                                     | PASS  |
+| 1  |  Valid info, submitted                   | Redirected to blog                                                        |&#9745;|
+| 2  |  Invalid info, submitted                 | Error message appears (password to common or to short, or don't match)    |&#9745;|
+| 3  |  Sign In Now clicked                     | Redirected to Sign In                                                     |&#9745;|
 
 
-|Test|     Contact US page                      |   Result                                                                  |Done   |
+|Test|     Contact US page                      |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Name not entered                        | Error message appears                                                     | PASS  |
-| 2  |  Email not entered                       | Error message appears                                                     | PASS  |
-| 3  |  Subject not entered                     | Error message appears                                                     | PASS  |
-| 4  |  Message not entered                     | Error message appears                                                     | PASS  |
-| 5  |  Email sent                              | Model window pops up, close is clicked                                    | PASS  |
-| 6  |  Email sent and closed is clicked        | Redirected to home page                                                   | PASS  |
-| 7  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              | PASS  |
+| 1  |  Name not entered                        | Error message appears                                                     |&#9745;|
+| 2  |  Email not entered                       | Error message appears                                                     |&#9745;|
+| 3  |  Subject not entered                     | Error message appears                                                     |&#9745;|
+| 4  |  Message not entered                     | Error message appears                                                     |&#9745;|
+| 5  |  Email sent                              | Model window pops up, close is clicked                                    |&#9745;|
+| 6  |  Email sent and closed is clicked        | Redirected to home page                                                   |&#9745;|
+| 7  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              |&#9745;|
 
 
-|Test|     General site page                    |   Result                                                                  |Done   |
+|Test|     General site page                    |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Post image clicked                      | Post opens, No comment available                                          | PASS  |
-| 2  |  Heart clicked                           | Error message appears to say to log in                                    | PASS  |
-| 3  |  Comment icon clicked                    | Not login, can't comment                                                  | PASS  |
+| 1  |  Post image clicked                      | Post opens, No comment available                                          |&#9745;|
+| 2  |  Heart clicked                           | Error message appears to say to log in                                    |&#9745;|
+| 3  |  Comment icon clicked                    | Not login, can't comment                                                  |&#9745;|
 
 
 **User is Registered and Signed In**
 - The following checks have been completed when a user is signed in.
 
-|Test|     Sign Out                             |   Result                                                                  |Done   |
+|Test|     Sign Out                             |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Sign Out clicked                        | User is signed Out                                                        | PASS  |
+| 1  |  Sign Out clicked                        | User is signed Out                                                        |&#9745;|
 
 
-|Test|     Add a Post                           |   Result                                                                  |Done   |
+|Test|     Add a Post                           |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Add a Post is clicked                   | Directed to create page                                                   | PASS  |
-| 2  |  Create clicked with invalid info        | Error message appears for image                                           | PASS  |
-| 3  |  Create clicked with valid info          | Directed to edit page                                                     | PASS  |
+| 1  |  Add a Post is clicked                   | Directed to create page                                                   |&#9745;|
+| 2  |  Create clicked with invalid info        | Error message appears for image                                           |&#9745;|
+| 3  |  Create clicked with valid info          | Directed to edit page                                                     |&#9745;|
 
-|Test|     My Adventure                         |   Result                                                                  |Done   |
+|Test|     My Adventure                         |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Search Bar ,Trip entered                | Only 1 adventure appears                                                  | PASS  |
-| 2  |  Search Bar ,Family entered              | All family tags appear                                                    | PASS  |
-| 3  |  Add an Adventure clicked                | Directed to create page                                                   | PASS  |
-| 4  |  Cancel clicked on create page           | Directed back to Adventure page                                           | PASS  |
-| 5  |  Create clicked with invalid info        | <details><summary>Error message appears for Image, Location and Activity</summary><img src="./readmedoc/advchecks.png"></details>                    | PASS  |
-| 6  |  Create clicked with valid info          | Directed to edit page                                                     | PASS  |
+| 1  |  Search Bar ,Trip entered                | Only 1 adventure appears                                                  |&#9745;|
+| 2  |  Search Bar ,Family entered              | All family tags appear                                                    |&#9745;|
+| 3  |  Add an Adventure clicked                | Directed to create page                                                   |&#9745;|
+| 4  |  Cancel clicked on create page           | Directed back to Adventure page                                           |&#9745;|
+| 5  |  Create clicked with invalid info        | <details><summary>Error message appears for Image, Location and Activity</summary><img src="./readmedoc/advchecks.png"></details>                    |&#9745;|
+| 6  |  Create clicked with valid info          | Directed to edit page                                                     |&#9745;|
 
 
-|Test|     Trip List                            |   Result                                                                  |Done   |
+|Test|     Trip List                            |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Search Bar, items entered               | Returns item                                                              | PASS  |
-| 2  |  Search Bar, incorrect entered           | <details><summary>Nothing returned item</summary><img src="./readmedoc/tripsearchchecknotfound.png"></details>                                                              | PASS  |
+| 1  |  Search Bar, items entered               | Returns item                                                              |&#9745;|
+| 2  |  Search Bar, incorrect entered           | <details><summary>Nothing returned item</summary><img src="./readmedoc/tripsearchchecknotfound.png"></details>                                                              |&#9745;|
 |Note*|  For testing for the search bar both Shorts and shor were items added for my trips list trip             |          |       |
-| 3  |  shor entered into search Bar            | <details><summary>Shorts and Shor both returned items</summary><img src="./readmedoc/tripsearchcheck.png"></details>                                       | PASS  |
-| 4  |  Add Item clicked with invalid info      | <details><summary>Error message appears for Item, Quantity and Buy</summary><img src="./readmedoc/tripchecks.png"></details>                          | PASS  |
-| 5  |  Only Item entered                       | Error message appears for Quantity and Buy                                | PASS  |
-| 6  |  Only Quantity entered                   | Error message appears for Item and Buy                                    | PASS  |
-| 7  |  Only Buy entered                        | Error message appears for Item and Quantity                               | PASS  |
-| 8  |  Add Item clicked                        | Item appears button of the screen                                         | PASS  |
+| 3  |  shor entered into search Bar            | <details><summary>Shorts and Shor both returned items</summary><img src="./readmedoc/tripsearchcheck.png"></details>                                       |&#9745;|
+| 4  |  Add Item clicked with invalid info      | <details><summary>Error message appears for Item, Quantity and Buy</summary><img src="./readmedoc/tripchecks.png"></details>                          |&#9745;|
+| 5  |  Only Item entered                       | Error message appears for Quantity and Buy                                |&#9745;|
+| 6  |  Only Quantity entered                   | Error message appears for Item and Buy                                    |&#9745;|
+| 7  |  Only Buy entered                        | Error message appears for Item and Quantity                               |&#9745;|
+| 8  |  Add Item clicked                        | Item appears button of the screen                                         |&#9745;|
 
 
 
 
-|Test|     Contact US page                      |   Result                                                                  |Done   |
+|Test|     Contact US page                      |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Name not entered                        | Error message appears for Email, Subject, Message                         | PASS  |
-| 2  |  Email not entered                       | Error message appears for Name, Subject, Message                          | PASS  |
-| 3  |  Subject not entered                     | Error message appears for Name, Email, Message                            | PASS  |
-| 4  |  Message not entered                     | Error message appears for Name, Email, Subject                            | PASS  |
-| 5  |  Email sent                              | Model window pops up, close is clicked                                    | PASS  |
-| 6  |  Email sent and closed is clicked        | Redirected to home page                                                   | PASS  |
-| 7  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              | PASS  |
+| 1  |  Name not entered                        | Error message appears for Email, Subject, Message                         |&#9745;|
+| 2  |  Email not entered                       | Error message appears for Name, Subject, Message                          |&#9745;|
+| 3  |  Subject not entered                     | Error message appears for Name, Email, Message                            |&#9745;|
+| 4  |  Message not entered                     | Error message appears for Name, Email, Subject                            |&#9745;|
+| 5  |  Email sent                              | Model window pops up, close is clicked                                    |&#9745;|
+| 6  |  Email sent and closed is clicked        | Redirected to home page                                                   |&#9745;|
+| 7  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              |&#9745;|
 
 
 
-|Test|     Liked page                           |   Result                                                                  |Done   |
+|Test|     Liked page                           |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Liked only 1 post                       | Show only the 1 liked post                                               | PASS  |
-| 2  |  Liked zero posts                        | Shows No results image                                                    | PASS  |
-| 3  |  Liked own posts                         | Error message appears for can't like your own posts                       | PASS  |
+| 1  |  Liked only 1 post                       | Show only the 1 liked post                                                |&#9745;|
+| 2  |  Liked zero posts                        | Shows No results image                                                    |&#9745;|
+| 3  |  Liked own posts                         | Error message appears for can't like your own posts                       |&#9745;|
 
-|Test|     Following page                       |   Result                                                                  |Done   |
+|Test|     Following page                       |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Following only 1 profile                | Show only the 1 post from that profile                                    | PASS  |
-| 2  |  Following zero profile                  | Shows No results image                                                    | PASS  |
+| 1  |  Following only 1 profile                | Show only the 1 post from that profile                                    |&#9745;|
+| 2  |  Following zero profile                  | Shows No results image                                                    |&#9745;|
 
 
 
-|Test|                              |   Result                                                                  |Done   |
+|Test|                              |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |                 |                                                   | PASS  |
-| 2  |                |                                                     | PASS  |
-| 3  |                 |                                                    | PASS  |
-| 4  |             |                                            | PASS  |
-| 5  |          |                      | PASS  |
-| 6  |            |                                                     | PASS  |
+| 1  |                 |                                                   | &#9745;|  |
+| 2  |                |                                                     | &#9745;|  |
+| 3  |                 |                                                    | &#9745;|  |
+| 4  |             |                                            | &#9745;|  |
+| 5  |          |                      | &#9745;|  |
+| 6  |            |                                                     | &#9745;|  |
 
 
-|Test|                              |   Result                                                                  |Done   |
+|Test|                              |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |                 |                                                   | PASS  |
-| 2  |                |                                                     | PASS  |
-| 3  |                 |                                                    | PASS  |
-| 4  |             |                                            | PASS  |
-| 5  |          |                      | PASS  |
-| 6  |            |                                                     | PASS  |
+| 1  |                 |                                                   | &#9745;|  |
+| 2  |                |                                                     | &#9745;|  |
+| 3  |                 |                                                    | &#9745;|  |
+| 4  |             |                                            | &#9745;|  |
+| 5  |          |                      | &#9745;|  |
+| 6  |            |                                                     | &#9745;|  |
 
 
 ## ESLint JavaScript validator

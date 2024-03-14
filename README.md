@@ -150,9 +150,7 @@ web: serve -s build
 
 
 ## API error and feedback
-Here are the examples that are absolutely fine: three 401s on mount when not logged in,
-which we just discussed; 401 error when going to sign up/ sign in page,
-which happens when we check if we need to redirect a logged in user away from these pages.
+Here are the examples that are absolutely fine: three 401s on mount when not logged in, 401 error when going to sign up/ sign in page, which happens when we check if we need to redirect a logged in user away from these pages.
 A 401 error when providing incorrect form input such as submitting the sign
 in form without entering a username. And 401 error when an access token has expired,
 it is refreshed in the background and the request eventually succeeds.
