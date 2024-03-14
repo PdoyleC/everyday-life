@@ -62,7 +62,7 @@ Anyone who enjoys going out and about and wants to share what there up to.
 The social network-style layout presents posts from different users, allowing interaction between them through likes, comments and following your favorite users.
 
 ### Current User Goals:
-Create new posts regularly, Create a item  list for there next adventure.
+Create new posts regularly, Create there own adventure area for there own privite viewing, Create a item list for there next adventure.
 
 ### New User Goals:
 To engage the user in a meaningful way, and encourage them to explore life and the outside world.
@@ -136,6 +136,8 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ### Database schema
 
+
+## Features
 
 ## Testing
 

@@ -77,6 +77,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 2  |  Heart clicked                           | Error message appears to say to log in                                    |&#9745;|
 | 3  |  Comment icon clicked                    | Not login, can't comment                                                  |&#9745;|
 | 4  |  Console error checks in Dev chrome      | No Console errors displayed for Sign Out checks                           |&#9745;|
+| 5  |  Edit posts                              | Can't edit posts if no user is logged in                                  |&#9745;|
 
 
 
@@ -162,6 +163,15 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 3  |  Comments deleted unauthenticated user   | Can't deleted another users comment                                       |&#9745;|
 | 4  |  Comments edit                           | Comment is edited correctly                                               |&#9745;|
 | 5  |  Console error checks in Dev chrome      | No Console errors displayed for Comments post checks                      |&#9745;|
+
+
+|Test|     Edit posts                           |   Result                                                                  |Passed |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Edit as authenticated user              | Title changed, post updated with correct edit info                        |&#9745;|
+| 2  |  Edit as unauthenticated user            | Can't edit another users posts                                            |&#9745;|
+| 3  |  Delete as authenticated user            | Post is deleted                                                           |&#9745;|
+| 4  |  Delete as unauthenticated user          | Can't deleted another users posts                                         |&#9745;|
+| 5  |  Console error checks in Dev chrome      | No Console errors displayed for Edit post checks                          |&#9745;|
 
 
 
