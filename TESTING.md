@@ -250,3 +250,5 @@ All JavaScript files were validated using the [ESLint JavaScript validator](http
 <img src="readmedoc/lighthouse2.png" alt="lighthouse image">
 
 <img src="readmedoc/lighthousetriplistcookie.png" alt="lighthouse cookie image">
+
+<img src="readmedoc/wave.png" alt="Wave image">
