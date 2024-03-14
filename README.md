@@ -20,8 +20,29 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
-  - [UX](#ux)
-  - [Design](#design)
+   * [UX](#ux)
+      + [Site Purpose:](#site-purpose)
+      + [Site Goal:](#site-goal)
+      + [Audience:](#audience)
+      + [Communication:](#communication)
+      + [Current User Goals:](#current-user-goals)
+      + [New User Goals:](#new-user-goals)
+      + [Future Goals:](#future-goals)
+   * [User Stories](#user-stories)
+   * [User Experience](#user-experience)
+      + [Agile](#agile)
+   * [Design](#design)
+      + [Wireframes](#wireframes)
+      + [Logo:](#logo)
+      + [Colour Scheme:](#colour-scheme)
+      + [Database schema](#database-schema)
+   * [Testing](#testing)
+   * [Deployment](#deployment)
+      + [Heroku](#heroku)
+      + [Connecting to the API:](#connecting-to-the-api)
+   * [API error and feedback](#api-error-and-feedback)
+   * [Issues](#issues)
+   * [Credits](#credits)
 
 
 
@@ -116,7 +137,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 ### Database schema
 
 
-# Testing
+## Testing
 
 Please see [TESTNG.md](TESTNG.md) for all testing completed.
 
