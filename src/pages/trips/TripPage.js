@@ -54,7 +54,7 @@ function TripPage({ message, filter = "" }) {
               ...trip,
               name: editingTripName,
               quantity: editingTripQuantity,
-              buy:setEditingTripBuy,
+              buy:editingTripBuy,
             };
           }
           return trip;
@@ -84,11 +84,19 @@ function TripPage({ message, filter = "" }) {
   useEffect(() => {
     const fetchTrips = async () => {
       try {
-        const { data } = await axiosReq.get(`/trips/?${filter}&search=${query}`);
-        const filteredLists = data.results.filter((trip) =>
-          trip.name.toLowerCase().includes(query.toLowerCase())
-        );
-        setTrips(filteredLists);
+        let newPage = `/trips/?${filter}&search=${query}`;
+        const completeListTrips = [];
+        
+        while (newPage) {
+          const { data } = await axiosReq.get(newPage);
+          const filteredLists = data.results.filter((trip) =>
+            trip.name.toLowerCase().includes(query.toLowerCase())
+          );
+          completeListTrips.push(...filteredLists);
+          newPage = data.next;
+        }
+        
+        setTrips(completeListTrips);
         setHasLoaded(true);
       } catch (err) {
         // console.log(err);
