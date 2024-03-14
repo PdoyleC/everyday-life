@@ -47,6 +47,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 1  |  Valid info, submitted                   | Redirected to blog                                                        |&#9745;|
 | 2  |  Invalid info, submitted                 | Error message appears                                                     |&#9745;|
 | 3  |  Sign Up Now clicked                     | Redirected to Sign UP                                                     |&#9745;|
+| 4  |  Console error checks in Dev chromo      | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/knowissue.png"></details>                                     |&#9745;|
 
 
 |Test|     Sign Up page                         |   Result                                                                  |Passed |
@@ -54,6 +55,8 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 1  |  Valid info, submitted                   | Redirected to blog                                                        |&#9745;|
 | 2  |  Invalid info, submitted                 | Error message appears (password to common or to short, or don't match)    |&#9745;|
 | 3  |  Sign In Now clicked                     | Redirected to Sign In                                                     |&#9745;|
+| 4  |  Console error checks in Dev chromo      | No Console errors displayed for Contact US checks                         |&#9745;|
+| 5  |  Console error checks in Dev chromo      | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/knowissue.png"></details>                                     |&#9745;|
 
 
 |Test|     Contact US page                      |   Result                                                                  |Passed |
@@ -65,6 +68,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 5  |  Email sent                              | Model window pops up, close is clicked                                    |&#9745;|
 | 6  |  Email sent and closed is clicked        | Redirected to home page                                                   |&#9745;|
 | 7  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              |&#9745;|
+| 4  |  Console error checks in Dev chromo      | No Console errors displayed for Contact US checks                         |&#9745;|
 
 
 |Test|     General site page                    |   Result                                                                  |Passed |
@@ -72,6 +76,8 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 1  |  Post image clicked                      | Post opens, No comment available                                          |&#9745;|
 | 2  |  Heart clicked                           | Error message appears to say to log in                                    |&#9745;|
 | 3  |  Comment icon clicked                    | Not login, can't comment                                                  |&#9745;|
+| 4  |  Console error checks in Dev chromo      | No Console errors displayed for Sign Out checks                           |&#9745;|
+
 
 
 **User is Registered and Signed In**
@@ -81,6 +87,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Sign Out clicked                        | User is signed Out                                                        |&#9745;|
 | 2  |  Sign Out clicked                        |  Page opens with no errors                                                |&#9745;|
+| 3  |  Console error checks in Dev chromo      | No Console errors displayed for Sign Out checks                           |&#9745;|
 
 
 |Test|     Add a Post                           |   Result                                                                  |Passed |
@@ -88,6 +95,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 1  |  Add a Post is clicked                   | Page opens with no errors, Directed to create page                        |&#9745;|
 | 2  |  Create clicked with invalid info        | Error message appears for image                                           |&#9745;|
 | 3  |  Create clicked with valid info          | Directed to edit page                                                     |&#9745;|
+| 4  |  Console error checks in Dev chromo      | No Console errors displayed for Add a Post checks                        |&#9745;|
 
 |Test|     My Adventure                         |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
@@ -98,6 +106,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 5  |  Cancel clicked on create page           | Directed back to Adventure page                                           |&#9745;|
 | 6  |  Create clicked with invalid info        | <details><summary>Error message appears for Image, Location and Activity</summary><img src="./readmedoc/advchecks.png"></details>                    |&#9745;|
 | 7  |  Create clicked with valid info          | Directed to edit page                                                     |&#9745;|
+| 8  |  Console error checks in Dev chromo      | No Console errors displayed for My Adventure checks                       |&#9745;|
 
 
 |Test|     Trip List                            |   Result                                                                  |Passed |
@@ -112,6 +121,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 7  |  Only Quantity entered                   | Error message appears for Item and Buy                                    |&#9745;|
 | 8  |  Only Buy entered                        | Error message appears for Item and Quantity                               |&#9745;|
 | 9  |  Add Item clicked                        | Item appears button of the screen                                         |&#9745;|
+| 10 |  Console error checks in Dev chromo      | No Console errors displayed for Trip List  checks                         |&#9745;|
 
 
 
@@ -126,21 +136,32 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 6  |  Email sent                              | Model window pops up, close is clicked                                    |&#9745;|
 | 7  |  Email sent and closed is clicked        | Redirected to home page                                                   |&#9745;|
 | 8  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              |&#9745;|
+| 9  |  Console error checks in Dev chromo      | No Console errors displayed for Contact us checks                         |&#9745;|
 
 
 
 |Test|     Liked page                           |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Liked page is clicked                   |  Redirected and page opens with no errors                                 |&#9745;|
+| 1  |  Liked page is clicked                   | Redirected and page opens with no errors                                  |&#9745;|
 | 2  |  Liked only 1 post                       | Show only the 1 liked post                                                |&#9745;|
 | 3  |  Liked zero posts                        | Shows No results image                                                    |&#9745;|
 | 4  |  Liked own posts                         | Error message appears for can't like your own posts                       |&#9745;|
+| 5  |  Console error checks in Dev chromo      | No Console errors displayed for Liked post checks                         |&#9745;|
 
 |Test|     Following page                       |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Following page is clicked               |  Redirected and page opens with no errors                                 |&#9745;|
+| 1  |  Following page is clicked               | Redirected and page opens with no errors                                  |&#9745;|
 | 2  |  Following only 1 profile                | Show only the 1 post from that profile                                    |&#9745;|
 | 3  |  Following zero profile                  | Shows No results image                                                    |&#9745;|
+| 4  |  Console error checks in Dev chromo      | No Console errors displayed for Following post checks                     |&#9745;|
+
+|Test|     Comments posts                       |   Result                                                                  |Passed |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Comments add to post                    | Comment added beside post image                                           |&#9745;|
+| 2  |  Comments deleted authenticated user     | When deleted, comment is removed from post                                |&#9745;|
+| 3  |  Comments deleted unauthenticated user   | Can't deleted another users comment                                       |&#9745;|
+| 4  |  Comments edit                           | Comment is edited correctly                                               |&#9745;|
+| 5  |  Console error checks in Dev chromo      | No Console errors displayed for Comments post checks                      |&#9745;|
 
 
 
