@@ -47,8 +47,8 @@ function TripPage({ message, filter = "" }) {
     setEditingTripBuy("");
   };
 
-  const handleSaveEdit = async (event) => {
-    event.preventDefault();
+  const handleSaveEdit = async (tripId) => {
+    tripId.preventDefault();
     const formData = new FormData();
 
     formData.append("name", editingTripName);

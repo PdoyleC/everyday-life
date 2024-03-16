@@ -141,7 +141,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ## Testing
 
-Please see [TESTNG.md](TESTNG.md) for all testing completed.
+Please see [TESTING.md](TESTING.md) for all testing completed.
 
 ## Deployment
 
