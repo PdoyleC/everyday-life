@@ -135,23 +135,28 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 </details>
 
-### Database schema
-
 
 ## Features
 
+<img src="readmedoc/navbar.png" alt="Navbar Page">
+<img src="readmedoc/navbardropdown.png" alt="Navbar Dropdown Page">
+<img src="readmedoc/signuppage.png" alt="Sign Up Page">
+<img src="readmedoc/signinpage.png" alt="Sign In Page">
 <img src="readmedoc/landingpage.png" alt="Landing Page">
-<img src="readmedoc/tripslist.png" alt="trips list">
-<img src="readmedoc/myadventures.png" alt="my adventures">
-<img src="readmedoc/following.png" alt="following">
-<img src="readmedoc/liked.png" alt="liked">
-<img src="readmedoc/contactus.png" alt="contact us page">
-<img src="readmedoc/addpostpage.png" alt="add post page">
-<img src="readmedoc/triplistadditem.png" alt="trip list add item page">
-<img src="readmedoc/triplistadditemedit.png" alt="trip list add item edit page">
-<img src="readmedoc/triplistaddeditemslist.png" alt="trip list added items list">
-<img src="readmedoc/addadventurespage.png" alt="add adventures page ">
-<img src="readmedoc/profile.png" alt="profile page">
+<img src="readmedoc/tripslist.png" alt="Trips List">
+<img src="readmedoc/triplistsearch.png" alt="Trip List Search List">
+<img src="readmedoc/myadventures.png" alt="My Adventures">
+<img src="readmedoc/addadventurespage.png" alt="Add Adventures Page ">
+<img src="readmedoc/adventuresearch1.png" alt="Adventures Search Page ">
+<img src="readmedoc/adventuresearch2.png" alt="Adventures Search Page ">
+<img src="readmedoc/following.png" alt="Following">
+<img src="readmedoc/liked.png" alt="Liked">
+<img src="readmedoc/contactus.png" alt="Contact Us Page">
+<img src="readmedoc/addpostpage.png" alt="Add Post Page">
+<img src="readmedoc/triplistadditem.png" alt="Trip List Add Item Page">
+Page<img src="readmedoc/triplistaddeditemslist.png" alt="Trip list Added items list">
+<img src="readmedoc/profile.png" alt="profile Page">
+<img src="readmedoc/404errorpage.png" alt="404 Error Page">
 
 
 
