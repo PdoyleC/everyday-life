@@ -140,6 +140,21 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ## Features
 
+<img src="readmedoc/landingpage.png" alt="Landing Page">
+<img src="readmedoc/tripslist.png" alt="trips list">
+<img src="readmedoc/myadventures.png" alt="my adventures">
+<img src="readmedoc/following.png" alt="following">
+<img src="readmedoc/liked.png" alt="liked">
+<img src="readmedoc/contactus.png" alt="contact us page">
+<img src="readmedoc/addpostpage.png" alt="add post page">
+<img src="readmedoc/triplistadditem.png" alt="trip list add item page">
+<img src="readmedoc/triplistadditemedit.png" alt="trip list add item edit page">
+<img src="readmedoc/triplistaddeditemslist.png" alt="trip list added items list">
+<img src="readmedoc/addadventurespage.png" alt="add adventures page ">
+<img src="readmedoc/profile.png" alt="profile page">
+
+
+
 ## Testing
 
 Please see [TESTING.md](TESTING.md) for all testing completed.
