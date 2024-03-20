@@ -14,6 +14,7 @@ import TripListCreateForm from "./TripListCreateForm";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { MoreDropdown } from "../../components/MoreDropdown";
 import btnStyles from "../../styles/Button.module.css";
+import { useParams } from "react-router";
 
 function TripPage({ message, filter = "" }) {
   const currentUser = useCurrentUser();
@@ -25,7 +26,8 @@ function TripPage({ message, filter = "" }) {
   const [editingTripName, setEditingTripName] = useState("");
   const [editingTripQuantity, setEditingTripQuantity] = useState("");
   const [editingTripBuy, setEditingTripBuy] = useState("");
-  const [setErrors] = useState({});
+  const [errors, setErrors] = useState({});
+  const { id } = useParams();
 
   const [setPostData] = useState({
     name: "",
@@ -47,17 +49,20 @@ function TripPage({ message, filter = "" }) {
     setEditingTripBuy("");
   };
 
-  const handleSaveEdit = async (tripId) => {
+  const handleSaveEdit = async (event, tripId) => {
     tripId.preventDefault();
+    event.preventDefault();
     const formData = new FormData();
+    console.log(event);
 
     formData.append("name", editingTripName);
     formData.append("quantity", editingTripQuantity);
     formData.append("buy", editingTripBuy);
 
     try {
-      const { data } = await axiosReq.post("/trips/", formData);
+      const { data } = await axiosReq.put(`/trips/${id}/`, formData);
       const newTrips = data ?? {};
+      console.log(data);
       setTrips((prevTrips) => [newTrips, ...prevTrips]);
       setPostData({ name: "", quantity: "", buy:"" });
       setErrors({});
@@ -69,6 +74,28 @@ function TripPage({ message, filter = "" }) {
       }
     }
   };
+
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+  //   const formData = new FormData();
+
+  //   formData.append("title", title);
+  //   formData.append("content", content);
+
+  //   if (imageInput?.current?.files[0]) {
+  //     formData.append("image", imageInput.current.files[0]);
+  //   }
+
+  //   try {
+  //     await axiosReq.put(`/posts/${id}/`, formData);
+  //     history.push(`/posts/${id}`);
+  //   } catch (err) {
+  //   //   console.log(err);
+  //     if (err.response?.status !== 401) {
+  //       setErrors(err.response?.data);
+  //     }
+  //   }
+  // };
 
   // const handleSaveEdit = async (tripId) => {
   //   try {
