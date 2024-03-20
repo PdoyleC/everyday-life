@@ -138,10 +138,20 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ## Features
 
+### Navbar
+Live Life's navbar, is visible at all times. When a user first visits the site, the navbar displayed has a Sign Up link and a contact us link. The user is able to contact the site owners if there having any issues. The user is able to create an account in the sign up link.
+<img src="readmedoc/navbarsignedout.png" alt="Navbar Signed Out  Page">
+
+When the user has signed up or signed in the navbar changes and the user has access to all the site links and pages. 
 <img src="readmedoc/navbar.png" alt="Navbar Page">
+
+The is a dropdown menu for Following / Liked and Contact Us. These are in a dropdown section so te user has access to them when needed but not to distract them from using the main features of the site. 
 <img src="readmedoc/navbardropdown.png" alt="Navbar Dropdown Page">
+
+
 <img src="readmedoc/signuppage.png" alt="Sign Up Page">
 <img src="readmedoc/signinpage.png" alt="Sign In Page">
+<img src="readmedoc/blankfields.png" alt="blankfields sign up and sign in">
 <img src="readmedoc/landingpage.png" alt="Landing Page">
 <img src="readmedoc/tripslist.png" alt="Trips List">
 <img src="readmedoc/triplistsearch.png" alt="Trip List Search List">
