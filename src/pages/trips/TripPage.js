@@ -179,7 +179,12 @@ const handleSaveEdit = async (tripId) => {
                               <Form.Control
                                 value={editingTripBuy}
                                 onChange={(e) => setEditingTripBuy(e.target.value)}
-                              />
+                                as="select"
+                                type="text"
+                              >
+                                <option value="N">N</option>
+                                <option value="Y">Y</option>
+                                </Form.Control>
                             </td>
                             <td>
                               <button className={`${btnStyles.Button} ${btnStyles.blue}`} onClick={() => handleSaveEdit(trip.id)}>Update</button>
