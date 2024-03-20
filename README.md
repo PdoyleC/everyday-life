@@ -148,10 +148,12 @@ When the user has signed up or signed in the navbar changes and the user has acc
 The is a dropdown menu for Following / Liked and Contact Us. These are in a dropdown section so te user has access to them when needed but not to distract them from using the main features of the site. 
 <img src="readmedoc/navbardropdown.png" alt="Navbar Dropdown Page">
 
-
+The user has to create an account using a valid username and password. When the user signs in they must use there username and password which they created an account. If no info is added error messages appear in the fields boxes
 <img src="readmedoc/signuppage.png" alt="Sign Up Page">
 <img src="readmedoc/signinpage.png" alt="Sign In Page">
 <img src="readmedoc/blankfields.png" alt="blankfields sign up and sign in">
+
+This is the sites landing page.
 <img src="readmedoc/landingpage.png" alt="Landing Page">
 <img src="readmedoc/tripslist.png" alt="Trips List">
 <img src="readmedoc/triplistsearch.png" alt="Trip List Search List">
