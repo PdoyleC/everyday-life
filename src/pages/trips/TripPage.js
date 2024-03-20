@@ -25,13 +25,7 @@ function TripPage({ message, filter = "" }) {
   const [editingTripName, setEditingTripName] = useState("");
   const [editingTripQuantity, setEditingTripQuantity] = useState("");
   const [editingTripBuy, setEditingTripBuy] = useState("");
-  // const [errors, setErrors] = useState({});
-
-  // const [setPostData] = useState({
-  //   name: "",
-  //   quantity: "",
-  //   buy: "",
-  // });
+  
 
   const handleEdit = (tripId, tripName, tripQuantity, tripBuy) => {
     setEditingTripId(tripId);
@@ -47,31 +41,6 @@ function TripPage({ message, filter = "" }) {
     setEditingTripBuy("");
   };
 
-  // const handleSaveEdit = async (event, tripId) => {
-    // tripId.preventDefault();
-    // event.preventDefault();
-    // const formData = new FormData();
-
-    // formData.append("name", editingTripName);
-    // formData.append("quantity", editingTripQuantity);
-    // formData.append("buy", editingTripBuy);
-
-  //   try {
-  //     const { data } = await axiosReq.put(`/trips/${id}/`, formData);
-  //     const newTrips = data ?? {};
-  //     console.log(data);
-  //     setTrips((prevTrips) => [newTrips, ...prevTrips]);
-  //     setPostData({ name: "", quantity: "", buy:"" });
-  //     setErrors({});
-  //   } catch (err) {
-  //     // console.log(err);
-  //     if (err.response?.status !== 401) {
-  //       setErrors(err.response?.data);
-  //       // console.log(err.response.data);
-  //     }
-  //   }
-  // };
-// test the update function
 const handleSaveEdit = async (tripId) => {
   try {
     await axiosReq.put(`/trips/${tripId}/`, {
@@ -103,57 +72,6 @@ const handleSaveEdit = async (tripId) => {
   
   }
 };
-
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
-  //   const formData = new FormData();
-
-  //   formData.append("title", title);
-  //   formData.append("content", content);
-
-  //   if (imageInput?.current?.files[0]) {
-  //     formData.append("image", imageInput.current.files[0]);
-  //   }
-
-  //   try {
-  //     await axiosReq.put(`/posts/${id}/`, formData);
-  //     history.push(`/posts/${id}`);
-  //   } catch (err) {
-  //   //   console.log(err);
-  //     if (err.response?.status !== 401) {
-  //       setErrors(err.response?.data);
-  //     }
-  //   }
-  // };
-
-  // const handleSaveEdit = async (tripId) => {
-  //   try {
-  //     await axiosReq.put(`/trips/${tripId}/`, {
-  //       name: setEditingTripName,
-  //       quantity: setEditingTripQuantity,
-  //       buy:setEditingTripBuy,
-  //     });
-  //     setTrips((prevTrips) =>
-  //       prevTrips.map((trip) => {
-  //         if (trip.id === tripId) {
-  //           return {
-  //             ...trip,
-  //             name: editingTripName,
-  //             quantity: editingTripQuantity,
-  //             buy: editingTripBuy,
-  //           };
-  //         }
-  //         return trip;
-  //       })
-  //     );
-  //     setEditingTripId(null);
-  //     setEditingTripName("");
-  //     setEditingTripQuantity("");
-  //     setEditingTripBuy("");
-  //   } catch (err) {
-  //     // console.log(err);
-  //   }
-  // };
 
   const handleDelete = async (tripId) => {
     const confirmed = window.confirm("Are you sure you want to delete this item?");
