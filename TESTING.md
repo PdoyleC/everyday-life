@@ -4,26 +4,23 @@ Return back to the [README.md](README.md) file.
 
 # Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [Testing](#testing)
-   * [Testing](#testing-1)
-   * [Validator Testing](#validator-testing)
-- [Manual Testing](#manual-testing)
+- [Table of Contents](#table-of-contents)
+- [Testing](#testing-1)
+   * [Manual Testing](#manual-testing)
    * [Checks Completed](#checks-completed)
    * [ESLint JavaScript validator](#eslint-javascript-validator)
    * [CSS validator](#css-validator)
    * [Lighthouse & WAVE](#lighthouse-wave)
 
-## Testing
+# Testing
 
 Manual testing is where the creator of the code/site does quality checks/tests on the code, this is completed step by step. The purpose of tests is to catch any bugs or issues in the site before going live while to site is under development.
 
 Automated testing is where code is used to test the logic, set of instructions to validate a feature or expected outcome of the code/feature.
 
-## Validator Testing
 
-
-# Manual Testing
+## Manual Testing
 
 **User Not Registered or Signed In**
 
