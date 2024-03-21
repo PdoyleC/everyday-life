@@ -97,8 +97,7 @@ I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-lif
 
 ### Wireframes
 
-<details>
-<summary>Wireframes</summary>
+Wireframes created using [Balsamiq](https://balsamiq.com/).
 
 <img src="readmedoc/wirehome.png" alt="Home image">
 <img src="readmedoc/wireprofile.png" alt="Profile image">
@@ -107,8 +106,6 @@ I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-lif
 <img src="readmedoc/wirecontactus.png" alt="Contact Us image">
 <img src="readmedoc/wiretriplist.png" alt="Trip List image">
 
-
-</details>
 
 ### Logo:
 
