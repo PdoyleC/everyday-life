@@ -185,6 +185,14 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 4  |  Delete as unauthenticated user          | Can't deleted another users posts                                         |&#9745;|
 | 5  |  Console error checks in Dev chrome      | No Console errors displayed for Edit post checks                          |&#9745;|
 
+|Test|     Edit Profile                         |   Result                                                                  |Passed |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Change Image                            | <details><summary>Image changed with no issues</summary><img src="./readmedoc/profileedit.png"></details>                                              |&#9745;|
+| 2  |  Edit bio                                | <details><summary>Added and changed bio with no issues</summary><img src="./readmedoc/profileedit.png"></details>                                      |&#9745;|
+| 3  |  Changed username                        | <details><summary>Username changed with no issues</summary><img src="./readmedoc/profileedit.png"></details>                                           |&#9745;|
+| 4  |  Changed password                        | Password changed with no issues                                           |&#9745;|
+| 5  |  Console error checks in Dev chrome      | No Console errors displayed for Profile checks                            |&#9745;|
+
 
 ## ESLint JavaScript validator
 
