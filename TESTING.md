@@ -274,3 +274,30 @@ All JavaScript files were validated using the [ESLint JavaScript validator](http
 <img src="readmedoc/lighthousetriplistcookie.png" alt="lighthouse cookie image">
 
 <img src="readmedoc/wave.png" alt="Wave image">
+
+
+## Screen Size Tests
+
+- Testing was carried out on small screen sizes.
+- Galaxy Note 3.
+- iPhone 4.
+- iPad mini.
+- A variety of screen sizes on the desktop.
+
+<details>
+
+<summary>Screen Size Tests Images</summary>
+
+<img src="readmedoc/screentest/galaxynote3.png" alt="galaxynote3 image">
+<img src="readmedoc/screentest/galaxynote3addpost.png" alt="galaxynote3addpost image">
+<img src="readmedoc/screentest/galaxynote3contact.png" alt="galaxynote3contact image">
+<img src="readmedoc/screentest/ipadminiaddpost.png" alt="ipadminiaddpost image">
+<img src="readmedoc/screentest/ipadminiadvanture.png" alt="ipadminiadvanture image">
+<img src="readmedoc/screentest/ipadminitriplist.png" alt="ipadminitriplist image">
+<img src="readmedoc/screentest/iphone14.png" alt="iphone14 image">
+<img src="readmedoc/screentest/iphone14addpost.png" alt="iphone14addpost image">
+<img src="readmedoc/screentest/iphone14addpost1.png" alt="iphone14addpost1 image">
+<img src="readmedoc/screentest/iphone14contact.png" alt="iphone14contact image">
+<img src="readmedoc/screentest/iphone14menu.png" alt="iphone14menu image">
+
+</details>
