@@ -2,6 +2,18 @@
 
 Return back to the [README.md](README.md) file.
 
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Testing](#testing)
+   * [Testing](#testing-1)
+   * [Validator Testing](#validator-testing)
+- [Manual Testing](#manual-testing)
+   * [Checks Completed](#checks-completed)
+   * [ESLint JavaScript validator](#eslint-javascript-validator)
+   * [CSS validator](#css-validator)
+   * [Lighthouse & WAVE](#lighthouse-wave)
+
 ## Testing
 
 Manual testing is where the creator of the code/site does quality checks/tests on the code, this is completed step by step. The purpose of tests is to catch any bugs or issues in the site before going live while to site is under development.
@@ -175,27 +187,6 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 3  |  Delete as authenticated user            | Post is deleted                                                           |&#9745;|
 | 4  |  Delete as unauthenticated user          | Can't deleted another users posts                                         |&#9745;|
 | 5  |  Console error checks in Dev chrome      | No Console errors displayed for Edit post checks                          |&#9745;|
-
-
-
-|Test|                              |   Result                                                                  |Passed |
-|----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |                 |                                                   | &#9745;|  |
-| 2  |                |                                                     | &#9745;|  |
-| 3  |                 |                                                    | &#9745;|  |
-| 4  |             |                                            | &#9745;|  |
-| 5  |          |                      | &#9745;|  |
-| 6  |            |                                                     | &#9745;|  |
-
-
-|Test|                              |   Result                                                                  |Passed |
-|----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |                 |                                                   | &#9745;|  |
-| 2  |                |                                                     | &#9745;|  |
-| 3  |                 |                                                    | &#9745;|  |
-| 4  |             |                                            | &#9745;|  |
-| 5  |          |                      | &#9745;|  |
-| 6  |            |                                                     | &#9745;|  |
 
 
 ## ESLint JavaScript validator

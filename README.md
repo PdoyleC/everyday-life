@@ -35,7 +35,7 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
       + [Wireframes](#wireframes)
       + [Logo:](#logo)
       + [Colour Scheme:](#colour-scheme)
-      + [Database schema](#database-schema)
+   * [Features](#features)
    * [Testing](#testing)
    * [Deployment](#deployment)
       + [Heroku](#heroku)
