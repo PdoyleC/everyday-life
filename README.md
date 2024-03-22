@@ -72,11 +72,12 @@ To engage the user in a meaningful way, and encourage them to explore life and t
 - Give users an option to send private messages to each other.
 - User could create an event and other users can sign up for the event.
 - Add ticks to the Trip list, so that items can be marked as bought or done, easier.
-#
+- Create a place for users to add walking trails (maps) of routes of nice places to go that are off the beaten track, walks that most people don't know or only locals know.  
+
 ## User Stories
 I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-life/issues) for this project, as well as the [KANBAN board](https://github.com/users/PdoyleC/projects/6/views/1).
 
-#
+
 ## User Experience
 
 ### Agile
@@ -92,7 +93,7 @@ I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-lif
 
 </details>
 
-#
+
 ## Design
 
 ### Wireframes
@@ -202,6 +203,11 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 ### Profile
 - In the profile section, users can see how many posts they have created, the number of people following them and the number of people they following. Users can also change there profile / Username and password here.
 <img src="readmedoc/profile.png" alt="profile Page">
+
+- By clicking on the 3 dot the user can select if they want to edit there profile, change they password or change username.
+<img src="readmedoc/profileedituser.png" alt="profile edit Page">
+
+
 
 #### 404 error
 - If a users entered an incorrect URL entention, there are greated with an error page.
