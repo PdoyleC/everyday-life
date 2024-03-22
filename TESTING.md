@@ -33,8 +33,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 ## Checks Completed
 
 - The following checks have been completed when there is no user signed in.
-
-
+- Console error checks were completed in Chrome / FireFox and Edge (abbreviated to CFE)*
 
   
 |Test|       Action                             |   Result                                                                  |Passed |
@@ -56,7 +55,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 1  |  Valid info, submitted                   | Redirected to blog                                                        |&#9745;|
 | 2  |  Invalid info, submitted                 | Error message appears                                                     |&#9745;|
 | 3  |  Sign Up Now clicked                     | Redirected to Sign UP                                                     |&#9745;|
-| 4  |  Console error checks in Dev chrome      | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/knowissue.png"></details>                                     |&#9745;|
+| 4  |  Console error checks in CFE             | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/knowissue.png"></details>                                     |&#9745;|
 
 
 |Test|     Sign Up page                         |   Result                                                                  |Passed |
@@ -64,8 +63,8 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 1  |  Valid info, submitted                   | Redirected to blog                                                        |&#9745;|
 | 2  |  Invalid info, submitted                 | Error message appears (password to common or to short, or don't match)    |&#9745;|
 | 3  |  Sign In Now clicked                     | Redirected to Sign In                                                     |&#9745;|
-| 4  |  Console error checks in Dev chrome      | No Console errors displayed for Contact US checks                         |&#9745;|
-| 5  |  Console error checks in Dev chrome      | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/knowissue.png"></details>                                     |&#9745;|
+| 4  |  Console error checks in CFE             | No Console errors displayed for Contact US checks                         |&#9745;|
+| 5  |  Console error checks in CFE             | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/knowissue.png"></details>                                     |&#9745;|
 
 
 |Test|     Contact US page                      |   Result                                                                  |Passed |
@@ -77,7 +76,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 5  |  Email sent                              | Model window pops up, close is clicked                                    |&#9745;|
 | 6  |  Email sent and closed is clicked        | Redirected to home page                                                   |&#9745;|
 | 7  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              |&#9745;|
-| 4  |  Console error checks in Dev chrome      | No Console errors displayed for Contact US checks                         |&#9745;|
+| 4  |  Console error checks in CFE             | No Console errors displayed for Contact US checks                         |&#9745;|
 
 
 |Test|     General site page                    |   Result                                                                  |Passed |
@@ -85,7 +84,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 1  |  Post image clicked                      | Post opens, No comment available                                          |&#9745;|
 | 2  |  Heart clicked                           | Error message appears to say to log in                                    |&#9745;|
 | 3  |  Comment icon clicked                    | Not login, can't comment                                                  |&#9745;|
-| 4  |  Console error checks in Dev chrome      | No Console errors displayed for Sign Out checks                           |&#9745;|
+| 4  |  Console error checks in CFE             | No Console errors displayed for Sign Out checks                           |&#9745;|
 | 5  |  Edit posts                              | Can't edit posts if no user is logged in                                  |&#9745;|
 
 
@@ -97,7 +96,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Sign Out clicked                        | User is signed Out                                                        |&#9745;|
 | 2  |  Sign Out clicked                        |  Page opens with no errors                                                |&#9745;|
-| 3  |  Console error checks in Dev chrome      | No Console errors displayed for Sign Out checks                           |&#9745;|
+| 3  |  Console error checks in CFE             | No Console errors displayed for Sign Out checks                           |&#9745;|
 
 
 |Test|     Add a Post                           |   Result                                                                  |Passed |
@@ -105,7 +104,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 1  |  Add a Post is clicked                   | Page opens with no errors, Directed to create page                        |&#9745;|
 | 2  |  Create clicked with invalid info        | Error message appears for image                                           |&#9745;|
 | 3  |  Create clicked with valid info          | Directed to edit page                                                     |&#9745;|
-| 4  |  Console error checks in Dev chrome      | No Console errors displayed for Add a Post checks                        |&#9745;|
+| 4  |  Console error checks in CFE             | No Console errors displayed for Add a Post checks                        |&#9745;|
 
 |Test|     My Adventure                         |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
@@ -116,7 +115,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 5  |  Cancel clicked on create page           | Directed back to Adventure page                                           |&#9745;|
 | 6  |  Create clicked with invalid info        | <details><summary>Error message appears for Image, Location and Activity</summary><img src="./readmedoc/advchecks.png"></details>                    |&#9745;|
 | 7  |  Create clicked with valid info          | Directed to edit page                                                     |&#9745;|
-| 8  |  Console error checks in Dev chrome      | No Console errors displayed for My Adventure checks                       |&#9745;|
+| 8  |  Console error checks in CFE             | No Console errors displayed for My Adventure checks                       |&#9745;|
 
 
 |Test|     Trip List                            |   Result                                                                  |Passed |
@@ -135,7 +134,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 11 |  Edit, item changed                      | Item updated                                                              |&#9745;|
 | 12 |  Edit, Quantity changed                  | Quantity updated                                                          |&#9745;|
 | 14 |  Edit, Need to Buy changed               | Need to Buy updated                                                       |&#9745;|
-| 15 |  Console error checks in Dev chrome      | No Console errors displayed for Trip List checks                          |&#9745;|
+| 15 |  Console error checks in CFE             | No Console errors displayed for Trip List checks                          |&#9745;|
 
 
 
@@ -150,7 +149,9 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 6  |  Email sent                              | Model window pops up, close is clicked                                    |&#9745;|
 | 7  |  Email sent and closed is clicked        | Redirected to home page                                                   |&#9745;|
 | 8  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              |&#9745;|
-| 9  |  Console error checks in Dev chrome      | <details><summary>No Console errors displayed for Contact us checks</summary><img src="./readmedoc/consoleemail.png"></details>                         |&#9745;|
+| 9  |  Console error checks in CFE             | <details><summary>No Console errors displayed for Contact us checks</summary><img src="./readmedoc/emailconsole.png"></details>                         |&#9745;|
+
+
 
 
 |Test|     Liked page                           |   Result                                                                  |Passed |
@@ -159,14 +160,14 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 2  |  Liked only 1 post                       | Show only the 1 liked post                                                |&#9745;|
 | 3  |  Liked zero posts                        | Shows No results image                                                    |&#9745;|
 | 4  |  Liked own posts                         | Error message appears for can't like your own posts                       |&#9745;|
-| 5  |  Console error checks in Dev chrome      | No Console errors displayed for Liked post checks                         |&#9745;|
+| 5  |  Console error checks in CFE             | No Console errors displayed for Liked post checks                         |&#9745;|
 
 |Test|     Following page                       |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Following page is clicked               | Redirected and page opens with no errors                                  |&#9745;|
 | 2  |  Following only 1 profile                | Show only the 1 post from that profile                                    |&#9745;|
 | 3  |  Following zero profile                  | Shows No results image                                                    |&#9745;|
-| 4  |  Console error checks in Dev chrome      | No Console errors displayed for Following post checks                     |&#9745;|
+| 4  |  Console error checks in CFE             | No Console errors displayed for Following post checks                     |&#9745;|
 
 |Test|     Comments posts                       |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
@@ -175,7 +176,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 3  |  Comments deleted unauthenticated user   | Can't deleted another users comment                                       |&#9745;|
 | 4  |  Comments edit authenticated user        | Comment is edited correctly                                               |&#9745;|
 | 5  |  Comments edit unauthenticated user      | Can't edited another users comment                                        |&#9745;|
-| 6  |  Console error checks in Dev chrome      | No Console errors displayed for Comments post checks                      |&#9745;|
+| 6  |  Console error checks in CFE             | No Console errors displayed for Comments post checks                      |&#9745;|
 
 
 |Test|     Edit posts                           |   Result                                                                  |Passed |
@@ -184,7 +185,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 2  |  Edit as unauthenticated user            | Can't edit another users posts                                            |&#9745;|
 | 3  |  Delete as authenticated user            | Post is deleted                                                           |&#9745;|
 | 4  |  Delete as unauthenticated user          | Can't deleted another users posts                                         |&#9745;|
-| 5  |  Console error checks in Dev chrome      | No Console errors displayed for Edit post checks                          |&#9745;|
+| 5  |  Console error checks in CFE             | No Console errors displayed for Edit post checks                          |&#9745;|
 
 |Test|     Edit Profile                         |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
@@ -192,7 +193,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 2  |  Edit bio                                | <details><summary>Added and changed bio with no issues</summary><img src="./readmedoc/profileedit.png"></details>                                      |&#9745;|
 | 3  |  Changed username                        | <details><summary>Username changed with no issues</summary><img src="./readmedoc/profileedit.png"></details>                                           |&#9745;|
 | 4  |  Changed password                        | Password changed with no issues                                           |&#9745;|
-| 5  |  Console error checks in Dev chrome      | No Console errors displayed for Profile checks                            |&#9745;|
+| 5  |  Console error checks in CFE             | No Console errors displayed for Profile checks                            |&#9745;|
 
 
 ## ESLint JavaScript validator

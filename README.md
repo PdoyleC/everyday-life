@@ -55,6 +55,9 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
       + [Languages](#languages)
       + [Frameworks](#frameworks)
       + [Other software and dependencies](#other-software-and-dependencies)
+   * [Resuable React Components and hooks](#resuable-react-components-and-hooks)
+      + [Components](#components)
+      + [Hooks](#hooks)
    * [Issues](#issues)
    * [Credits](#credits)
 
@@ -370,6 +373,21 @@ it is refreshed in the background and the request eventually succeeds.
 - [WAVE Evaluation tool](https://wave.webaim.org/) - Testing tool
 - [W3jigsaw](https://jigsaw.w3.org/css-validator/) - CSS validation tool
 - [JSHint](https://jshint.com/) - Javascript testing tool
+
+## Resuable React Components and hooks
+
+### Components
+
+- AdventureCard: this displays a post for adventures
+- Asset: renders a loading spinner, an image or message. 
+- Avatar: displays the users profile image.
+- MoreDropDown: displays a dropdown menu for edit, delete functions.
+- NavBar: displays the navbar at the top of the site.
+- NotFound: displays a message for the user if they go to a non existing url.
+
+### Hooks
+- useClickOutsideToggle: provides a convenient way to handle the closing, for example a menu by monitoring clicks outside the component.
+- useRedirect: redirects the user depending on authorization.
 
 ## Issues
 
