@@ -15,8 +15,6 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
 - View other users images.
 
 
-
-
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
@@ -36,11 +34,27 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
       + [Logo:](#logo)
       + [Colour Scheme:](#colour-scheme)
    * [Features](#features)
+      + [Navbar](#navbar)
+      + [Authentication](#authentication)
+      + [Home Page](#home-page)
+      + [Add Post](#add-post)
+      + [Trip List](#trip-list)
+      + [Adventures](#adventures)
+      + [Contact](#contact)
+      + [Profile](#profile)
+      + [Search Bar](#search-bar)
+      + [Liked/Comments](#likedcomments)
+         - [404 error](#404-error)
+      + [CRUD functionality](#crud-functionality)
    * [Testing](#testing)
    * [Deployment](#deployment)
       + [Heroku](#heroku)
       + [Connecting to the API:](#connecting-to-the-api)
    * [API error and feedback](#api-error-and-feedback)
+   * [Technology](#technology)
+      + [Languages](#languages)
+      + [Frameworks](#frameworks)
+      + [Other software and dependencies](#other-software-and-dependencies)
    * [Issues](#issues)
    * [Credits](#credits)
 
@@ -77,6 +91,23 @@ To engage the user in a meaningful way, and encourage them to explore life and t
 ## User Stories
 I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-life/issues) for this project, as well as the [KANBAN board](https://github.com/users/PdoyleC/projects/6/views/1).
 
+- General Site
+  - Account registration
+  - Account sign-in
+  - Account sign-out
+  - User profile
+- Trip List
+  - Search Bar
+  - Add Items
+  - Editing Items
+  - Delete Items
+- My Adventure
+  - Search Bar
+  - Add Adventure
+  - Editing Adventure posts
+  - Delete Adventure posts
+- Contact US
+  - Creating Contact US
 
 ## User Experience
 
@@ -86,12 +117,7 @@ I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-lif
 - Agile methodology was used to map and create user stories, each with their own function and list of tasks.
 - GitHub projects Kanban was used to keep track of the project. It is divided into To Start, In Progress and Completed. [KANBAN board](https://github.com/users/PdoyleC/projects/6/views/1) to Kanban board.
 
-<details>
-<summary>Project Issues Image</summary>
-
 <img src="readmedoc/kanbanproject.png" alt="kanban project image">
-
-</details>
 
 
 ## Design
@@ -271,7 +297,12 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 <img src="readmedoc/404errorpage.png" alt="404 Error Page">
 
-
+### CRUD functionality
+Live Life features have full Create, Read, Update and Delete functions.
+- Create - users can register a new account, and all authenticated users can create posts, comments, Trip lists and My adventures posts.
+- Read - authenticated users can view their Trips list, My adventures, comments and posts, other users posts and comments, and their profile image and display name.
+- Update - authenticated users can update their posts, comments, Trip List, My Adventure posts, Likes, profile image, display name and password.
+- Delete - authenticated users can delete their posts, Trip lists, My adventure posts, Comments. 
 
 ## Testing
 
