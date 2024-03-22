@@ -359,7 +359,17 @@ it is refreshed in the background and the request eventually succeeds.
 ### Other software and dependencies
 - Axios
 - React testing library
-- npm 
+- npm
+- [Balsamiq](https://balsamiq.com/)
+- [Github](https://github.com/) - Host for the repository
+- [Gitpod](https://gitpod.io/workspaces) - Code editor
+- [ElephantSQL](https://www.elephantsql.com/) - Database
+- [Cloudinary](https://cloudinary.com/) - Static & Media host
+- [Heroku](https://id.heroku.com/login) - Cloud platform/Host the live project
+- Chrome DevTools - Testing tool
+- [WAVE Evaluation tool](https://wave.webaim.org/) - Testing tool
+- [W3jigsaw](https://jigsaw.w3.org/css-validator/) - CSS validation tool
+- [JSHint](https://jshint.com/) - Javascript testing tool
 
 ## Issues
 
