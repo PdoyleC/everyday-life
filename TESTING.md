@@ -173,8 +173,9 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 1  |  Comments add to post                    | Comment added beside post image                                           |&#9745;|
 | 2  |  Comments deleted authenticated user     | When deleted, comment is removed from post                                |&#9745;|
 | 3  |  Comments deleted unauthenticated user   | Can't deleted another users comment                                       |&#9745;|
-| 4  |  Comments edit                           | Comment is edited correctly                                               |&#9745;|
-| 5  |  Console error checks in Dev chrome      | No Console errors displayed for Comments post checks                      |&#9745;|
+| 4  |  Comments edit authenticated user        | Comment is edited correctly                                               |&#9745;|
+| 5  |  Comments edit unauthenticated user      | Can't edited another users comment                                        |&#9745;|
+| 6  |  Console error checks in Dev chrome      | No Console errors displayed for Comments post checks                      |&#9745;|
 
 
 |Test|     Edit posts                           |   Result                                                                  |Passed |

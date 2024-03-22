@@ -242,6 +242,25 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 <img src="readmedoc/searchbar.png" alt="search bar image">
 
 
+### Liked/Comments
+
+- User can see on each post if it has been liked and if there is a comment for the post.
+
+<img src="readmedoc/likedcomments.png" alt="liked comments image">
+
+- User can't like there own posts.
+
+<img src="readmedoc/cantlike.png" alt="can't like post">
+
+- User can see comments in each post when the post image is clicked.
+
+<img src="readmedoc/comments.png" alt="comments post">
+
+- Users can edit there own comments by clicking the 3 dots and choosing edit.
+<img src="readmedoc/editcomments.png" alt="edit comments post">
+
+
+
 
 
 - By clicking on the 3 dot the user can select if they want to edit there profile, change they password or change username.
