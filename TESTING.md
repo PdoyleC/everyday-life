@@ -4,14 +4,14 @@ Return back to the [README.md](README.md) file.
 
 # Table of Contents
 
-- [Testing](#testing)
-- [Table of Contents](#table-of-contents)
 - [Testing](#testing-1)
    * [Manual Testing](#manual-testing)
    * [Checks Completed](#checks-completed)
    * [ESLint JavaScript validator](#eslint-javascript-validator)
    * [CSS validator](#css-validator)
    * [Lighthouse & WAVE](#lighthouse-wave)
+   * [Browser Compatibility](#browser-compatibility)
+   * [Screen Size Tests](#screen-size-tests)
 
 # Testing
 
@@ -285,6 +285,9 @@ All JavaScript files were validated using the [ESLint JavaScript validator](http
 
 <img src="readmedoc/wave.png" alt="Wave image">
 
+
+## Browser Compatibility
+This website was tested on Chrome, Firefox and Microsoft Edge.
 
 ## Screen Size Tests
 
