@@ -137,80 +137,123 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 ## Features
 
 ### Navbar
+
 - Live Life's navbar, is visible at all times. When a user first visits the site, the navbar displayed has a Sign Up link and a contact us link. The user is able to contact the site owners if there having any issues. The user is able to create an account in the sign up link.
+
 <img src="readmedoc/navbarsignedout.png" alt="Navbar Signed Out  Page">
 
 - When the user has signed up or signed in the navbar changes and the user has access to all the site links and pages. 
+
 <img src="readmedoc/navbar.png" alt="Navbar Page">
 
 - The is a dropdown menu for Following / Liked and Contact Us. These are in a dropdown section so te user has access to them when needed but not to distract them from using the main features of the site. 
+
 <img src="readmedoc/navbardropdown.png" alt="Navbar Dropdown Page">
 
 ### Authentication
-- The user has to create an account using a valid username and password. When the user signs in they must use there username and password which they created an account. If no info is added error messages appear in the fields boxes
+
+- The user has to create an account using a valid username and password. When the user signs in they must use there username and password which they created an account. If no info is added error messages appear in the fields boxes.
+
 <img src="readmedoc/signuppage.png" alt="Sign Up Page">
 <img src="readmedoc/signinpage.png" alt="Sign In Page">
 <img src="readmedoc/blankfields.png" alt="blankfields sign up and sign in">
 
 ### Home Page
+
 - This is the sites landing page. The user has access to Add Post, Their personal Trip List, their personal Adventure posts, Items containing Liked posts, following users, and contact site owners, Sign out and their Profile page, where user can edit their profile by changing (name, password).
+
 <img src="readmedoc/landingpage.png" alt="Landing Page">
 
 ### Add Post
+
 - Users can add a post by clicking on the add post icon and they will be redirected to add a post and upload an image.
+
 <img src="readmedoc/addpostpage.png" alt="Add Post Page">
 
 
 ### Trip List
+
 - In Trip List the user can have their own personal list of things that they need for there next trip/adventure away.
 - It can be a to do list for the user.
 - Users can add items, see there items entered under the add items section, users can search for items, edit/update and deleted items entered.
 - The list is ordered in if the user needs to buy it or not, if the item needs to be bought then the item is top of the list and if it doesn't need to be bought it goes down the bottom of the list. This is so the user can see first what needs to be bought.
 - Users have full CRUD over there items entered. 
+
 <img src="readmedoc/tripslist.png" alt="Trips List">
 
 - Users can add there items here. Users can enter item name, the number that needed and also if the user needs to buy the item or not.
+
 <img src="readmedoc/triplistadditem.png" alt="Trip List Add Item Page">
 
 - Users can search for an item entered also. If the user have loads of items on there list, this search feature will come in handy to see if an item have already been entered.
+
 <img src="readmedoc/triplistsearch.png" alt="Trip List Search List">
 <img src="readmedoc/triplistaddeditemslist.png" alt="Trip list Added items list">
+
 - Users have full CRUD over the items. Users can update or deleted there items by pressing the 3 dots.
+
 <img src="readmedoc/triplistedit.png" alt="trip list edit List">
 
 
 ### Adventures
+
 -  Users have there own private personal space to upload there own adventures just for them to look at. Users can add a post adventure here by clicking Add an Adventure button. Users have full CRUD over there posts entered. 
+
 <img src="readmedoc/myadventures.png" alt="My Adventures">
 
 - Users can enter there own personal adventures here. Users can add a personal note here also, maybe to say who they were with or how long of a trip it was.
+
 <img src="readmedoc/addadventurespage.png" alt="Add Adventures Page ">
 
 - The search bar is there for users to find a trip that they have been on easier. Users can search for Location or Activity.
+
 <img src="readmedoc/adventuresearch1.png" alt="Adventures Search Page ">
 <img src="readmedoc/adventuresearch2.png" alt="Adventures Search Page ">
 
 - Here users can see the posts from the other profiles that there following, users won't see posts from profiles that there not following. 
+
 <img src="readmedoc/following.png" alt="Following">
 
 - Here users can see the posts that they have liked and no other posts. 
+
 <img src="readmedoc/liked.png" alt="Liked">
 
 ### Contact
+
 - All users are able to contact the site owners, even if the user doesn't have an account, for any issues relating to the site.
+
 <img src="readmedoc/contactus.png" alt="Contact Us Page">
 
 ### Profile
+
 - In the profile section, users can see how many posts they have created, the number of people following them and the number of people they following. Users can also change there profile / Username and password here.
+
 <img src="readmedoc/profile.png" alt="profile Page">
 
+### Search Bar
+
+- There are 5 search bars on the site.
+- There is a search bar for posts on the home page.
+- There is a search bar for Trips list where the user can searh for items they've entered.
+- There is a search bar for My Adventure, where the user can search for there own posts.
+- There is a search bar for in the Following page.
+- There is a search bar for in the Liked page.
+
+<img src="readmedoc/searchbar.png" alt="search bar image">
+
+
+
+
 - By clicking on the 3 dot the user can select if they want to edit there profile, change they password or change username.
+
 <img src="readmedoc/profileedituser.png" alt="profile edit Page">
 
 
 
 #### 404 error
+
 - If a users entered an incorrect URL entention, there are greated with an error page.
+
 <img src="readmedoc/404errorpage.png" alt="404 Error Page">
 
 
