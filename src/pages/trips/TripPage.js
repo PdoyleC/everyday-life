@@ -11,6 +11,7 @@ import Asset from "../../components/Asset";
 import NoResults from "../../assets/no-results.png";
 import styles from "../../styles/TripsPage.module.css";
 import TripListCreateForm from "./TripListCreateForm";
+import Alert from "react-bootstrap/Alert";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { MoreDropdown } from "../../components/MoreDropdown";
 import btnStyles from "../../styles/Button.module.css";
@@ -25,6 +26,7 @@ function TripPage({ message, filter = "" }) {
   const [editingTripName, setEditingTripName] = useState("");
   const [editingTripQuantity, setEditingTripQuantity] = useState("");
   const [editingTripBuy, setEditingTripBuy] = useState("");
+  const [errors] = useState({});
   
 
   const handleEdit = (tripId, tripName, tripQuantity, tripBuy) => {
@@ -167,6 +169,11 @@ const handleSaveEdit = async (tripId) => {
                                 value={editingTripName}
                                 onChange={(e) => setEditingTripName(e.target.value)}
                               />
+                              {errors?.editingTripName?.map((message, idx) => (
+                              <Alert variant="warning" key={idx}>
+                              {message}
+                              </Alert>
+                              ))}
                             </td>
                             <td>
                               <Form.Control

@@ -44,7 +44,7 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
       + [Profile](#profile)
       + [Search Bar](#search-bar)
       + [Liked/Comments](#likedcomments)
-         - [404 error](#404-error)
+      + [404 error](#404-error)
       + [CRUD functionality](#crud-functionality)
    * [Testing](#testing)
    * [Deployment](#deployment)
@@ -294,7 +294,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 
 
-#### 404 error
+### 404 error
 
 - If a user enters an incorrect URL extention, their are greeted with an error page.
 

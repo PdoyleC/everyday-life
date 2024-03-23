@@ -299,10 +299,6 @@ This website was tested on Chrome, Firefox and Microsoft Edge.
 - iPad mini.
 - A variety of screen sizes on the desktop.
 
-<details>
-
-<summary>Screen Size Tests Images</summary>
-
 <img src="readmedoc/screentest/galaxynote3.png" alt="galaxynote3 image">
 <img src="readmedoc/screentest/galaxynote3addpost.png" alt="galaxynote3addpost image">
 <img src="readmedoc/screentest/galaxynote3contact.png" alt="galaxynote3contact image">
@@ -315,4 +311,3 @@ This website was tested on Chrome, Firefox and Microsoft Edge.
 <img src="readmedoc/screentest/iphone14contact.png" alt="iphone14contact image">
 <img src="readmedoc/screentest/iphone14menu.png" alt="iphone14menu image">
 
-</details>
