@@ -167,7 +167,9 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ### Navbar
 
-- Live Life's navbar, is visible at all times. When a user first visits the site, the navbar displayed has a Sign Up link and a contact us link. The user is able to contact the site owners if there having any issues. The user is able to create an account in the sign up link.
+- Live Life's navbar, is visible at all times. When a user first visits the site, the navbar displayed has a Sign Up link and a contact us link.
+- The user is able to contact the site owners if there having any issues. The user is able to create an account in the sign up link.
+- ***The Live Life logo is the Home link***
 
 <img src="readmedoc/navbarsignedout.png" alt="Navbar Signed Out  Page">
 
@@ -175,9 +177,6 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 <img src="readmedoc/navbar.png" alt="Navbar Page">
 
-- There is a dropdown menu for Following / Liked and Contact Us. These are in a dropdown section so the user has access to them when needed but not to distract them from using the main features of the site. 
-
-<img src="readmedoc/navbardropdown.png" alt="Navbar Dropdown Page">
 
 ### Authentication
 
@@ -189,6 +188,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ### Home Page
 
+- ***The Live Life logo is the Home link***
 - This is the sites landing page. The user has access to Add Post, Their personal Trip List, their personal Adventure posts, Items containing Liked posts, following users, and contact site owners, Sign out and their Profile page, where user can edit their profile by changing (name, password).
 
 <img src="readmedoc/landingpage.png" alt="Landing Page">
@@ -241,7 +241,11 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 - Here users can see the posts from the other profiles that their following, users won't see posts from profiles that their not following. 
 
+### Following
+
 <img src="readmedoc/following.png" alt="Following">
+
+### Liked
 
 - Here users can see the posts that they have liked and no other posts. 
 
