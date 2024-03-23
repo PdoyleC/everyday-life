@@ -55,7 +55,7 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
       + [Languages](#languages)
       + [Frameworks](#frameworks)
       + [Other software and dependencies](#other-software-and-dependencies)
-   * [Resuable React Components and hooks](#resuable-react-components-and-hooks)
+   * [Reusable React Components and hooks](#reusable-react-components-and-hooks)
       + [Components](#components)
       + [Hooks](#hooks)
    * [Issues](#issues)
@@ -70,16 +70,16 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
 This site is a blog style site, aimed at people to share what their up to, going for a walk, having a picnic, etc.
 
 ### Site Goal:
-Users to upload images, for the group. Users can upload images for themselves to view, create a list for there next trip so the user doesn't forget anything.
+Users to upload images, for the group. Users can upload images for themselves to view, create a list for their next trip so the user doesn't forget anything.
 
 ### Audience:
 Anyone who enjoys going out and about and wants to share what there up to.
 
 ### Communication:
-The social network-style layout presents posts from different users, allowing interaction between them through likes, comments and following your favorite users.
+The social network-style layout presents posts from different users, allowing interaction between them through likes, comments and following your favourite users.
 
 ### Current User Goals:
-Create new posts regularly, Create there own adventure area for there own privite viewing, Create a item list for there next adventure.
+Create new posts regularly, Create their own adventure area for their own private viewing, Create a item list for their next adventure.
 
 ### New User Goals:
 To engage the user in a meaningful way, and encourage them to explore life and the outside world.
@@ -156,9 +156,9 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 ### Colour Scheme:
 
 <details>
-<summary>Colour Palet Image</summary>
+<summary>Colour Palette Image</summary>
 
-<img src="readmedoc/colourpalet.png" alt="colour Palet">
+<img src="readmedoc/colourpalet.png" alt="colour Palette">
 
 </details>
 
@@ -175,13 +175,13 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 <img src="readmedoc/navbar.png" alt="Navbar Page">
 
-- The is a dropdown menu for Following / Liked and Contact Us. These are in a dropdown section so te user has access to them when needed but not to distract them from using the main features of the site. 
+- There is a dropdown menu for Following / Liked and Contact Us. These are in a dropdown section so the user has access to them when needed but not to distract them from using the main features of the site. 
 
 <img src="readmedoc/navbardropdown.png" alt="Navbar Dropdown Page">
 
 ### Authentication
 
-- The user has to create an account using a valid username and password. When the user signs in they must use there username and password which they created an account. If no info is added error messages appear in the fields boxes.
+- The user has to create an account using a valid username and password. When the user signs in they must use their username and password which they created an account. If no info is added error messages appear in the fields boxes.
 
 <img src="readmedoc/signuppage.png" alt="Sign Up Page">
 <img src="readmedoc/signinpage.png" alt="Sign In Page">
@@ -202,35 +202,35 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ### Trip List
 
-- In Trip List the user can have their own personal list of things that they need for there next trip/adventure away.
+- In Trip List the user can have their own personal list of things that they need for their next trip/adventure away.
 - It can be a to do list for the user.
-- Users can add items, see there items entered under the add items section, users can search for items, edit/update and deleted items entered.
+- Users can add items, see their items entered under the add items section, users can search for items, edit/update and deleted items entered.
 - The list is ordered in if the user needs to buy it or not, if the item needs to be bought then the item is top of the list and if it doesn't need to be bought it goes down the bottom of the list. This is so the user can see first what needs to be bought.
-- Users have full CRUD over there items entered. 
+- Users have full CRUD over their items entered. 
 
 <img src="readmedoc/tripslist.png" alt="Trips List">
 
-- Users can add there items here. Users can enter item name, the number that needed and also if the user needs to buy the item or not.
+- Users can add their items here. Users can enter item name, the number that needed and also if the user needs to buy the item or not.
 
 <img src="readmedoc/triplistadditem.png" alt="Trip List Add Item Page">
 
-- Users can search for an item entered also. If the user have loads of items on there list, this search feature will come in handy to see if an item have already been entered.
+- Users can search for an item entered also. If the user has loads of items on their list, this search feature will come in handy to see if an item has already been entered.
 
 <img src="readmedoc/triplistsearch.png" alt="Trip List Search List">
 <img src="readmedoc/triplistaddeditemslist.png" alt="Trip list Added items list">
 
-- Users have full CRUD over the items. Users can update or deleted there items by pressing the 3 dots.
+- Users have full CRUD over the items. Users can update or deleted their items by pressing the 3 dots.
 
 <img src="readmedoc/triplistedit.png" alt="trip list edit List">
 
 
 ### Adventures
 
--  Users have there own private personal space to upload there own adventures just for them to look at. Users can add a post adventure here by clicking Add an Adventure button. Users have full CRUD over there posts entered. 
+-  Users have their own private personal space to upload their own adventures just for them to look at. Users can add a post adventure here by clicking Add an Adventure button. Users have full CRUD over their posts entered. 
 
 <img src="readmedoc/myadventures.png" alt="My Adventures">
 
-- Users can enter there own personal adventures here. Users can add a personal note here also, maybe to say who they were with or how long of a trip it was.
+- Users can enter their own personal adventures here. Users can add a personal note here also, maybe to say who they were with or how long of a trip it was.
 
 <img src="readmedoc/addadventurespage.png" alt="Add Adventures Page ">
 
@@ -239,7 +239,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 <img src="readmedoc/adventuresearch1.png" alt="Adventures Search Page ">
 <img src="readmedoc/adventuresearch2.png" alt="Adventures Search Page ">
 
-- Here users can see the posts from the other profiles that there following, users won't see posts from profiles that there not following. 
+- Here users can see the posts from the other profiles that their following, users won't see posts from profiles that their not following. 
 
 <img src="readmedoc/following.png" alt="Following">
 
@@ -255,7 +255,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ### Profile
 
-- In the profile section, users can see how many posts they have created, the number of people following them and the number of people they following. Users can also change there profile / Username and password here.
+- In the profile section, users can see how many posts they have created, the number of people following them and the number of people they following. Users can also change their profile / Username and password here.
 
 <img src="readmedoc/profile.png" alt="profile Page">
 
@@ -263,8 +263,8 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 - There are 5 search bars on the site.
 - There is a search bar for posts on the home page.
-- There is a search bar for Trips list where the user can searh for items they've entered.
-- There is a search bar for My Adventure, where the user can search for there own posts.
+- There is a search bar for Trips list where the user can search for items they've entered.
+- There is a search bar for My Adventure, where the user can search for their own posts.
 - There is a search bar for in the Following page.
 - There is a search bar for in the Liked page.
 
@@ -273,11 +273,11 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ### Liked/Comments
 
-- User can see on each post if it has been liked and if there is a comment for the post.
+- User can see on each post if it has been liked and if their is a comment for the post.
 
 <img src="readmedoc/likedcomments.png" alt="liked comments image">
 
-- User can't like there own posts.
+- User can't like their own posts.
 
 <img src="readmedoc/cantlike.png" alt="can't like post">
 
@@ -285,10 +285,10 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 <img src="readmedoc/comments.png" alt="comments post">
 
-- Users can edit there own comments by clicking the 3 dots and choosing edit.
+- Users can edit their own comments by clicking the 3 dots and choosing edit.
 <img src="readmedoc/editcomments.png" alt="edit comments post">
 
-- By clicking on the 3 dot the user can select if they want to edit there profile, change they password or change username.
+- By clicking on the 3 dot the user can select if they want to edit their profile, change they password or change username.
 
 <img src="readmedoc/profileedituser.png" alt="profile edit Page">
 
@@ -296,7 +296,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 #### 404 error
 
-- If a users entered an incorrect URL entention, there are greated with an error page.
+- If a user enters an incorrect URL extention, their are greeted with an error page.
 
 <img src="readmedoc/404errorpage.png" alt="404 Error Page">
 
@@ -366,6 +366,7 @@ it is refreshed in the background and the request eventually succeeds.
 - [Balsamiq](https://balsamiq.com/)
 - [Github](https://github.com/) - Host for the repository
 - [Gitpod](https://gitpod.io/workspaces) - Code editor
+- [Code AnyWhere](https://app.codeanywhere.com/) - Code editor
 - [ElephantSQL](https://www.elephantsql.com/) - Database
 - [Cloudinary](https://cloudinary.com/) - Static & Media host
 - [Heroku](https://id.heroku.com/login) - Cloud platform/Host the live project
@@ -374,16 +375,16 @@ it is refreshed in the background and the request eventually succeeds.
 - [W3jigsaw](https://jigsaw.w3.org/css-validator/) - CSS validation tool
 - [JSHint](https://jshint.com/) - Javascript testing tool
 
-## Resuable React Components and hooks
+## Reusable React Components and hooks
 
 ### Components
 
 - AdventureCard: this displays a post for adventures
 - Asset: renders a loading spinner, an image or message. 
-- Avatar: displays the users profile image.
+- Avatar: displays the user's profile image.
 - MoreDropDown: displays a dropdown menu for edit, delete functions.
 - NavBar: displays the navbar at the top of the site.
-- NotFound: displays a message for the user if they go to a non existing url.
+- NotFound: displays a message for the user if they go to a non-existing url.
 
 ### Hooks
 - useClickOutsideToggle: provides a convenient way to handle the closing, for example a menu by monitoring clicks outside the component.
