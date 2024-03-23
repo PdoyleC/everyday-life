@@ -18,48 +18,51 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
-   * [UX](#ux)
-      + [Site Purpose:](#site-purpose)
-      + [Site Goal:](#site-goal)
-      + [Audience:](#audience)
-      + [Communication:](#communication)
-      + [Current User Goals:](#current-user-goals)
-      + [New User Goals:](#new-user-goals)
-      + [Future Goals:](#future-goals)
-   * [User Stories](#user-stories)
-   * [User Experience](#user-experience)
-      + [Agile](#agile)
-   * [Design](#design)
-      + [Wireframes](#wireframes)
-      + [Logo:](#logo)
-      + [Colour Scheme:](#colour-scheme)
-   * [Features](#features)
-      + [Navbar](#navbar)
-      + [Authentication](#authentication)
-      + [Home Page](#home-page)
-      + [Add Post](#add-post)
-      + [Trip List](#trip-list)
-      + [Adventures](#adventures)
-      + [Contact](#contact)
-      + [Profile](#profile)
-      + [Search Bar](#search-bar)
-      + [Liked/Comments](#likedcomments)
-      + [404 error](#404-error)
-      + [CRUD functionality](#crud-functionality)
-   * [Testing](#testing)
-   * [Deployment](#deployment)
-      + [Heroku](#heroku)
-      + [Connecting to the API:](#connecting-to-the-api)
-   * [API error and feedback](#api-error-and-feedback)
-   * [Technology](#technology)
-      + [Languages](#languages)
-      + [Frameworks](#frameworks)
-      + [Other software and dependencies](#other-software-and-dependencies)
-   * [Reusable React Components and hooks](#reusable-react-components-and-hooks)
-      + [Components](#components)
-      + [Hooks](#hooks)
-   * [Issues](#issues)
-   * [Credits](#credits)
+- [UX](#ux)
+   * [Site Purpose:](#site-purpose)
+   * [Site Goal:](#site-goal)
+   * [Audience:](#audience)
+   * [Communication:](#communication)
+   * [Current User Goals:](#current-user-goals)
+   * [New User Goals:](#new-user-goals)
+   * [Future Goals:](#future-goals)
+- [User Stories](#user-stories)
+- [User Experience](#user-experience)
+   * [Agile](#agile)
+- [Design](#design)
+   * [Wireframes](#wireframes)
+   * [Logo:](#logo)
+   * [Colour Scheme:](#colour-scheme)
+- [Features](#features)
+   * [Navbar](#navbar)
+   * [Authentication](#authentication)
+   * [Home Page](#home-page)
+   * [Add Post](#add-post)
+   * [Trip List](#trip-list)
+   * [Adventures](#adventures)
+   * [Following](#following)
+   * [Liked](#liked)
+   * [Contact](#contact)
+   * [Profile](#profile)
+   * [Search Bar](#search-bar)
+   * [Liked/Comments](#likedcomments)
+   * [404 error](#404-error)
+   * [CRUD functionality](#crud-functionality)
+- [Testing](#testing)
+- [Deployment](#deployment)
+   * [Heroku](#heroku)
+   * [Connecting to the API:](#connecting-to-the-api)
+- [API error and feedback](#api-error-and-feedback)
+- [Technology](#technology)
+   * [Languages](#languages)
+   * [Frameworks](#frameworks)
+   * [Other software and dependencies](#other-software-and-dependencies)
+- [Reusable React Components and hooks](#reusable-react-components-and-hooks)
+   * [Components](#components)
+   * [Hooks](#hooks)
+- [Issues](#issues)
+- [Credits](#credits)
+- [Acknowledgments](#acknowledgments)
 
 
 
@@ -169,6 +172,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 - Live Life's navbar, is visible at all times. When a user first visits the site, the navbar displayed has a Sign Up link and a contact us link.
 - The user is able to contact the site owners if there having any issues. The user is able to create an account in the sign up link.
+- The Home icon is visible here for new users, this makes it easier for a new user to navigate.
 - ***The Live Life logo is the Home link***
 
 <img src="readmedoc/navbarsignedout.png" alt="Navbar Signed Out  Page">
@@ -422,3 +426,7 @@ it is refreshed in the background and the request eventually succeeds.
 - Contact page modal pop up for confirmation [Modal pop up](https://getbootstrap.com/docs/4.0/components/modal/).
 - React-infinite-scroll-component [Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component).
 
+## Acknowledgments
+
+- The following tutors online at CI, guided and helped me during this project - Oisin, Holly, John, Rebecca, Sarah, Joanne, Alan, Sean.
+- My mentor Jubril Akolade for good briefings, tips and feedback.
