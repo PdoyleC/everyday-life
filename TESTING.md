@@ -135,6 +135,8 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 12 |  Edit, Quantity changed                  | Quantity updated                                                          |&#9745;|
 | 14 |  Edit, Need to Buy changed               | Need to Buy updated                                                       |&#9745;|
 | 15 |  Console error checks in CFE             | No Console errors displayed for Trip List checks                          |&#9745;|
+| 16 |  Django Admin checked                    | <details><summary>Item arrived with same info</summary><img src="./readmedoc/triplistchecks.png"></details>                                              |&#9745;|
+
 
 
 
