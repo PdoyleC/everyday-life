@@ -71,9 +71,10 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
 
 ### Site Purpose:
 This site is a blog style site, aimed at people to share what their up to, going for a walk, having a picnic, etc.
+A live life website serves as a digital haven for individuals seeking inspiration and guidance to enhance the quality of their lives. It is designed to touch the lives of its visitors, providing them with the tools and motivation needed to live life and go out into the world.
 
 ### Site Goal:
-Users to upload images, for the group. Users can upload images for themselves to view, create a list for their next trip so the user doesn't forget anything.
+Users to upload images, for the group. Users can upload images for themselves to view, create a list for their next trip so the user doesn't forget anything. The website acts as a source of inspiration, sharing stories, quotes, and life experiences from people of all walks of life. Give other visiters ideas on things to do and places to go. If a user adds a post about having a picnic or there out for a walk, another user could see this as inspiration and go for a walk or a picnic.
 
 ### Audience:
 Anyone who enjoys going out and about and wants to share what there up to.
@@ -130,7 +131,9 @@ I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-lif
 
 ### Wireframes
 
-Wireframes created using [Balsamiq](https://balsamiq.com/).
+- Wireframes created using [Balsamiq](https://balsamiq.com/).
+- Some wireframes have changed from the original design due to iterative revisions and evolving requirements.
+
 
 <img src="readmedoc/wirehome.png" alt="Home image">
 <img src="readmedoc/wireprofile.png" alt="Profile image">
