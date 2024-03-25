@@ -233,7 +233,6 @@ const handleSaveEdit = async (tripId) => {
         )}
       </Col>
       <Col className=".d-none .d-md-block .d-lg-none p-0 p-lg-2">
-      {/* <div class="d-lg-none"> */}
         <PopularProfiles />
       </Col>
     </Row>
