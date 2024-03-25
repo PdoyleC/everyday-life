@@ -6,6 +6,8 @@ import Col from "react-bootstrap/Col";
 import Alert from "react-bootstrap/Alert";
 import { axiosReq } from "../../api/axiosDefaults";
 import appStyles from "../../App.module.css";
+import PopularProfiles from "../profiles/PopularProfiles";
+import Row from "react-bootstrap/Row";
 // import styles from "../../styles/ContactCreateForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import { useHistory } from "react-router-dom";
@@ -151,8 +153,9 @@ const  ContactCreateForm = () => {
           </Modal.Footer>
         </Modal>
       )}
-      <div className={appStyles.CenterAlignForm}>
-        <Col md={7} lg={8}>
+      <Row className="h-100">
+      <Col className="py-2 p-0 p-lg-2" lg={8}>
+        <PopularProfiles mobile />
           <div
             className={`${appStyles.Content} ${appStyles.TextAlignCenter} d-flex flex-column justify-content-center`}
           >
@@ -160,7 +163,10 @@ const  ContactCreateForm = () => {
             <div className={appStyles.Content}>{contactfields}</div>
           </div>
         </Col>
-      </div>
+        <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
+        <PopularProfiles />
+      </Col>
+      </Row>
     </Form>
   );
 };
