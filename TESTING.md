@@ -296,7 +296,7 @@ This website was tested on Chrome, Firefox and Microsoft Edge.
 - Testing was carried out on small screen sizes.
 - Galaxy Note 3.
 - iPhone 4.
-- iPad mini.
+- iPad Pro.
 - A variety of screen sizes on the desktop.
 
 <img src="readmedoc/screentest/galaxynote3.png" alt="galaxynote3 image">

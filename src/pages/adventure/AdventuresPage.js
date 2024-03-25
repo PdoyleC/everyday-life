@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 import { Button } from "react-bootstrap";
 
 import Asset from "../../components/Asset";
-
+import PopularProfiles from "../profiles/PopularProfiles";
 import appStyles from "../../App.module.css";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
@@ -51,6 +51,7 @@ function AdventuresPage({ message, filter = "" }) {
 
   return (
     <Row className="h-100">
+      <PopularProfiles mobile />
       <Col className="py-2 p-0 p-lg-2" lg={8} xl={9}>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
@@ -98,6 +99,9 @@ function AdventuresPage({ message, filter = "" }) {
             <Asset spinner />
           </Container>
         )}
+      </Col>
+      <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
+        <PopularProfiles />
       </Col>
     </Row>
   );

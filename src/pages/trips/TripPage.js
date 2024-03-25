@@ -11,6 +11,7 @@ import Asset from "../../components/Asset";
 import NoResults from "../../assets/no-results.png";
 import styles from "../../styles/TripsPage.module.css";
 import TripListCreateForm from "./TripListCreateForm";
+import PopularProfiles from "../profiles/PopularProfiles";
 import Alert from "react-bootstrap/Alert";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { MoreDropdown } from "../../components/MoreDropdown";
@@ -122,6 +123,7 @@ const handleSaveEdit = async (tripId) => {
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8} xl={9}>
+        <PopularProfiles mobile />
       <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
@@ -229,6 +231,9 @@ const handleSaveEdit = async (tripId) => {
             <Asset spinner />
           </Container>
         )}
+      </Col>
+      <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
+        <PopularProfiles />
       </Col>
     </Row>
   );
