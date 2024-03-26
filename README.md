@@ -74,7 +74,7 @@ This site is a blog style site, aimed at people to share what their up to, going
 A live life website serves as a digital haven for individuals seeking inspiration and guidance to enhance the quality of their lives. It is designed to touch the lives of its visitors, providing them with the tools and motivation needed to live life and go out into the world.
 
 ### Site Goal:
-Users to upload images, for the group. Users can upload images for themselves to view, create a list for their next trip so the user doesn't forget anything. The website acts as a source of inspiration, sharing stories, quotes, and life experiences from people of all walks of life. Give other visiters ideas on things to do and places to go. If a user adds a post about having a picnic or there out for a walk, another user could see this as inspiration and go for a walk or a picnic.
+Users to upload images, for the group. Users can upload images for themselves to view, create an list for their next trip so the user doesn't forget anything. The website acts as a source of inspiration, sharing stories, quotes, and life experiences from people of all walks of life. Give other visitors ideas on things to do and places to go. If a user adds a post about having a picnic or there out for a walk, another user could see this as inspiration and go for a walk or a picnic.
 
 ### Audience:
 Anyone who enjoys going out and about and wants to share what there up to.
@@ -250,7 +250,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 <img src="readmedoc/adventuresearch1.png" alt="Adventures Search Page ">
 <img src="readmedoc/adventuresearch2.png" alt="Adventures Search Page ">
 
-- Here users can see the posts from the other profiles that their following, users won't see posts from profiles that their not following. 
+- Here users can see the posts from the other profiles that their following, users won't see posts from profiles that they're not following. 
 
 ### Following
 
@@ -288,7 +288,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ### Liked/Comments
 
-- User can see on each post if it has been liked and if their is a comment for the post.
+- User can see on each post if it has been liked and if there is a comment for the post.
 
 <img src="readmedoc/likedcomments.png" alt="liked comments image">
 
@@ -311,7 +311,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 
 ### 404 error
 
-- If a user enters an incorrect URL extention, their are greeted with an error page.
+- If a user enters an incorrect URL extension, they're greeted with an error page.
 
 <img src="readmedoc/404errorpage.png" alt="404 Error Page">
 
@@ -331,7 +331,7 @@ Please see [TESTING.md](TESTING.md) for all testing completed.
 ### Heroku
 To deploy to Heroku, follow these steps:
 
-1. In the `scripts` section of `package.json` in gitpod, added the following command:
+1. In the `scripts` section of `package.json` in GitPod, added the following command:
 ```
 "heroku-prebuild": "npm install -g serve",
 ```
@@ -412,7 +412,7 @@ it is refreshed in the background and the request eventually succeeds.
 - There was an issue with the complete items list not loading fully. It was giving an array of 10 objects only, when there were more items in the list. This was solved by adding [newPage filter search and completeListTrips](https://github.com/PdoyleC/live-life/commit/367b5fd461d509d57dbb2a569817b2598c6b7987).
 <img src="readmedoc/itemlistarr.png" alt="item list array issue">
 
-- There was an issue with the dropdown menu when testing was done on a mobile screen. When a user clicked the link (i.e. contact Us) the menu never closed, it stayed open and the hamburger icon needed to be pressed to close it. [Navbar Close Menu Issue](https://forum.bootstrapstudio.io/t/solved-bootstrap-navbar-close-menu-issue/7204/2) couldn't be resolved so it was decided to removed the dropdown menu and also removed the Home link and Icon as the Live Life logo is a home link and also it was decided to keep the following and Liked links there. The Home icon was removed as it was just doubling up on a task that was being completed by the logo already.
+- There was an issue with the dropdown menu when testing was done on a mobile screen. When a user clicked the link (i.e. contact Us) the menu never closed, it stayed open and the hamburger icon needed to be pressed to close it. [Navbar Close Menu Issue](https://forum.bootstrapstudio.io/t/solved-bootstrap-navbar-close-menu-issue/7204/2) couldn't be resolved so it was decided to remove the dropdown menu and also removed the Home link and Icon as the Live Life logo is a home link and also it was decided to keep the following and Liked links there. The Home icon was removed as it was just doubling up on a task that was being completed by the logo already.
 
 
 
