@@ -217,7 +217,7 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 - In Trip List the user can have their own personal list of things that they need for their next trip/adventure away.
 - It can be a to do list for the user.
 - Users can add items, see their items entered under the add items section, users can search for items, edit/update and deleted items entered.
-- The list is prioritized based on whether the user needs to purchase each item. Items requiring purchase are placed at the top, while those not requiring purchase are positioned at the bottom. This arrangement ensures that the user immediately sees what needs to be bought.
+- The list is ordered in if the user needs to buy it or not, if the item needs to be bought then the item is top of the list and if it doesn't need to be bought it goes down the bottom of the list. This is so the user can see first what needs to be bought.
 - Users have full CRUD over their items entered. 
 
 <img src="readmedoc/tripslist.png" alt="Trips List">
