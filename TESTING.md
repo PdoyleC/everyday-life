@@ -223,7 +223,6 @@ All JavaScript files were validated using the [ESLint JavaScript validator](http
 - `PostEditForm.js`: no errors found
 - `PostPage.js`: no errors found
 - `PostsPage.js`: no errors found
-- `ContactConfirPage.js`: no errors found
 - `ContactCreateForm.js`: no errors found
 - `Comment.js`: no errors found
 - `CommentCreateForm.js`: no errors found
