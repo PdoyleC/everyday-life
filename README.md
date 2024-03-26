@@ -162,9 +162,8 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 ### Colour Scheme:
 
 - Green was used for the circle in the logo and for the icons when the user is on a page.
-   - Green is often associated with nature, growth, and renewal. It can evoke feelings of freshness, vitality, and harmony, making it a popular choice for designs related to health, wellness, and environmental sustainability.
-   - Green is considered a balanced color, as it sits in the middle of the visible spectrum.
-   - Green is often associated with positive concepts such as growth, prosperity, and safety.
+   - Green is often associated with nature and growth. Green is often described as refreshing, tranquil, and harmony, making it a popular choice for things related to health and wellness.   
+   - Green is relaxing and some find green motivates.
 
 <details>
 <summary>Colour Palette Image</summary>
