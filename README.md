@@ -135,12 +135,12 @@ I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-lif
 - Some wireframes have changed from the original design due to iterative revisions and evolving requirements.
 
 
-<img src="readmedoc/wirehome.png" alt="Home image">
-<img src="readmedoc/wireprofile.png" alt="Profile image">
-<img src="readmedoc/wireupload.png" alt="Upload image">
-<img src="readmedoc/wireadventure.png" alt="Adventure image">
-<img src="readmedoc/wirecontactus.png" alt="Contact Us image">
-<img src="readmedoc/wiretriplist.png" alt="Trip List image">
+<img src="readmedoc/wireframe/wirehome.png" alt="Home image">
+<img src="readmedoc/wireframe/wireprofile.png" alt="Profile image">
+<img src="readmedoc/wireframe/wireupload.png" alt="Upload image">
+<img src="readmedoc/wireframe/wireadventure.png" alt="Adventure image">
+<img src="readmedoc/wireframe/wirecontactus.png" alt="Contact Us image">
+<img src="readmedoc/wireframe/wiretriplist.png" alt="Trip List image">
 
 
 ### Logo:
