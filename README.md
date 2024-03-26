@@ -152,12 +152,14 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 <img src="readmedoc/livelifelogo.png" alt="Live Life logo">
 <img src="readmedoc/livelifelogopaint.png" alt="Live Life logo paint software">
 <img src="readmedoc/livelifelogopublisher.png" alt="Live Life publisher software">
-
-
-
 <img src="readmedoc/pagenotfounddesign.png" alt="page not found design">
 - The page not found image was designed in Paint.
 </details>
+
+### Fonts:
+The fonts used for this website were "DM sans" and "sans serif" by default. A choice that should be plain and easy to read. The fonts for the navigation links and logo on the navigation bar are in Green. If a Navbar link is active, its highlighted in a Green. The icon of the page is in Green to show the user which page is active.
+
+<img src="readmedoc/fonts/dnsans.png" alt="DM Sans fonts">
 
 ### Colour Scheme:
 
