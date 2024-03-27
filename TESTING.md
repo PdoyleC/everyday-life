@@ -294,14 +294,22 @@ This website was tested on Chrome, Firefox and Microsoft Edge.
 - Galaxy Note 3.
 - iPhone 14 Pro.
 - iPad Pro.
-- A variety of screen sizes on the desktop.
+
+
+- Galaxy Note 3, Screen Shots.
 
 <img src="readmedoc/screentest/galaxynote3.png" alt="galaxynote3 image">
 <img src="readmedoc/screentest/galaxynote3addpost.png" alt="galaxynote3addpost image">
 <img src="readmedoc/screentest/galaxynote3contact.png" alt="galaxynote3contact image">
-<img src="readmedoc/screentest/ipadminiaddpost.png" alt="ipadminiaddpost image">
-<img src="readmedoc/screentest/ipadminiadvanture.png" alt="ipadminiadvanture image">
-<img src="readmedoc/screentest/ipadminitriplist.png" alt="ipadminitriplist image">
+
+- iPad Pro, Screen Shots.
+
+<img src="readmedoc/screentest/ipadaddpost.png" alt="ipadminiaddpost image">
+<img src="readmedoc/screentest/ipadadvanture.png" alt="ipadminiadvanture image">
+<img src="readmedoc/screentest/ipadtriplist.png" alt="ipadminitriplist image">
+
+- iPhone 14 Pro, Screen Shots.
+
 <img src="readmedoc/screentest/iphone14.png" alt="iphone14 image">
 <img src="readmedoc/screentest/iphone14addpost.png" alt="iphone14addpost image">
 <img src="readmedoc/screentest/iphone14addpost1.png" alt="iphone14addpost1 image">
