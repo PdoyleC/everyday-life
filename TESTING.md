@@ -55,7 +55,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 1  |  Valid info, submitted                   | Redirected to blog                                                        |&#9745;|
 | 2  |  Invalid info, submitted                 | Error message appears                                                     |&#9745;|
 | 3  |  Sign Up Now clicked                     | Redirected to Sign UP                                                     |&#9745;|
-| 4  |  Console error checks in CFE             | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/knowissue.png"></details>                                     |&#9745;|
+| 4  |  Console error checks in CFE             | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/testing/knowissue.png"></details>                                     |&#9745;|
 
 
 |Test|     Sign Up page                         |   Result                                                                  |Passed |
@@ -64,7 +64,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 2  |  Invalid info, submitted                 | Error message appears (password to common or to short, or don't match)    |&#9745;|
 | 3  |  Sign In Now clicked                     | Redirected to Sign In                                                     |&#9745;|
 | 4  |  Console error checks in CFE             | No Console errors displayed for Contact US checks                         |&#9745;|
-| 5  |  Console error checks in CFE             | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/knowissue.png"></details>                                     |&#9745;|
+| 5  |  Console error checks in CFE             | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/testing/knowissue.png"></details>                                     |&#9745;|
 
 
 |Test|     Contact US page                      |   Result                                                                  |Passed |
@@ -75,7 +75,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 4  |  Message not entered                     | Error message appears                                                     |&#9745;|
 | 5  |  Email sent                              | Model window pops up, close is clicked                                    |&#9745;|
 | 6  |  Email sent and closed is clicked        | Redirected to home page                                                   |&#9745;|
-| 7  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              |&#9745;|
+| 7  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/testing/emailchecls.png"></details>                                              |&#9745;|
 | 4  |  Console error checks in CFE             | No Console errors displayed for Contact US checks                         |&#9745;|
 
 
@@ -113,7 +113,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 3  |  Search Bar ,Family entered              | All family tags appear                                                    |&#9745;|
 | 4  |  Add an Adventure clicked                | Directed to create page                                                   |&#9745;|
 | 5  |  Cancel clicked on create page           | Directed back to Adventure page                                           |&#9745;|
-| 6  |  Create clicked with invalid info        | <details><summary>Error message appears for Image, Location and Activity</summary><img src="./readmedoc/advchecks.png"></details>                    |&#9745;|
+| 6  |  Create clicked with invalid info        | <details><summary>Error message appears for Image, Location and Activity</summary><img src="./readmedoc/testing/advchecks.png"></details>                    |&#9745;|
 | 7  |  Create clicked with valid info          | Directed to edit page                                                     |&#9745;|
 | 8  |  Console error checks in CFE             | No Console errors displayed for My Adventure checks                       |&#9745;|
 
@@ -122,10 +122,10 @@ Automated testing is where code is used to test the logic, set of instructions t
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Trip List is clicked                    | Page opens with no errors, Directed to Trip List page                     |&#9745;|
 | 2  |  Search Bar, items entered               | Returns item                                                              |&#9745;|
-| 3  |  Search Bar, incorrect entered           | <details><summary>Nothing returned item</summary><img src="./readmedoc/tripsearchchecknotfound.png"></details>                                                              |&#9745;|
+| 3  |  Search Bar, incorrect entered           | <details><summary>Nothing returned item</summary><img src="./readmedoc/testing/tripsearchchecknotfound.png"></details>                                                              |&#9745;|
 |Note*|  For testing for the search bar both Shorts and shor were items added for my trips list trip             |          |       |
-| 4  |  shor entered into search Bar            | <details><summary>Shorts and Shor both returned items</summary><img src="./readmedoc/tripsearchcheck.png"></details>                                       |&#9745;|
-| 5  |  Add Item clicked with invalid info      | <details><summary>Error message appears for Item, Quantity and Buy</summary><img src="./readmedoc/tripchecks.png"></details>                          |&#9745;|
+| 4  |  shor entered into search Bar            | <details><summary>Shorts and Shor both returned items</summary><img src="./readmedoc/testing/tripsearchcheck.png"></details>                                       |&#9745;|
+| 5  |  Add Item clicked with invalid info      | <details><summary>Error message appears for Item, Quantity and Buy</summary><img src="./readmedoc/testing/tripchecks.png"></details>                          |&#9745;|
 | 6  |  Only Item entered                       | Error message appears for Quantity and Buy                                |&#9745;|
 | 7  |  Only Quantity entered                   | Error message appears for Item and Buy                                    |&#9745;|
 | 8  |  Only Buy entered                        | Error message appears for Item and Quantity                               |&#9745;|
@@ -135,7 +135,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 12 |  Edit, Quantity changed                  | Quantity updated                                                          |&#9745;|
 | 14 |  Edit, Need to Buy changed               | Need to Buy updated                                                       |&#9745;|
 | 15 |  Console error checks in CFE             | No Console errors displayed for Trip List checks                          |&#9745;|
-| 16 |  Django Admin checked                    | <details><summary>Item arrived with same info</summary><img src="./readmedoc/triplistchecks.png"></details>                                              |&#9745;|
+| 16 |  Django Admin checked                    | <details><summary>Item arrived with same info</summary><img src="./readmedoc/testing/triplistchecks.png"></details>                                              |&#9745;|
 
 
 
@@ -150,8 +150,8 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 5  |  Message not entered                     | Error message appears for Name, Email, Subject                            |&#9745;|
 | 6  |  Email sent                              | Model window pops up, close is clicked                                    |&#9745;|
 | 7  |  Email sent and closed is clicked        | Redirected to home page                                                   |&#9745;|
-| 8  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/emailchecls.png"></details>                                              |&#9745;|
-| 9  |  Console error checks in CFE             | <details><summary>No Console errors displayed for Contact us checks</summary><img src="./readmedoc/emailconsole.png"></details>                         |&#9745;|
+| 8  |  Django Admin checked                    | <details><summary>Email arrived with same info</summary><img src="./readmedoc/testing/emailchecls.png"></details>                                              |&#9745;|
+| 9  |  Console error checks in CFE             | <details><summary>No Console errors displayed for Contact us checks</summary><img src="./readmedoc/testing/emailconsole.png"></details>                         |&#9745;|
 
 
 
@@ -191,9 +191,9 @@ Automated testing is where code is used to test the logic, set of instructions t
 
 |Test|     Edit Profile                         |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Change Image                            | <details><summary>Image changed with no issues</summary><img src="./readmedoc/profileedit.png"></details>                                              |&#9745;|
-| 2  |  Edit bio                                | <details><summary>Added and changed bio with no issues</summary><img src="./readmedoc/profileedit.png"></details>                                      |&#9745;|
-| 3  |  Changed username                        | <details><summary>Username changed with no issues</summary><img src="./readmedoc/profileedit.png"></details>                                           |&#9745;|
+| 1  |  Change Image                            | <details><summary>Image changed with no issues</summary><img src="./readmedoc/testing/profileedit.png"></details>                                              |&#9745;|
+| 2  |  Edit bio                                | <details><summary>Added and changed bio with no issues</summary><img src="./readmedoc/testing/profileedit.png"></details>                                      |&#9745;|
+| 3  |  Changed username                        | <details><summary>Username changed with no issues</summary><img src="./readmedoc/testing/profileedit.png"></details>                                           |&#9745;|
 | 4  |  Changed password                        | Password changed with no issues                                           |&#9745;|
 | 5  |  Console error checks in CFE             | No Console errors displayed for Profile checks                            |&#9745;|
 
@@ -279,12 +279,12 @@ All JavaScript files were validated using the [ESLint JavaScript validator](http
 - Performance due to image size and extension for posts and profiles, when uploaded by Users, was around the 70-80%. With no images the Performance was above 90%
 - Best Practices was down to third part cookies, [Dev tools 3rd party cookies](https://developer.chrome.com/blog/new-in-devtools-122/?utm_source=devtools), and the phaseout warnings in network [tracking protection](https://blog.google/products/chrome/privacy-sandbox-tracking-protection/). Chrome is testing Tracking Protection, a new feature that limits cross-site tracking.
 
-<img src="readmedoc/lighthouse1.png" alt="lighthouse image">
-<img src="readmedoc/lighthouse2.png" alt="lighthouse image">
+<img src="readmedoc/testing/lighthouse1.png" alt="lighthouse image">
+<img src="readmedoc/testing/lighthouse2.png" alt="lighthouse image">
 
-<img src="readmedoc/lighthousetriplistcookie.png" alt="lighthouse cookie image">
+<img src="readmedoc/testing/lighthousetriplistcookie.png" alt="lighthouse cookie image">
 
-<img src="readmedoc/wave.png" alt="Wave image">
+<img src="readmedoc/testing/wave.png" alt="Wave image">
 
 
 ## Browser Compatibility
