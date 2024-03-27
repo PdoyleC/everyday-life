@@ -93,7 +93,11 @@ To engage the user in a meaningful way, and encourage them to explore life and t
 - Give users an option to send private messages to each other.
 - User could create an event and other users can sign up for the event.
 - Add ticks to the Trip list, so that items can be marked as bought or done, easier.
-- Create a place for users to add walking trails (maps) of routes of nice places to go that are off the beaten track, walks that most people don't know or only locals know.  
+- Create a place for users to add walking trails (maps) of routes of nice places to go that are off the beaten track, walks that most people don't know or only locals know. 
+- To be able to have multiple trip lists for different trips. The user should be able to go into Trip Lists and see a choice of different lists instead of just one. <details><summary>multiple trip lists</summary><img src="readmedoc/design/futuretriplist.png" alt="future trip list image"></details>, and the user will be able to create a list in the same way it is done now.
+
+
+
 
 ## User Stories
 I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-life/issues) for this project, as well as the [KANBAN board](https://github.com/users/PdoyleC/projects/6/views/1).
