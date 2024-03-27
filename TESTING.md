@@ -130,7 +130,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 7  |  Only Quantity entered                   | Error message appears for Item and Buy                                    |&#9745;|
 | 8  |  Only Buy entered                        | Error message appears for Item and Quantity                               |&#9745;|
 | 9  |  Add Item clicked                        | Item appears button of the screen                                         |&#9745;|
-| 10 |  Full List of items displayed            | All items created are dispalayed                                          |&#9745;|
+| 10 |  Full List of items displayed            | All items created are displayed                                          |&#9745;|
 | 11 |  Edit, item changed                      | Item updated                                                              |&#9745;|
 | 12 |  Edit, Quantity changed                  | Quantity updated                                                          |&#9745;|
 | 14 |  Edit, Need to Buy changed               | Need to Buy updated                                                       |&#9745;|
@@ -200,7 +200,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 
 All JavaScript files were validated using the [ESLint JavaScript validator](https://jshint.com/).
 
-- There are a number of warning for 'import' is only available in ES6 (use 'esversion: 6'), [ES6 Fix stackoverflow](https://stackoverflow.com/questions/36318895/vs-code-with-es6).
+- There are a number of warnings for 'import' is only available in ES6 (use 'esversion: 6'), [ES6 Fix stackoverflow](https://stackoverflow.com/questions/36318895/vs-code-with-es6).
 
 
 - `Adventure.js`: no errors found

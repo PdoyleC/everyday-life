@@ -4,10 +4,13 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
 
 <img src="readmedoc/design/iamresponsive.png" alt="I am Responsive image for screen sizes for the site">
 
+## Live Project
 
-[Link, to live project](https://live-life-897b359a6b34.herokuapp.com/)
+The link to the live website can be found **[Here](https://live-life-897b359a6b34.herokuapp.com/)**
 
-[Link, to DRF-API READme project](https://github.com/PdoyleC/live-life-api/blob/main/README.md)
+
+## DRF-API READme
+The Link, to DRF-API READme project can be found **[Here](https://github.com/PdoyleC/live-life-api/blob/main/README.md)**
 
 **Purpose of the site**
 - This site is a blog style site, aimed at people to share what their up to, going for a walk, having a picnic, etc.
@@ -18,51 +21,52 @@ Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a 
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [UX](#ux)
-   * [Site Purpose:](#site-purpose)
-   * [Site Goal:](#site-goal)
-   * [Audience:](#audience)
-   * [Communication:](#communication)
-   * [Current User Goals:](#current-user-goals)
-   * [New User Goals:](#new-user-goals)
-   * [Future Goals:](#future-goals)
-- [User Stories](#user-stories)
-- [User Experience](#user-experience)
-   * [Agile](#agile)
-- [Design](#design)
-   * [Wireframes](#wireframes)
-   * [Logo:](#logo)
-   * [Colour Scheme:](#colour-scheme)
-- [Features](#features)
-   * [Navbar](#navbar)
-   * [Authentication](#authentication)
-   * [Home Page](#home-page)
-   * [Add Post](#add-post)
-   * [Trip List](#trip-list)
-   * [Adventures](#adventures)
-   * [Following](#following)
-   * [Liked](#liked)
-   * [Contact](#contact)
-   * [Profile](#profile)
-   * [Search Bar](#search-bar)
-   * [Liked/Comments](#likedcomments)
-   * [404 error](#404-error)
-   * [CRUD functionality](#crud-functionality)
-- [Testing](#testing)
-- [Deployment](#deployment)
-   * [Heroku](#heroku)
-   * [Connecting to the API:](#connecting-to-the-api)
-- [API error and feedback](#api-error-and-feedback)
-- [Technology](#technology)
-   * [Languages](#languages)
-   * [Frameworks](#frameworks)
-   * [Other software and dependencies](#other-software-and-dependencies)
-- [Reusable React Components and hooks](#reusable-react-components-and-hooks)
-   * [Components](#components)
-   * [Hooks](#hooks)
-- [Issues](#issues)
-- [Credits](#credits)
-- [Acknowledgments](#acknowledgments)
+   * [UX](#ux)
+      + [Site Purpose:](#site-purpose)
+      + [Site Goal:](#site-goal)
+      + [Audience:](#audience)
+      + [Communication:](#communication)
+      + [Current User Goals:](#current-user-goals)
+      + [New User Goals:](#new-user-goals)
+      + [Future Goals:](#future-goals)
+   * [User Stories](#user-stories)
+   * [User Experience](#user-experience)
+      + [Agile](#agile)
+   * [Design](#design)
+      + [Wireframes](#wireframes)
+      + [Logo:](#logo)
+      + [Fonts:](#fonts)
+      + [Colour Scheme:](#colour-scheme)
+   * [Features](#features)
+      + [Navbar](#navbar)
+      + [Authentication](#authentication)
+      + [Home Page](#home-page)
+      + [Add Post](#add-post)
+      + [Trip List](#trip-list)
+      + [Adventures](#adventures)
+      + [Following](#following)
+      + [Liked](#liked)
+      + [Contact](#contact)
+      + [Profile](#profile)
+      + [Search Bar](#search-bar)
+      + [Liked/Comments](#likedcomments)
+      + [404 error](#404-error)
+      + [CRUD functionality](#crud-functionality)
+   * [Testing](#testing)
+   * [Deployment](#deployment)
+      + [Heroku](#heroku)
+      + [Connecting to the API:](#connecting-to-the-api)
+   * [API error and feedback](#api-error-and-feedback)
+   * [Technology](#technology)
+      + [Languages](#languages)
+      + [Frameworks](#frameworks)
+      + [Other software and dependencies](#other-software-and-dependencies)
+   * [Reusable React Components and hooks](#reusable-react-components-and-hooks)
+      + [Components](#components)
+      + [Hooks](#hooks)
+   * [Issues](#issues)
+   * [Credits](#credits)
+   * [Acknowledgments](#acknowledgments)
 
 
 
@@ -201,7 +205,7 @@ The fonts used for this website were "DM sans" and "sans serif" by default. A ch
 
 <img src="readmedoc/features/signuppage.png" alt="Sign Up Page">
 <img src="readmedoc/features/signinpage.png" alt="Sign In Page">
-<img src="readmedoc/features/blankfields.png" alt="blankfields sign up and sign in">
+<img src="readmedoc/features/blankfields.png" alt="blank fields sign up and sign in">
 
 ### Home Page
 
@@ -276,7 +280,7 @@ The fonts used for this website were "DM sans" and "sans serif" by default. A ch
 
 ### Profile
 
-- In the profile section, users can see how many posts they have created, the number of people following them and the number of people they following. Users can also change their profile / Username and password here.
+- In the profile section, users can see how many posts they have created, the number of people following them and the number of people they follow. Users can also change their profile / Username and password here.
 
 <img src="readmedoc/features/profile.png" alt="profile Page">
 
@@ -418,7 +422,7 @@ it is refreshed in the background and the request eventually succeeds.
 - There was an issue with the complete items list not loading fully. It was giving an array of 10 objects only, when there were more items in the list. This was solved by adding [newPage filter search and completeListTrips](https://github.com/PdoyleC/live-life/commit/367b5fd461d509d57dbb2a569817b2598c6b7987).
 <img src="readmedoc/issues/itemlistarr.png" alt="item list array issue">
 
-- There was an issue with the dropdown menu when testing was done on a mobile screen. When a user clicked the link (i.e. contact Us) the menu never closed, it stayed open and the hamburger icon needed to be pressed to close it. [Navbar Close Menu Issue](https://forum.bootstrapstudio.io/t/solved-bootstrap-navbar-close-menu-issue/7204/2) couldn't be resolved so it was decided to remove the dropdown menu and also removed the Home link and Icon as the Live Life logo is a home link and also it was decided to keep the following and Liked links there. The Home icon was removed as it was just doubling up on a task that was being completed by the logo already.
+- There was an issue with the dropdown menu when testing was done on a mobile screen. When a user clicked the link (i.e. contact Us) the menu never closed, it stayed open, and the hamburger icon needed to be pressed to close it. [Navbar Close Menu Issue](https://forum.bootstrapstudio.io/t/solved-bootstrap-navbar-close-menu-issue/7204/2) couldn't be resolved so it was decided to remove the dropdown menu and also removed the Home link and Icon as the Live Life logo is a home link and also it was decided to keep the following and Liked links there. The Home icon was removed as it was just doubling up on a task that was being completed by the logo already.
 <img src="readmedoc/issues/navbardropdown.png" alt="navbar dropdown issue">
 
 
