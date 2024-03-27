@@ -35,3 +35,11 @@
     border: 0;
     text-align: right;
   }
+
+  @media (max-width: 1199.98px) { 
+    .NavLink {
+      padding: 2px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+   }
