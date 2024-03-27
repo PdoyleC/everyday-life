@@ -116,6 +116,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 6  |  Create clicked with invalid info        | <details><summary>Error message appears for Image, Location and Activity</summary><img src="./readmedoc/testing/advchecks.png"></details>                    |&#9745;|
 | 7  |  Create clicked with valid info          | Directed to edit page                                                     |&#9745;|
 | 8  |  Console error checks in CFE             | No Console errors displayed for My Adventure checks                       |&#9745;|
+| 9  |  Created adventure's under user A        | Logged in under user B and adventure's from user A aren't there           |&#9745;|
 
 
 |Test|     Trip List                            |   Result                                                                  |Passed |
@@ -136,6 +137,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 14 |  Edit, Need to Buy changed               | Need to Buy updated                                                       |&#9745;|
 | 15 |  Console error checks in CFE             | No Console errors displayed for Trip List checks                          |&#9745;|
 | 16 |  Django Admin checked                    | <details><summary>Item arrived with same info</summary><img src="./readmedoc/testing/triplistchecks.png"></details>                                              |&#9745;|
+| 17  |  Created Trip List under user A        | Logged in under user B and Trip List from user A aren't there              |&#9745;|
 
 
 
@@ -195,6 +197,13 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 4  |  Changed password                        | Password changed with no issues                                           |&#9745;|
 | 5  |  Console error checks in CFE             | No Console errors displayed for Profile checks                            |&#9745;|
 
+
+## Django Aministration
+
+- Admin was tested to see if Trip List, Adventure's, Post, Comments and Contacts were visible.
+[Django administration](https://live-life-api-now-f6f9c42b2398.herokuapp.com/admin/)
+
+<img src="readmedoc/testing/djangoadmin.png" alt="django admin image">
 
 ## ESLint JavaScript validator
 
