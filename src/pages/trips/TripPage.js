@@ -232,7 +232,7 @@ const handleSaveEdit = async (tripId) => {
           </Container>
         )}
       </Col>
-      <Col className=".d-none .d-md-block .d-lg-none p-0 p-lg-2">
+      <Col className="d-none d-lg-block p-0 p-lg-2">
         <PopularProfiles />
       </Col>
     </Row>
