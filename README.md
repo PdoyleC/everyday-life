@@ -2,7 +2,7 @@
 
 Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a platform where people can share what their up to, share their experience of going out into the world. User can upload images for other to view or can upload images to their private folder called My Adventures for the use. 
 
-<img src="readmedoc/iamresponsive.png" alt="I am Responsive image for screen sizes for the site">
+<img src="readmedoc/design/iamresponsive.png" alt="I am Responsive image for screen sizes for the site">
 
 
 [Link, to live project](https://live-life-897b359a6b34.herokuapp.com/)
@@ -124,7 +124,7 @@ I have included links to the [GitHub Issues](https://github.com/PdoyleC/live-lif
 - Agile methodology was used to map and create user stories, each with their own function and list of tasks.
 - GitHub projects Kanban was used to keep track of the project. It is divided into To Start, In Progress and Completed. [KANBAN board](https://github.com/users/PdoyleC/projects/6/views/1) to Kanban board.
 
-<img src="readmedoc/kanbanproject.png" alt="kanban project image">
+<img src="readmedoc/design/kanbanproject.png" alt="kanban project image">
 
 
 ## Design
@@ -149,10 +149,10 @@ Using publisher and paint I created the logo. Font Kristen ITC was used for the 
 <details>
 <summary>Logo Image</summary>
 
-<img src="readmedoc/livelifelogo.png" alt="Live Life logo">
-<img src="readmedoc/livelifelogopaint.png" alt="Live Life logo paint software">
-<img src="readmedoc/livelifelogopublisher.png" alt="Live Life publisher software">
-<img src="readmedoc/pagenotfounddesign.png" alt="page not found design">
+<img src="readmedoc/design/livelifelogo.png" alt="Live Life logo">
+<img src="readmedoc/design/livelifelogopaint.png" alt="Live Life logo paint software">
+<img src="readmedoc/design/livelifelogopublisher.png" alt="Live Life publisher software">
+<img src="readmedoc/design/pagenotfounddesign.png" alt="page not found design">
 - The page not found image was designed in Paint.
 </details>
 
@@ -170,7 +170,7 @@ The fonts used for this website were "DM sans" and "sans serif" by default. A ch
 <details>
 <summary>Colour Palette Image</summary>
 
-<img src="readmedoc/colourpalet.png" alt="colour Palette">
+<img src="readmedoc/design/colourpalet.png" alt="colour Palette">
 
 </details>
 
@@ -204,13 +204,13 @@ The fonts used for this website were "DM sans" and "sans serif" by default. A ch
 - ***The Live Life logo is the Home link***
 - This is the sites landing page. The user has access to Add Post, Their personal Trip List, their personal Adventure posts, Items containing Liked posts, following users, and contact site owners, Sign out and their Profile page, where user can edit their profile by changing (name, password).
 
-<img src="readmedoc/landingpage.png" alt="Landing Page">
+<img src="readmedoc/features/landingpage.png" alt="Landing Page">
 
 ### Add Post
 
 - Users can add a post by clicking on the add post icon and they will be redirected to add a post and upload an image.
 
-<img src="readmedoc/addpostpage.png" alt="Add Post Page">
+<img src="readmedoc/features/addpostpage.png" alt="Add Post Page">
 
 
 ### Trip List
@@ -412,10 +412,10 @@ it is refreshed in the background and the request eventually succeeds.
 - After my adventures was created and there was a number of images uploaded under user A. I logged in under user B and I was able to see the images that user A had uploaded. This was solved by adding Authenticated only and adding a filter to the queryset, [in the backend api](https://github.com/PdoyleC/live-life-api/commit/270f2ff0e80ed908788683529fd3594c259d0c88).
 - When the dropdown menu was added and tested on a small screen (mobile). The dropdown menu was opening but wouldn't open. This was fixed by removing ref and changing a const for easy to read function.
 - There was an issue with the complete items list not loading fully. It was giving an array of 10 objects only, when there were more items in the list. This was solved by adding [newPage filter search and completeListTrips](https://github.com/PdoyleC/live-life/commit/367b5fd461d509d57dbb2a569817b2598c6b7987).
-<img src="readmedoc/itemlistarr.png" alt="item list array issue">
+<img src="readmedoc/issues/itemlistarr.png" alt="item list array issue">
 
 - There was an issue with the dropdown menu when testing was done on a mobile screen. When a user clicked the link (i.e. contact Us) the menu never closed, it stayed open and the hamburger icon needed to be pressed to close it. [Navbar Close Menu Issue](https://forum.bootstrapstudio.io/t/solved-bootstrap-navbar-close-menu-issue/7204/2) couldn't be resolved so it was decided to remove the dropdown menu and also removed the Home link and Icon as the Live Life logo is a home link and also it was decided to keep the following and Liked links there. The Home icon was removed as it was just doubling up on a task that was being completed by the logo already.
-
+<img src="readmedoc/issues/navbardropdown.png" alt="navbar dropdown issue">
 
 
 

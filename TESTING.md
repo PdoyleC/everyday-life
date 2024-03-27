@@ -126,7 +126,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 |Note*|  For testing for the search bar both Shorts and shor were items added for my trips list trip             |          |       |
 | 4  |  shor entered into search Bar            | <details><summary>Shorts and Shor both returned items</summary><img src="./readmedoc/testing/tripsearchcheck.png"></details>                                       |&#9745;|
 | 5  |  Add Item clicked with invalid info      | <details><summary>Error message appears for Item, Quantity and Buy</summary><img src="./readmedoc/testing/tripchecks.png"></details>                          |&#9745;|
-| 6  |  Only Item entered                       | Error message appears for Quantity and Buy                                |&#9745;|
+| 6  |  Only Item entered                       | <details><summary>Error message appears for Quantity and Buy</summary><img src="./readmedoc/testing/errortriplistitem.png"></details>                                |&#9745;|
 | 7  |  Only Quantity entered                   | Error message appears for Item and Buy                                    |&#9745;|
 | 8  |  Only Buy entered                        | Error message appears for Item and Quantity                               |&#9745;|
 | 9  |  Add Item clicked                        | Item appears button of the screen                                         |&#9745;|
@@ -136,8 +136,6 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 14 |  Edit, Need to Buy changed               | Need to Buy updated                                                       |&#9745;|
 | 15 |  Console error checks in CFE             | No Console errors displayed for Trip List checks                          |&#9745;|
 | 16 |  Django Admin checked                    | <details><summary>Item arrived with same info</summary><img src="./readmedoc/testing/triplistchecks.png"></details>                                              |&#9745;|
-
-
 
 
 
