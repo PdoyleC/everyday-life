@@ -49,8 +49,12 @@ body, html {
     cursor: default;
   }
 
-  @media (max-width: 575.98px) {
-    .form-control {
-      padding: 1px;
+  @media (max-width: 767.98px) {
+    th {
+      width: 30%;
+    }
+  
+    td {
+      width: 22%;
     }
   }

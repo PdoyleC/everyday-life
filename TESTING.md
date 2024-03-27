@@ -292,7 +292,7 @@ This website was tested on Chrome, Firefox and Microsoft Edge.
 
 - Testing was carried out on small screen sizes.
 - Galaxy Note 3.
-- iPhone 4.
+- iPhone 14 Pro.
 - iPad Pro.
 - A variety of screen sizes on the desktop.
 
