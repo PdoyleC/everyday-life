@@ -141,6 +141,8 @@ Automated testing is where code is used to test the logic, set of instructions t
 
 
 
+
+
 |Test|     Contact US page                      |   Result                                                                  |Passed |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Contact US	                            | Redirected and Page opens with no errors                                  |&#9745;|

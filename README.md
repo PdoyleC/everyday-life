@@ -1,6 +1,6 @@
 # Live Life
 
-Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a platform where people can share what their up to, share their experience of going out into the world. User can upload images for other to view or can upload images to their private folder called My Adventures for the use. 
+Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a platform where people can share what their up to, share their experience of going out into the world. 
 
 <img src="readmedoc/design/iamresponsive.png" alt="I am Responsive image for screen sizes for the site">
 
@@ -14,8 +14,9 @@ The Link, to DRF-API READme project can be found **[Here](https://github.com/Pdo
 
 **Purpose of the site**
 - This site is a blog style site, aimed at people to share what their up to, going for a walk, having a picnic, etc.
-- Upload images.
-- View other users images.
+- Upload images to share with everyone.
+- User can upload images to their private folder called My Adventures for their private use. 
+- Users can create a list of items for there next trip away for their private use. 
 
 
 # Table of Contents
@@ -75,7 +76,7 @@ The Link, to DRF-API READme project can be found **[Here](https://github.com/Pdo
 
 ### Site Purpose:
 This site is a blog style site, aimed at people to share what their up to, going for a walk, having a picnic, etc.
-A live life website serves as a digital haven for individuals seeking inspiration and guidance to enhance the quality of their lives. It is designed to touch the lives of its visitors, providing them with the tools and motivation needed to live life and go out into the world.
+A live life website serves as a digital haven for individuals seeking inspiration and guidance to enhance the quality of their lives. It is designed to touch the lives of its visitors, providing them with the motivation needed to live life and go out into the world.
 
 ### Site Goal:
 Users to upload images, for the group. Users can upload images for themselves to view, create an list for their next trip so the user doesn't forget anything. The website acts as a source of inspiration, sharing stories, quotes, and life experiences from people of all walks of life. Give other visitors ideas on things to do and places to go. If a user adds a post about having a picnic or there out for a walk, another user could see this as inspiration and go for a walk or a picnic.
@@ -95,11 +96,12 @@ To engage the user in a meaningful way, and encourage them to explore life and t
 ### Future Goals:
 - To provide a page for users to show walking routes around there area for others to see.
 - Give users an option to send private messages to each other.
+- If a user has created a post for themselves in My Adventures (which is for there own private viewing), it would be good to be able to share that post with a few people but not everyone, so a future improvement would be to have a share button where the user can select the users to share the adventure with, or to be able to create group where 2-127 users can share adventures. 
 - User could create an event and other users can sign up for the event.
 - Add ticks to the Trip list, so that items can be marked as bought or done, easier, and add a tick all radio button at the top. <details><summary>ticks to the Trip list</summary><img src="readmedoc/design/quickdeletetriplist.png" alt="quick delete trip list image"><img src="readmedoc/design/quickdeletetriplisttick.png" alt="quick delete trip list image with tick"></details>
 - Create a place for users to add walking trails (maps) of routes of nice places to go that are off the beaten track, walks that most people don't know or only locals know. 
 - To be able to have multiple trip lists for different trips. The user should be able to go into Trip Lists and see a choice of different lists instead of just one. <details><summary>multiple trip lists</summary><img src="readmedoc/design/futuretriplist.png" alt="future trip list image"></details>, and the user will be able to create a list in the same way it is done now.
-
+- In a future iteration, stopping the user from entering the same item again and again would be good. Put code in place to search if the item is already in the list and display an error message to say that the item is already in the list and click ok to enter the item again or cancel to stop.<details><summary>same item entered</summary><img src="readmedoc/design/entersameitem.png" alt="enter same item image"></details>
 
 
 
@@ -420,11 +422,20 @@ it is refreshed in the background and the request eventually succeeds.
 - After my adventures was created and there was a number of images uploaded under user A. I logged in under user B and I was able to see the images that user A had uploaded. This was solved by adding Authenticated only and adding a filter to the queryset, [in the backend api](https://github.com/PdoyleC/live-life-api/commit/270f2ff0e80ed908788683529fd3594c259d0c88).
 - When the dropdown menu was added and tested on a small screen (mobile). The dropdown menu was opening but wouldn't open. This was fixed by removing ref and changing a const for easy to read function.
 - There was an issue with the complete items list not loading fully. It was giving an array of 10 objects only, when there were more items in the list. This was solved by adding [newPage filter search and completeListTrips](https://github.com/PdoyleC/live-life/commit/367b5fd461d509d57dbb2a569817b2598c6b7987).
-<img src="readmedoc/issues/itemlistarr.png" alt="item list array issue">
+<img src="readmedoc/issues/itemlistarr.png" alt="item list array issue image">
 
 - There was an issue with the dropdown menu when testing was done on a mobile screen. When a user clicked the link (i.e. contact Us) the menu never closed, it stayed open, and the hamburger icon needed to be pressed to close it. [Navbar Close Menu Issue](https://forum.bootstrapstudio.io/t/solved-bootstrap-navbar-close-menu-issue/7204/2) couldn't be resolved so it was decided to remove the dropdown menu and also removed the Home link and Icon as the Live Life logo is a home link and also it was decided to keep the following and Liked links there. The Home icon was removed as it was just doubling up on a task that was being completed by the logo already.
-<img src="readmedoc/issues/navbardropdown.png" alt="navbar dropdown issue">
+<img src="readmedoc/issues/navbardropdown.png" alt="navbar dropdown issue image">
 
+- There is an issue that I would have liked to have resolved, when a user enters an item (i.e. Book, in the 1st image below) that item can be entered a number of times. There is a search bar for the user to use to see if the item is already there. I tried using unique constraints to stop this from happening, using django admin in the Add trip image (2nd image), there is an example of map being added by user Jason to there trip list. Since Jason already has the item Map in his list there is an error. When David goes to add the item map to his trip list, an error appears saying that the item is already there, when in fact David doesn't have item map in his trip list. When the item is added to Davids trip list, the trip list only sees that the item is there and not who it belongs to, so the item needs to be added with the owner. This was resolved by adding item and owner for the UniqueConstraint. 
+[Constraints reference djangoproject](https://docs.djangoproject.com/en/3.2/ref/models/constraints/) and ,
+[Constraints reference stackoverflow.com](https://stackoverflow.com/questions/2201598/how-to-define-two-fields-unique-as-couple/2201687#2201687). On the frontend side of the site, after the backend was deployed the site was opened on a local port and Trip List was tested, the item Jumper was used to test this, in the 3rd image below, when the item Jumper was entered and Jumper was already in the list the item didn't enter the list but it just stayed there in the form. A user could keep on pressing Add item and nothing would happen. The user could think that there was something wrong with the site, so an error message would be needed. I wasn't successful in completing this code, due to knowledge gaps and time constraints for the project due date.
+[Display Error Messages stackoverflow.com](https://stackoverflow.com/questions/73251549/trying-to-display-error-messages-on-the-frontend-from-the-backend)
+[validation Error Messages stackoverflow.com](https://stackoverflow.com/questions/64245493/bootstrap-validation-is-not-showing-the-error-message-for-empty-input-on-submit).
+<img src="readmedoc/design/entersameitem.png" alt="enter same item image">
+<img src="readmedoc/issues/uniqueconstraint.png" alt="unique constraint  image">
+
+<img src="readmedoc/issues/ucjumper.png" alt="enter same item image">
 
 
 
@@ -445,5 +456,5 @@ it is refreshed in the background and the request eventually succeeds.
 
 ## Acknowledgments
 
-- The following tutors online at CI, guided and helped me during this project - Oisin, Holly, John, Rebecca, Sarah, Joanne, Alan, Sean.
+- The following tutors online at CI, guided and helped me during this project - Oisin, Holly, John, Rebecca, Sarah, Joanne, Alan, Lewis, Thomas, Sean.
 - My mentor Jubril Akolade for good briefings, tips and feedback.
