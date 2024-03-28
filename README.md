@@ -96,7 +96,7 @@ To engage the user in a meaningful way, and encourage them to explore life and t
 - To provide a page for users to show walking routes around there area for others to see.
 - Give users an option to send private messages to each other.
 - User could create an event and other users can sign up for the event.
-- Add ticks to the Trip list, so that items can be marked as bought or done, easier. <details><summary>ticks to the Trip list</summary><img src="readmedoc/design/quickdeletetriplist.png" alt="quick delete trip list image"><img src="readmedoc/design/quickdeletetriplisttick.png" alt="quick delete trip list image with tick"></details>
+- Add ticks to the Trip list, so that items can be marked as bought or done, easier, and add a tick all radio button at the top. <details><summary>ticks to the Trip list</summary><img src="readmedoc/design/quickdeletetriplist.png" alt="quick delete trip list image"><img src="readmedoc/design/quickdeletetriplisttick.png" alt="quick delete trip list image with tick"></details>
 - Create a place for users to add walking trails (maps) of routes of nice places to go that are off the beaten track, walks that most people don't know or only locals know. 
 - To be able to have multiple trip lists for different trips. The user should be able to go into Trip Lists and see a choice of different lists instead of just one. <details><summary>multiple trip lists</summary><img src="readmedoc/design/futuretriplist.png" alt="future trip list image"></details>, and the user will be able to create a list in the same way it is done now.
 
