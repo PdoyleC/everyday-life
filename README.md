@@ -1,6 +1,6 @@
 # Live Life
 
-Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** a platform where people can share what their up to, share their experience of going out into the world. 
+Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** website,a platform where people can share what their up to, share their experience of going out into the world. 
 
 <img src="readmedoc/design/iamresponsive.png" alt="I am Responsive image for screen sizes for the site">
 
@@ -233,7 +233,7 @@ The fonts used for this website were "DM sans" and "sans serif" by default. A ch
 
 <img src="readmedoc/features/tripslist.png" alt="Trips List">
 
-- Users can add their items here. Users can enter item name, the number that needed and also if the user needs to buy the item or not.
+- Users can add their items here. Users can enter item name, the number thats needed and also if the user needs to buy the item or not.
 
 <img src="readmedoc/features/triplistadditem.png" alt="Trip List Add Item Page">
 
@@ -427,14 +427,17 @@ it is refreshed in the background and the request eventually succeeds.
 - There was an issue with the dropdown menu when testing was done on a mobile screen. When a user clicked the link (i.e. contact Us) the menu never closed, it stayed open, and the hamburger icon needed to be pressed to close it. [Navbar Close Menu Issue](https://forum.bootstrapstudio.io/t/solved-bootstrap-navbar-close-menu-issue/7204/2) couldn't be resolved so it was decided to remove the dropdown menu and also removed the Home link and Icon as the Live Life logo is a home link and also it was decided to keep the following and Liked links there. The Home icon was removed as it was just doubling up on a task that was being completed by the logo already.
 <img src="readmedoc/issues/navbardropdown.png" alt="navbar dropdown issue image">
 
-- There is an issue that I would have liked to have resolved, when a user enters an item (i.e. Book, in the 1st image below) that item can be entered a number of times. There is a search bar for the user to use to see if the item is already there. I tried using unique constraints to stop this from happening, using django admin in the Add trip image (2nd image), there is an example of map being added by user Jason to there trip list. Since Jason already has the item Map in his list there is an error. When David goes to add the item map to his trip list, an error appears saying that the item is already there, when in fact David doesn't have item map in his trip list. When the item is added to Davids trip list, the trip list only sees that the item is there and not who it belongs to, so the item needs to be added with the owner. This was resolved by adding item and owner for the UniqueConstraint. 
+- There is an issue that I would have liked to have resolved, when a user enters an item (i.e. Book, in the 1st image below) that item can be entered a number of times. There is a search bar for the user to use to see if the item is already there. I tried using unique constraints to stop this from happening, using django admin in the Add trip image (2nd image), there is an example of Map being added by user Jason to there trip list. Since Jason already has the item Map in his list there is an error. When David goes to add the item Map to his trip list, an error appears saying that the item is already there, when in fact David doesn't have item Map in his trip list. When the item is added to Davids trip list, the trip list only sees that the item is there and not who it belongs to, so the item needs to be added with the owner. This was resolved by adding item and owner for the UniqueConstraint
+[UniqueConstraint  github.com](https://github.com/PdoyleC/live-life-api/commit/bfa8580120243a985cd8df02c0fa831998b29000). 
 [Constraints reference djangoproject](https://docs.djangoproject.com/en/3.2/ref/models/constraints/) and ,
 [Constraints reference stackoverflow.com](https://stackoverflow.com/questions/2201598/how-to-define-two-fields-unique-as-couple/2201687#2201687). On the frontend side of the site, after the backend was deployed the site was opened on a local port and Trip List was tested, the item Jumper was used to test this, in the 3rd image below, when the item Jumper was entered and Jumper was already in the list the item didn't enter the list but it just stayed there in the form. A user could keep on pressing Add item and nothing would happen. The user could think that there was something wrong with the site, so an error message would be needed. I wasn't successful in completing this code, due to knowledge gaps and time constraints for the project due date.
 [Display Error Messages stackoverflow.com](https://stackoverflow.com/questions/73251549/trying-to-display-error-messages-on-the-frontend-from-the-backend)
 [validation Error Messages stackoverflow.com](https://stackoverflow.com/questions/64245493/bootstrap-validation-is-not-showing-the-error-message-for-empty-input-on-submit).
-<img src="readmedoc/design/entersameitem.png" alt="enter same item image">
-<img src="readmedoc/issues/uniqueconstraint.png" alt="unique constraint  image">
 
+Image 1 <img src="readmedoc/design/entersameitem.png" alt="enter same item image">
+Image 2
+<img src="readmedoc/issues/uniqueconstraint.png" alt="unique constraint  image">
+Image 3
 <img src="readmedoc/issues/ucjumper.png" alt="enter same item image">
 
 
