@@ -421,7 +421,7 @@ it is refreshed in the background and the request eventually succeeds.
 
 - After my adventures was created and there was a number of images uploaded under user A. I logged in under user B and I was able to see the images that user A had uploaded. This was solved by adding Authenticated only and adding a filter to the queryset, [in the backend api](https://github.com/PdoyleC/live-life-api/commit/270f2ff0e80ed908788683529fd3594c259d0c88).
 
-- When the dropdown menu was added and tested on a small screen (mobile). The dropdown menu was opening but wouldn't close. This was fixed by removing ref and changing a const for easy to read function. The user would still have to close the menu by pressing the hanburger icon. The dropdown was later removed for better responsive when selecting different pages, as the user would have to press the hanburger icon to close the navbar everytime. 
+- When the dropdown menu was added and tested on a small screen (mobile). The dropdown menu was opening but wouldn't close when a page link was pressed. This was fixed by removing ref and changing a const for easy to read function. The user would still have to close the menu by pressing the hanburger icon. The dropdown was later removed for better responsive when selecting different pages, as the user would have to press the hanburger icon to close the navbar everytime. 
 <img src="readmedoc/issues/dropdown.png" alt="dropdown menu issue image">
 
 - There was an issue with the complete items list not loading fully. It was giving an array of 10 objects only, when there were more items in the list. This was solved by adding [newPage filter search and completeListTrips](https://github.com/PdoyleC/live-life/commit/367b5fd461d509d57dbb2a569817b2598c6b7987).
