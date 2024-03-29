@@ -302,22 +302,14 @@ This website was tested on Chrome, Firefox and Microsoft Edge.
 ## Screen Size Tests
 
 - Testing was carried out on small screen sizes.
-- Galaxy Note 3.
 - iPhone 14 Pro.
 - iPad Pro.
 
 
-- Galaxy Note 3, Screen Shots.
-
-<img src="readmedoc/screentest/galaxynote3.png" alt="galaxynote3 image">
-<img src="readmedoc/screentest/galaxynote3addpost.png" alt="galaxynote3addpost image">
-<img src="readmedoc/screentest/galaxynote3contact.png" alt="galaxynote3contact image">
-
 - iPad Pro, Screen Shots.
 
-<img src="readmedoc/screentest/ipadaddpost.png" alt="ipadminiaddpost image">
-<img src="readmedoc/screentest/ipadadvanture.png" alt="ipadminiadvanture image">
-<img src="readmedoc/screentest/ipadtriplist.png" alt="ipadminitriplist image">
+<img src="readmedoc/screentest/ipad31.png" alt="ipad 3 screen shot image">
+<img src="readmedoc/screentest/ipad32.png" alt="ipad 3 screen shot image">
 
 - iPhone 14 Pro, Screen Shots.
 
