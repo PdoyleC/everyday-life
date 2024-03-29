@@ -82,7 +82,7 @@ A live life website serves as a digital haven for individuals seeking inspiratio
 Users to upload images, for the group. Users can upload images for themselves to view, create a list for their next trip so the user doesn't forget anything. The website acts as a source of inspiration, and sharing adventure's from people of all walks of life. Give other visitors ideas on things to do and places to go. If a user adds a post about having a picnic or there out for a walk, another user could see this as inspiration and go for a walk or a picnic.
 
 ### Audience:
-Anyone who enjoys going out and about and wants to share what there up to.
+Anyone who enjoys going out and about and wants to share what they're up to.
 
 ### Communication:
 The social network-style layout presents posts from different users, allowing interaction between them through likes, comments and following your favourite users.
@@ -94,7 +94,7 @@ Create new posts regularly, Create their own adventure area for their own privat
 To engage the user in a meaningful way, and encourage them to explore life and the outside world.
 
 ### Future Goals:
-- To provide a page for users to show walking routes around there area for others to see.
+- To provide a page for users to show walking routes around their area for others to see.
 - Give users an option to send private messages to each other.
 - If a user has created a post for themselves in My Adventures (which is for there own private viewing), it would be good to be able to share that post with a few people but not everyone, so a future improvement would be to have a share button where the user can select the users to share the adventure with, or to be able to create group where 2-127 users can share adventures. 
 - User could create an event and other users can sign up for the event.
@@ -262,7 +262,7 @@ The fonts used for this website were "DM sans" and "sans serif" by default. A ch
 <img src="readmedoc/features/adventuresearch1.png" alt="Adventures Search Page ">
 <img src="readmedoc/features/adventuresearch2.png" alt="Adventures Search Page ">
 
-- Here users can see the posts from the other profiles that their following, users won't see posts from profiles that they're not following. 
+- Here users can see the posts from the other profiles that they're following, users won't see posts from profiles that they're not following. 
 
 ### Following
 
