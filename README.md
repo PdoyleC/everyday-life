@@ -1,6 +1,6 @@
 # Live Life
 
-Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** website,a platform where people can share what their up to, share their experience of going out into the world. 
+Welcome to the **[Live Life](https://live-life-897b359a6b34.herokuapp.com/)** website, a platform where people can share what their up to, share their experience of going out into the world. 
 
 <img src="readmedoc/design/iamresponsive.png" alt="I am Responsive image for screen sizes for the site">
 

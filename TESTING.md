@@ -321,9 +321,6 @@ This website was tested on Chrome, Firefox and Microsoft Edge.
 
 - iPhone 14 Pro, Screen Shots.
 
-<img src="readmedoc/screentest/iphone14.png" alt="iphone14 image">
-<img src="readmedoc/screentest/iphone14addpost.png" alt="iphone14addpost image">
-<img src="readmedoc/screentest/iphone14addpost1.png" alt="iphone14addpost1 image">
-<img src="readmedoc/screentest/iphone14contact.png" alt="iphone14contact image">
-<img src="readmedoc/screentest/iphone14menu.png" alt="iphone14menu image">
+<img src="readmedoc/screentest/iphone145.png" alt="iphone14 5 screen shot  image">
+<img src="readmedoc/screentest/iphone1451.png" alt="iphone14 5 screen shot image">
 
