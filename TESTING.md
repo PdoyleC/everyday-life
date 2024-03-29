@@ -15,7 +15,7 @@ Return back to the [README.md](README.md) file.
 
 # Testing
 
-Manual testing is where the creator of the code/site does quality checks/tests on the code, this is completed step by step. The purpose of tests is to catch any bugs or issues in the site before going live while to site is under development.
+Manual testing is where the creator of the code/site does quality checks/tests on the code, this is completed step by step. The purpose of tests is to catch any bugs or issues in the site before going live while the site is under development.
 
 Automated testing is where code is used to test the logic, set of instructions to validate a feature or expected outcome of the code/feature.
 
@@ -24,9 +24,9 @@ Automated testing is where code is used to test the logic, set of instructions t
 
 **User Not Registered or Signed In**
 
-- If there is no user logged in, the home page is showing with no Crate a post, My Adventure, Trip list.
+- If there is no user logged in, the home page is showing with no Create a post, My Adventure, Trip list.
 - The user will be able to see a post entry but won't be able to add a comment.
-- The user isn't able to edit or deleted a post unless it's a post that the user has created.
+- The user isn't able to edit or delete a post unless it's a post that the user has created.
 - The user can't see another users My Adventure or Trip list details. 
 - User can See Home, Sign in, Sign up and Contact Us.
 
