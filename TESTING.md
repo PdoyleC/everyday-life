@@ -63,8 +63,7 @@ Automated testing is where code is used to test the logic, set of instructions t
 | 1  |  Valid info, submitted                   | Redirected to blog                                                        |&#9745;|
 | 2  |  Invalid info, submitted                 | Error message appears (password to common or to short, or don't match)    |&#9745;|
 | 3  |  Sign In Now clicked                     | Redirected to Sign In                                                     |&#9745;|
-| 4  |  Console error checks in CFE             | No Console errors displayed for Contact US checks                         |&#9745;|
-| 5  |  Console error checks in CFE             | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/testing/knowissue.png"></details>                                     |&#9745;|
+| 4  |  Console error checks in CFE             | 401 (Unauthorized) error, <details><summary>known issue</summary><img src="./readmedoc/testing/knowissue.png"></details>                                     |&#9745;|
 
 
 |Test|     Contact US page                      |   Result                                                                  |Passed |
