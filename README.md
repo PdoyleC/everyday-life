@@ -79,7 +79,7 @@ This site is a blog style site, aimed at people to share what their up to, going
 A live life website serves as a digital haven for individuals seeking inspiration and guidance to enhance the quality of their lives. It is designed to touch the lives of its visitors, providing them with the motivation needed to live life and go out into the world.
 
 ### Site Goal:
-Users to upload images, for the group. Users can upload images for themselves to view, create an list for their next trip so the user doesn't forget anything. The website acts as a source of inspiration, sharing stories, quotes, and life experiences from people of all walks of life. Give other visitors ideas on things to do and places to go. If a user adds a post about having a picnic or there out for a walk, another user could see this as inspiration and go for a walk or a picnic.
+Users to upload images, for the group. Users can upload images for themselves to view, create a list for their next trip so the user doesn't forget anything. The website acts as a source of inspiration, and sharing adventure's from people of all walks of life. Give other visitors ideas on things to do and places to go. If a user adds a post about having a picnic or there out for a walk, another user could see this as inspiration and go for a walk or a picnic.
 
 ### Audience:
 Anyone who enjoys going out and about and wants to share what there up to.
@@ -420,7 +420,10 @@ it is refreshed in the background and the request eventually succeeds.
 ## Issues
 
 - After my adventures was created and there was a number of images uploaded under user A. I logged in under user B and I was able to see the images that user A had uploaded. This was solved by adding Authenticated only and adding a filter to the queryset, [in the backend api](https://github.com/PdoyleC/live-life-api/commit/270f2ff0e80ed908788683529fd3594c259d0c88).
-- When the dropdown menu was added and tested on a small screen (mobile). The dropdown menu was opening but wouldn't open. This was fixed by removing ref and changing a const for easy to read function.
+
+- When the dropdown menu was added and tested on a small screen (mobile). The dropdown menu was opening but wouldn't close. This was fixed by removing ref and changing a const for easy to read function. The user would still have to close the menu by pressing the hanburger icon. The dropdown was later removed for better responsive when selecting different pages, as the user would have to press the hanburger icon to close the navbar everytime. 
+<img src="readmedoc/issues/dropdown.png" alt="dropdown menu issue image">
+
 - There was an issue with the complete items list not loading fully. It was giving an array of 10 objects only, when there were more items in the list. This was solved by adding [newPage filter search and completeListTrips](https://github.com/PdoyleC/live-life/commit/367b5fd461d509d57dbb2a569817b2598c6b7987).
 <img src="readmedoc/issues/itemlistarr.png" alt="item list array issue image">
 
